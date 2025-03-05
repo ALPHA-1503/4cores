@@ -44,9 +44,29 @@ export default function Root(){
                 <Outlet/>
             </div>
 
-            <div className="footer">
-                <p>© Avetech {currentYear} - Tous droits réservés</p>
-            </div>
+            <section className="footer">
+                <section className="top">
+                    <article className="left">
+                        <img src="/images/FULL_v1_white.png" alt="Avetech Logo"/>
+                    </article>
+                    <article className="right">
+
+                    </article>
+                </section>
+                <section className="bottom">
+                    <article className="left">
+                        <p>© Avetech {currentYear} - Tous droits réservés</p>
+                        <p>Conditions générales</p>
+                        <p>Politique de cookies</p>
+                        <p>TVA XXXXXX</p>
+                    </article>
+                    <article className="right">
+                        <img src="/images/courrier-b.png" alt="mail logo"/>
+                        <img src="/images/linkedin.png" alt="linkedin logo"/>
+                    </article>
+
+                </section>
+            </section>
         </div>
     );
 }

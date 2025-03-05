@@ -54,4 +54,42 @@
   .burger-nav{
     display: none;
   }
+
+  .footer{
+    padding: 2.5%;
+    .top{
+      padding-bottom: 1.5%;
+      .left{
+        img{
+          width: 12rem;
+        }
+      }
+      .right{
+
+      }
+    }
+
+    .bottom{
+      border-top: 1px solid #D0D0D0;
+      padding-top: 1.25%;
+      display: flex;
+
+      .left{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .right{
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+
+        img{
+            width: 2rem;
+            margin-left: 1rem;
+        }
+      }
+    }
+  }
 }
