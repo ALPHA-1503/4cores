@@ -1,0 +1,33 @@
+@mixin Root_phone{
+  .header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding:3% 5% 1% 5%;
+    border-bottom: 1px solid #D0D0D0;
+    .left{
+      width: 25%;
+      display: flex;
+      align-items: center;
+      img{
+        width: 8rem;
+      }
+    }
+
+    .middle{
+      display: none;
+    }
+
+    .right{
+      display: none;
+    }
+  }
+
+  .burger-nav{
+    display: none;
+  }
+
+  .burger-nav .active{
+    display: flex;
+  }
+}

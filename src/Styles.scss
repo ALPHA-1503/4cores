@@ -1,3 +1,20 @@
 @use "./styles/index" as *;
 @use "./styles/Home" as Home;
 @use "./styles/Root" as Root;
+
+@media screen and (min-width: 1601px) {
+  @include Root.Root;
+  @include Home.Home;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1600px) {
+  //laptop
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  //tablet
+}
+
+@media screen and (max-width: 767px) {
+  @include Root.Root_phone;
+}
