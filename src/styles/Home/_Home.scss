@@ -70,7 +70,7 @@
 }
 
 .home-services{
-  padding: 0 15% 15%;
+  padding: 0 15% 10%;
   width: 100%;
   margin-top: -22%;
 
@@ -179,6 +179,63 @@
         a{
           padding: 1% 2%;
         }
+      }
+    }
+  }
+}
+
+.home-team{
+  .top{
+    h1{
+        color: #FFC300;
+        text-align: center;
+        font-size: 3.25rem;
+        font-weight: 800;
+        padding-bottom: 2%;
+    }
+  }
+
+  .team{
+    display: flex;
+    .left{
+      width: 30%;
+      #face{
+        width: 50rem;
+        border-radius: 15px;
+        margin-left: -15rem;
+      }
+    }
+
+    .right{
+      display: flex;
+      flex-direction: column;
+      padding-left: 5%;
+      padding-top: 5%;
+
+      h1{
+        font-size: 2.2rem;
+        font-weight: 800;
+        padding-bottom: 1%;
+      }
+
+      h2{
+        font-size: 1.2rem;
+        font-weight: 600;
+        padding-bottom: 2%;
+      }
+
+      p{
+        width: 60%;
+        font-size: 1.25rem;
+        font-weight: 500;
+      }
+    }
+
+    .social{
+      img{
+        width: 2.5rem;
+        margin-right: 1%;
+        margin-top: 1%;
       }
     }
   }
