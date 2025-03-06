@@ -2,11 +2,15 @@
 @use "./styles/Home" as Home;
 @use "./styles/Root" as Root;
 @use "./styles/Contact" as Contact;
+@use "./styles/Not_found" as Not_found;
+@use "./styles/Soon" as Soon;
 
 @media screen and (min-width: 1601px) {
   @include Root.Root;
   @include Home.Home;
   @include Contact.Contact;
+  @include Not_found.Not_found;
+  @include Soon.Soon;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1600px) {

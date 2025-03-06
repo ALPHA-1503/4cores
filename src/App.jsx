@@ -4,6 +4,7 @@ import Home from "./pages/Home/Home.jsx";
 import Not_found from "./pages/Not_found/Not_found.jsx";
 import "./Styles.scss";
 import Contact from "./pages/Contact/Contact.jsx";
+import Soon from "./pages/Soon/Soon.jsx";
 
 function App() {
     const router = createBrowserRouter([
@@ -13,12 +14,10 @@ function App() {
             children: [
                 { path: 'Home', element: <Home /> },
                 { path: 'Contact', element: <Contact /> },
+                { path: 'Soon', element: <Soon /> },
+                { path: '*', element: <Not_found /> },
             ],
         },
-        {
-            path: '*',
-            element: <Not_found />
-        }
     ]);
 
     return (

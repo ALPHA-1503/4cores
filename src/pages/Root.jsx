@@ -22,8 +22,8 @@ export default function Root(){
                 </section>
                 <section className="middle">
                     <NavLink to="/Home">Accueil</NavLink>
-                    <NavLink to="/">A propos</NavLink>
-                    <NavLink to="/">Réalisations</NavLink>
+                    <NavLink to="/Soon">A propos</NavLink>
+                    <NavLink to="/Soon">Réalisations</NavLink>
                 </section>
                 <section className="right">
                     <NavLink to="/Contact">Contactez-nous</NavLink>
@@ -34,9 +34,9 @@ export default function Root(){
             </section>
 
             <section className={`burger-nav${isBurgerActive ? 'active' : ''}`}>
-                <NavLink to="/">Accueil</NavLink>
-                <NavLink to="/">A propos</NavLink>
-                <NavLink to="/">Réalisations</NavLink>
+                <NavLink to="/Home">Accueil</NavLink>
+                <NavLink to="/Soon">A propos</NavLink>
+                <NavLink to="/Soon">Réalisations</NavLink>
                 <NavLink to="/Contact">Contact</NavLink>
             </section>
 
