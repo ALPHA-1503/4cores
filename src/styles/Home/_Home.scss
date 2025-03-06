@@ -15,19 +15,16 @@
   padding-top: 7.5%;
 
   h1{
-    font-family: "Inter", sans-serif;
+    width: 60%;
     align-items: center;
     text-align: center;
-    padding-left: 20%;
-    padding-right: 20%;
     color: #031C43;
     font-size: 3.5rem;
     padding-bottom: 2%;
   }
 
   h2{
-    padding-right:35%;
-    padding-left: 35%;
+    width: 30%;
     color: #000814;
     text-align: center;
     font-size:1.5rem;
@@ -36,7 +33,7 @@
   }
 
   .buttons{
-    width: 20%;
+    min-width: 20vw;
     display: flex;
     justify-content: space-between;
     border-radius: 50px;
@@ -46,9 +43,8 @@
     a{
       color: #003566;
       font-size: 1.25rem;
-      font-family: "Inter", sans-serif;
       font-weight: 700;
-      padding: 4% 10%;
+      padding: 1rem 2rem;
       border-radius: 50px;
       background: #FFF;
     }
@@ -68,9 +64,123 @@
     #realisations:hover{
       color: rgb(234, 179, 0);
     }
-
   }
 
 
+}
+
+.home-services{
+  padding: 0 15% 15%;
+  width: 100%;
+  margin-top: -22%;
+
+  .top{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5%;
+  }
+
+  h1{
+    color: #FFC300;
+    text-align: center;
+    font-size: 3.25rem;
+    font-weight: 800;
+  }
+
+  h2{
+    color: #003566;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: normal;
+    padding-bottom: 5%;
+  }
+
+  p{
+    color: #000814;
+    font-size: 1.25rem;
+    font-weight: 100;
+    line-height: 1.5;
+  }
+
+  .service-card{
+    width: 32%;
+    min-height: fit-content;
+    height: 40vh;
+    border-radius: 15px;
+    background: #E1EBF4;
+    padding: 2% 0 0 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .service-top{
+      padding-right: 10%;
+      .service-row{
+        display: flex;
+        align-items: center;
+        padding-bottom: 5%;
+
+        img{
+          width: 1.2rem;
+          height: 1.2rem;
+          margin-right: 5%;
+        }
+
+        p{
+            color: #004E96;
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+      }
+    }
+
+    .service-bottom{
+      display: flex;
+      justify-content: flex-end;
+
+      a{
+        border-radius: 15px 0;
+        background: #C9D8E7;
+        padding: 2.5% 5%;
+        color: #004E96;
+      }
+
+      a:hover{
+        background: #B3CCE3;
+        transform:translateX(1%);
+      }
+    }
+  }
+
+  .menu{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2%;
+  }
+
+  .menu-bottom{
+    .service-card{
+      width: 100%;
+
+      h2{
+        padding-bottom: 1.5%;
+      }
+
+      .service-top{
+        .service-row{
+          padding-bottom: 1.5%;
+          img{
+            margin-right: 1%;
+          }
+        }
+      }
+
+      .service-bottom{
+        a{
+          padding: 1% 2%;
+        }
+      }
+    }
+  }
 }
 }

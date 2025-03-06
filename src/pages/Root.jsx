@@ -26,7 +26,7 @@ export default function Root(){
                     <NavLink to="/">Réalisations</NavLink>
                 </section>
                 <section className="right">
-                    <NavLink to="/">Contactez-moi</NavLink>
+                    <NavLink to="/">Contactez-nous</NavLink>
                 </section>
                 <section className="burger">
                     <Hamburger onToggle={toggleMenuBurger} toggled={isBurgerActive}/>
