@@ -1,10 +1,12 @@
 @use "./styles/index" as *;
 @use "./styles/Home" as Home;
 @use "./styles/Root" as Root;
+@use "./styles/Contact" as Contact;
 
 @media screen and (min-width: 1601px) {
   @include Root.Root;
   @include Home.Home;
+  @include Contact.Contact;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1600px) {

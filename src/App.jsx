@@ -3,6 +3,7 @@ import Root from "./pages/Root.jsx";
 import Home from "./pages/Home/Home.jsx";
 import Not_found from "./pages/Not_found/Not_found.jsx";
 import "./Styles.scss";
+import Contact from "./pages/Contact/Contact.jsx";
 
 function App() {
     const router = createBrowserRouter([
@@ -11,6 +12,7 @@ function App() {
             element: <Root />,
             children: [
                 { path: 'Home', element: <Home /> },
+                { path: 'Contact', element: <Contact /> },
             ],
         },
         {

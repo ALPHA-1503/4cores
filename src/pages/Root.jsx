@@ -26,7 +26,7 @@ export default function Root(){
                     <NavLink to="/">Réalisations</NavLink>
                 </section>
                 <section className="right">
-                    <NavLink to="/">Contactez-nous</NavLink>
+                    <NavLink to="/Contact">Contactez-nous</NavLink>
                 </section>
                 <section className="burger">
                     <Hamburger onToggle={toggleMenuBurger} toggled={isBurgerActive}/>
@@ -37,7 +37,7 @@ export default function Root(){
                 <NavLink to="/">Accueil</NavLink>
                 <NavLink to="/">A propos</NavLink>
                 <NavLink to="/">Réalisations</NavLink>
-                <NavLink to="/">Contact</NavLink>
+                <NavLink to="/Contact">Contact</NavLink>
             </section>
 
             <div className="content">
@@ -50,7 +50,7 @@ export default function Root(){
                         <img src="/images/FULL_v1_white.png" alt="Avetech Logo"/>
                     </article>
                     <article className="right">
-                        <NavLink to="/">Contactez-moi</NavLink>
+                        <NavLink to="/Contact">Contactez-moi</NavLink>
                     </article>
                 </section>
                 <section className="bottom">
