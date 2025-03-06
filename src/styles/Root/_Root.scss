@@ -58,6 +58,9 @@
   .footer{
     padding: 2.5%;
     .top{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       padding-bottom: 1.5%;
       .left{
         img{
@@ -65,7 +68,16 @@
         }
       }
       .right{
+        a{
+          background-color:#003566;
+          color: #ffffff;
+          padding: 0.65rem 1.25rem;
+          border-radius: 50px;
+        }
 
+        a:hover{
+          background-color: rgba(0, 53, 102, 0.81);
+        }
       }
     }
 
