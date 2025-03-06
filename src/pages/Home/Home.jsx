@@ -72,6 +72,50 @@ export default function Home(){
                     nouveaux défis pour innover et apporter des solutions efficaces."
                     mail="https://www.google.com"
                     linkedin="https://www.linkedin.com"
+                    side="left"
+                    image="/images/nini_team.png"
+                />
+
+                <Home_team
+                    title="Gjoni Ervin"
+                    subtitle="Etudiant Indépendant & Co-Fondateur"
+                    description="Passionné d’informatique depuis toujours, je suis animé par l’envie de contribuer
+                    activement au monde digital qui nous entoure. Actuellement en Master en Architecture Informatique,
+                    après un bachelier en Technologie Informatique, je développe une expertise solide dans la conception
+                    et l’optimisation des systèmes informatiques. Curieux et motivé, je suis constamment en quête de
+                    nouveaux défis pour innover et apporter des solutions efficaces."
+                    mail="https://www.google.com"
+                    linkedin="https://www.linkedin.com"
+                    side="right"
+                    image="/images/ervinou_team.png"
+                />
+
+                <Home_team
+                    title="Abs Luca"
+                    subtitle="Etudiant Indépendant & Co-Fondateur"
+                    description="Passionné d’informatique depuis toujours, je suis animé par l’envie de contribuer
+                    activement au monde digital qui nous entoure. Actuellement en Master en Architecture Informatique,
+                    après un bachelier en Technologie Informatique, je développe une expertise solide dans la conception
+                    et l’optimisation des systèmes informatiques. Curieux et motivé, je suis constamment en quête de
+                    nouveaux défis pour innover et apporter des solutions efficaces."
+                    mail="https://www.google.com"
+                    linkedin="https://www.linkedin.com"
+                    side="left"
+                    image="/images/lvca_team.png"
+                />
+
+                <Home_team
+                    title="Van Eenoo Arnaud"
+                    subtitle="Etudiant Indépendant & Co-Fondateur"
+                    description="Passionné d’informatique depuis toujours, je suis animé par l’envie de contribuer
+                    activement au monde digital qui nous entoure. Actuellement en Master en Architecture Informatique,
+                    après un bachelier en Technologie Informatique, je développe une expertise solide dans la conception
+                    et l’optimisation des systèmes informatiques. Curieux et motivé, je suis constamment en quête de
+                    nouveaux défis pour innover et apporter des solutions efficaces."
+                    mail="https://www.google.com"
+                    linkedin="https://www.linkedin.com"
+                    side="right"
+                    image="/images/me_team.png"
                 />
             </section>
         </>
