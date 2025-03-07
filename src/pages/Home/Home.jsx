@@ -1,8 +1,33 @@
 import { NavLink, Outlet } from 'react-router-dom';
 import Service_card from "./Home-service-card.jsx";
 import Home_team from "./Home-team.jsx";
+import { useEffect } from 'react';
 
 export default function Home(){
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('in-view');
+                    }
+                });
+            },
+            { threshold: 0.1 }
+        );
+
+        const homeServices = document.querySelector('.home-services');
+        if (homeServices) {
+            observer.observe(homeServices);
+        }
+
+        return () => {
+            if (homeServices) {
+                observer.unobserve(homeServices);
+            }
+        };
+    }, []);
+
 
     return(
         <>
