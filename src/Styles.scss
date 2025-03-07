@@ -25,4 +25,7 @@
 @media screen and (max-width: 767px) {
   @include Root.Root_phone;
   @include Home.Home_phone;
+  @include Soon.Soon_phone;
+  @include Not_found.Not_found_phone;
+  @include Contact.Contact_phone;
 }
