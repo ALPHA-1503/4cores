@@ -17,14 +17,29 @@ export default function Home(){
         );
 
         const homeServices = document.querySelector('.home-services');
+        const teams = document.querySelectorAll('.team');
+        const teamRights = document.querySelectorAll('.team-right');
+
         if (homeServices) {
             observer.observe(homeServices);
         }
+        teams.forEach((team) => {
+            observer.observe(team);
+        });
+        teamRights.forEach((teamRight) => {
+            observer.observe(teamRight);
+        });
 
         return () => {
             if (homeServices) {
                 observer.unobserve(homeServices);
             }
+            teams.forEach((team) => {
+                observer.unobserve(team);
+            });
+            teamRights.forEach((teamRight) => {
+                observer.unobserve(teamRight);
+            });
         };
     }, []);
 

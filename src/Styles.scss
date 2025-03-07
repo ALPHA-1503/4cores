@@ -14,7 +14,8 @@
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1600px) {
-  //laptop
+  @include Root.Root_laptop;
+  @include Home.Home_laptop;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -23,4 +24,5 @@
 
 @media screen and (max-width: 767px) {
   @include Root.Root_phone;
+  @include Home.Home_phone;
 }

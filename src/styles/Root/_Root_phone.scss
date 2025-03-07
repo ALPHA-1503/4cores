@@ -30,4 +30,61 @@
   .burger-nav .active{
     display: flex;
   }
+
+  .footer{
+    padding: 5% 2.5% 2.5%;
+
+    .top{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 1.5%;
+      .left{
+        img{
+          width: 5rem;
+        }
+      }
+      .right{
+        a{
+          font-size: 0.5rem;
+          background-color:#003566;
+          color: #ffffff;
+          padding: 0.5rem 0.9rem;
+          border-radius: 50px;
+        }
+
+        a:hover{
+          background-color: rgba(0, 53, 102, 0.81);
+        }
+      }
+    }
+
+    .bottom{
+      border-top: 1px solid #D0D0D0;
+      padding-top: 1.25%;
+      display: flex;
+
+      .left{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+
+        p{
+            font-size: 0.5rem;
+        }
+      }
+
+      .right{
+        width: 20%;
+        display: flex;
+        justify-content: flex-end;
+
+        img{
+          width: 1.25rem;
+          height: 1.25rem;
+          margin-left: 0.5rem;
+        }
+      }
+    }
+  }
 }

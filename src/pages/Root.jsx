@@ -50,7 +50,7 @@ export default function Root(){
                         <img src="/images/FULL_v1_white.png" alt="Avetech Logo"/>
                     </article>
                     <article className="right">
-                        <NavLink to="/Contact">Contactez-moi</NavLink>
+                        <NavLink to="/Contact">Contactez-nous</NavLink>
                     </article>
                 </section>
                 <section className="bottom">
