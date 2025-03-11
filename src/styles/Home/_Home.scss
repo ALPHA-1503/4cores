@@ -1,7 +1,4 @@
 @mixin Home{
-
-
-
 .home-top{
   display: flex;
   flex-direction: column;
@@ -25,7 +22,7 @@
   }
 
   h2{
-    width: 30%;
+    width: 32%;
     color: #000814;
     text-align: center;
     font-size:1.5rem;
@@ -313,9 +310,6 @@
         }
       }
     }
-
-
   }
-
 }
 }

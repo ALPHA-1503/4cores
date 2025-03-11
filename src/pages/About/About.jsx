@@ -1,9 +1,8 @@
-import { NavLink, Outlet } from 'react-router-dom';
-import Service_card from "./Home-service-card.jsx";
-import Home_team from "./Home-team.jsx";
-import { useEffect } from 'react';
+import {NavLink} from "react-router-dom";
+import Home_team from "../Home/Home-team.jsx";
+import {useEffect} from "react";
 
-export default function Home(){
+export default function About(){
     useEffect(() => {
         const observer = new IntersectionObserver(
             (entries) => {
@@ -43,61 +42,24 @@ export default function Home(){
         };
     }, []);
 
-
     return(
         <>
-        <section className="home-top">
-            <h1>Des <span className="blue">solutions</span> technologiques intégrées pour une performance optimale de <span className="blue">votre entreprise.</span></h1>
-            <h2>Ne laissez pas la technologie vous freiner ! Modernisez vos outils pour plus d’efficacité,
-                de compétitivité et de rentabilité.</h2>
-            <article className="buttons">
-                <NavLink to="/About" id="propos">A propos</NavLink>
-                <NavLink to="/Soon" id="realisations">Réalisations</NavLink>
-            </article>
-        </section>
-            <section className="home-services">
-                <article className="top">
-                    <h1>Services</h1>
-                </article>
-                <article className="menu">
-                    <Service_card
-                      title="Transition digitale"
-                      services={[
-                          "Audit et conseil en transformation numérique",
-                          "Automatisation des processus métiers",
-                          "Intégration de solutions digitales adaptées"
-                      ]}
-                    />
-                    <Service_card
-                      title="Développement web/mobile"
-                      services={[
-                          "Développement front-end & backend (Php, Python, Javascript, Typescript, Nodejs,..)",
-                          "Création d’applications web et mobiles sur mesure",
-                          "Design UI/UX"
-                      ]}
-                    />
-                    <Service_card
-                      title="Gestion des applications"
-                      services={[
-                          "Déploiement et maintenance d’applications",
-                          "Sécurisation et gestion des mises à jour",
-                          "Monitoring "
-                      ]}
-                    />
-
-                </article>
-                <article className="menu-bottom">
-                    <Service_card
-                      title="Infrastructure & Cloud"
-                      services={[
-                          "Architecture réseau - Conception et déploiement d’un réseau interne",
-                          "Configuration et sécurisation - Switches, routeurs, access point, VLAN, VPN, Firewall",
-                          "Cloud computing - Déploiement et gestion d’infrastructure en cloud ",
-                          "Installation et configuration de serveurs - Gestion VMware, Proxmox, Docker, Kubernetes, " +
-                          "VMware Tanzu "
-                      ]}
-                    />
-                </article>
+            <section className="about">
+                <section className="about-top">
+                    <h2>4CORES</h2>
+                    <h1>A propos de nous</h1>
+                    <p>Nous sommes une association de quatre étudiants indépendants, actuellement en première année de
+                        Master en architecture des systèmes informatiques. Diplômés en 2024 d’un Bachelier en
+                        technologie de l’informatique à l’Hénallux, nous unissons nos compétences et notre passion
+                        pour offrir des solutions adaptées <span id="blue">à vos besoins.</span></p>
+                    <p>Grâce à nos expertises complémentaires, nous couvrons divers domaines : réseau, développement
+                        web, IoT et administration système (Linux et Windows). Cette synergie nous permet d’accompagner
+                        votre entreprise dans ses défis technologiques et d’optimiser ses performances avec des
+                        solutions innovantes.</p>
+                </section>
+                <section className="about-bottom">
+                    <img className="about-img" src="/images/about.png" alt="about image"/>
+                </section>
             </section>
             <section className="home-team">
                 <article className="top">

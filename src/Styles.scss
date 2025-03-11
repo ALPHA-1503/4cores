@@ -4,6 +4,7 @@
 @use "./styles/Contact" as Contact;
 @use "./styles/Not_found" as Not_found;
 @use "./styles/Soon" as Soon;
+@use "./styles/About" as About;
 
 @media screen and (min-width: 1601px) {
   @include Root.Root;
@@ -11,6 +12,7 @@
   @include Contact.Contact;
   @include Not_found.Not_found;
   @include Soon.Soon;
+  @include About.About;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1600px) {

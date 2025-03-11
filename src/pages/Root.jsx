@@ -22,7 +22,7 @@ export default function Root(){
                 </section>
                 <section className="middle">
                     <NavLink to="/Home">Accueil</NavLink>
-                    <NavLink to="/Soon">A propos</NavLink>
+                    <NavLink to="/About">A propos</NavLink>
                     <NavLink to="/Soon">Réalisations</NavLink>
                 </section>
                 <section className="right">
@@ -34,10 +34,12 @@ export default function Root(){
             </section>
 
             <section className={`burger-nav${isBurgerActive ? 'active' : ''}`}>
-                <NavLink to="/Home">Accueil</NavLink>
-                <NavLink to="/Soon">A propos</NavLink>
-                <NavLink to="/Soon">Réalisations</NavLink>
-                <NavLink to="/Contact">Contact</NavLink>
+                <section className="menu">
+                    <NavLink to="/Home">Accueil</NavLink>
+                    <NavLink to="/About">A propos</NavLink>
+                    <NavLink to="/Soon">Réalisations</NavLink>
+                    <NavLink to="/Contact">Contact</NavLink>
+                </section>
             </section>
 
             <div className="content">
@@ -64,7 +66,6 @@ export default function Root(){
                         <img src="/images/courrier-b.png" alt="mail logo"/>
                         <img src="/images/linkedin.png" alt="linkedin logo"/>
                     </article>
-
                 </section>
             </section>
         </div>
