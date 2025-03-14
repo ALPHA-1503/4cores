@@ -5,11 +5,6 @@ import { Twirl as Hamburger } from 'hamburger-react';
 
 export default function Root(){
     const currentYear = new Date().getFullYear();
-    const [isBurgerActive, setIsBurgerActive] = useState(false);
-
-    const toggleMenuBurger = () => {
-        setIsBurgerActive(!isBurgerActive);
-    };
 
     return(
         <div>
@@ -28,19 +23,47 @@ export default function Root(){
                 <section className="right">
                     <NavLink to="/Contact">Contactez-nous</NavLink>
                 </section>
-                <section className="burger">
-                    <Hamburger onToggle={toggleMenuBurger} toggled={isBurgerActive}/>
-                </section>
+            </section>
+            <section className="bottom-navigation">
+                <nav className="nav-container">
+                    <NavLink to="/Home" className="nav-item">
+                        {({isActive}) => (
+                            <>
+                                <img src={isActive ? "/images/home-selected.png" : "/images/home-mobile.png"} alt="home icon"/>
+                                <h1>Accueil</h1>
+                            </>
+                        )}
+                    </NavLink>
+                    <NavLink to="/About" className="nav-item">
+                        {({isActive}) => (
+                            <>
+                                <img src={isActive ? "/images/a-propos-selected.png" : "/images/a-propos.png"}
+                                     alt="about icon"/>
+                                <h1>A propos</h1>
+                            </>
+                        )}
+                    </NavLink>
+                    <NavLink to="/Soon" className="nav-item">
+                        {({isActive}) => (
+                            <>
+                                <img src={isActive ? "/images/realisation-selected.png" : "/images/realisation.png"}
+                                     alt="projects icon"/>
+                                <h1>Réalisations</h1>
+                            </>
+                        )}
+                    </NavLink>
+                    <NavLink to="/Contact" className="nav-item">
+                        {({isActive}) => (
+                            <>
+                                <img src={isActive ? "/images/contact-selected.png" : "/images/contact.png"}
+                                     alt="contact icon"/>
+                                <h1>Contact</h1>
+                            </>
+                        )}
+                    </NavLink>
+                </nav>
             </section>
 
-            <section className={`burger-nav${isBurgerActive ? 'active' : ''}`}>
-                <section className="menu">
-                    <NavLink to="/Home">Accueil</NavLink>
-                    <NavLink to="/About">A propos</NavLink>
-                    <NavLink to="/Soon">Réalisations</NavLink>
-                    <NavLink to="/Contact">Contact</NavLink>
-                </section>
-            </section>
 
             <div className="content">
                 <Outlet/>
