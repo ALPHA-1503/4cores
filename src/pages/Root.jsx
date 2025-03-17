@@ -80,7 +80,7 @@ export default function Root(){
                 </section>
                 <section className="bottom">
                     <article className="left">
-                        <p>© Avetech {currentYear} - Tous droits réservés</p>
+                        <p>[SA SPJ] © 4CORES {currentYear} - Tous droits réservés</p>
                         <p>Conditions générales</p>
                         <p>Politique de cookies</p>
                         <p>TVA XXXXXX</p>

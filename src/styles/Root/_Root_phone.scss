@@ -56,27 +56,26 @@
       border-radius: 50%;
 
       img {
-        width: 1.5rem;
+        width: 1.4rem;
         transition: transform 0.3s ease;
       }
 
       h1 {
         padding-top: 10%;
         font-size: 0.9rem;
+        font-weight: 200;
       }
 
       &.active {
-        background-color: #EFF4F9;
-        padding: 0.5rem;
-        
         img {
           width: 2.5rem;
-          margin-bottom: 15%;
+          margin-bottom: 0.4rem;
           transform: scale(1.1);
         }
 
         h1 {
-          font-weight: bold;
+          color:#031C43;
+          font-weight: 600;
         }
       }
     }
