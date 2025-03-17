@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {createBrowserRouter, Navigate, RouterProvider} from "react-router-dom";
 import Root from "./pages/Root.jsx";
 import Home from "./pages/Home/Home.jsx";
 import Not_found from "./pages/Not_found/Not_found.jsx";
@@ -13,6 +13,7 @@ function App() {
             path: '/',
             element: <Root />,
             children: [
+                { path: '/', element: <Navigate to="/Home" />},
                 { path: 'Home', element: <Home /> },
                 { path: 'Contact', element: <Contact /> },
                 { path: 'Soon', element: <Soon /> },
