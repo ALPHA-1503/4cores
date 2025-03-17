@@ -204,6 +204,10 @@
     }
   }
 
+  .team-mobile{
+    display: none;
+  }
+
   .team{
     display: flex;
     animation: fadeIn 1.5s ease-in-out;

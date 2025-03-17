@@ -1,5 +1,11 @@
 export default function Contact(){
 
+
+
+
+
+
+
     return(
         <section className="Contact">
             <section className="contact-left">
