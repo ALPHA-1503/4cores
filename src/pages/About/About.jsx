@@ -1,5 +1,6 @@
 import {NavLink} from "react-router-dom";
 import Home_team from "../Home/Home-team.jsx";
+import Home_team_mobile from "../Home/Home-team-mobile.jsx";
 import {useEffect} from "react";
 
 export default function About(){
@@ -121,6 +122,20 @@ export default function About(){
                     linkedin="https://www.linkedin.com"
                     side="right"
                     image="/images/me_team.png"
+                />
+
+                <Home_team_mobile
+                    title="Van Eenoo Arnaud"
+                    subtitle="Etudiant Indépendant & Co-Fondateur"
+                    description="Passionné d’informatique depuis toujours, je suis animé par l’envie de contribuer
+                    activement au monde digital qui nous entoure. Actuellement en Master en Architecture Informatique,
+                    après un bachelier en Technologie Informatique, je développe une expertise solide dans la conception
+                    et l’optimisation des systèmes informatiques. Curieux et motivé, je suis constamment en quête de
+                    nouveaux défis pour innover et apporter des solutions efficaces."
+                    mail="https://www.google.com"
+                    linkedin="https://www.linkedin.com"
+                    side="right"
+                    image="/images/me.png"
                 />
             </section>
         </>
