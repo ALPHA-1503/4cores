@@ -43,6 +43,63 @@ export default function About(){
         };
     }, []);
 
+    const lvca = {
+        title: "Abs Luca",
+        subtitle: "Etudiant Indépendant & Co-Fondateur",
+        description: `Passionné d’informatique depuis toujours, je suis animé par l’envie de contribuer
+        activement au monde digital qui nous entoure. Actuellement en Master en Architecture Informatique,
+        après un bachelier en Technologie Informatique, je développe une expertise solide dans la conception
+        et l’optimisation des systèmes informatiques. Curieux et motivé, je suis constamment en quête de
+        nouveaux défis pour innover et apporter des solutions efficaces.`,
+        mail: "https://www.google.com",
+        linkedin: "https://www.linkedin.com",
+        image: "/images/lvca_team.png",
+        image_mobile: "/images/lvca.png"
+    };
+
+    const ervinou = {
+        title: "Gjoni Ervin",
+        subtitle: "Etudiant Indépendant & Co-Fondateur",
+        description:"Passionné de technologie et d’innovation, j’évolue dans le domaine de l’informatique depuis " +
+            "plusieurs années. Actuellement en Master en Architecture des Systèmes à l’Hénallux, j’aiacquis une " +
+            "solide expertise en réseaux, programmation, cybersécurité, IoT et développement web.En parallèle de mes " +
+            "études, j'ai également pu travailler en milieux professionnel dansl'informatique ce qui m’a permis de " +
+            "développer une approche rigoureuse et efficace pour résoudreles problèmes techniques et optimiser " +
+            "les performances des équipements.",
+        mail: "https://www.google.com",
+        linkedin: "https://www.linkedin.com",
+        image:"/images/ervinou_team.png",
+        image_mobile:"/images/ervinou.png"
+    }
+
+    const nini = {
+        title: "Jaunart Noé",
+        subtitle: "Etudiant Indépendant & Co-Fondateur",
+        description: "Passionné d’informatique depuis toujours, je suis animé par l’envie de contribueractivement " +
+            "au monde digital qui nous entoure. Actuellement en Master en Architecture Informatique,après " +
+            "un bachelier en Technologie Informatique, je développe une expertise solide dans la conceptionet " +
+            "l’optimisation des systèmes informatiques. Curieux et motivé, je suis constamment en quête denouveaux " +
+            "défis pour innover et apporter des solutions efficaces.",
+        mail: "https://www.google.com",
+        linkedin: "https://www.linkedin.com",
+        image:"/images/nini_team.png",
+        image_mobile:"/images/nini.png",
+    }
+
+    const arnaud = {
+        title: "Van Eenoo Arnaud",
+        subtitle: "Etudiant Indépendant & Co-Fondateur",
+        description: "Passionné d’informatique depuis toujours, je suis animé par l’envie de contribueractivement " +
+            "au monde digital qui nous entoure. Actuellement en Master en Architecture Informatique,après " +
+            "un bachelier en Technologie Informatique, je développe une expertise solide dans la conceptionet " +
+            "l’optimisation des systèmes informatiques. Curieux et motivé, je suis constamment en quête denouveaux " +
+            "défis pour innover et apporter des solutions efficaces.",
+        mail: "https://www.google.com",
+        linkedin: "https://www.linkedin.com",
+        image:"/images/me_team.png",
+        image_mobile:"/images/me.png"
+    }
+
     return(
         <>
             <section className="about">
@@ -67,75 +124,79 @@ export default function About(){
                     <h1>Notre équipe</h1>
                 </article>
                 <Home_team
-                    title="Jaunart Noé"
-                    subtitle="Etudiant Indépendant & Co-Fondateur"
-                    description="Passionné d’informatique depuis toujours, je suis animé par l’envie de contribuer
-                    activement au monde digital qui nous entoure. Actuellement en Master en Architecture Informatique,
-                    après un bachelier en Technologie Informatique, je développe une expertise solide dans la conception
-                    et l’optimisation des systèmes informatiques. Curieux et motivé, je suis constamment en quête de
-                    nouveaux défis pour innover et apporter des solutions efficaces."
-                    mail="https://www.google.com"
-                    linkedin="https://www.linkedin.com"
+                    title={nini.title}
+                    subtitle={nini.subtitle}
+                    description={nini.description}
+                    mail={nini.mail}
+                    linkedin={nini.linkedin}
                     side="left"
-                    image="/images/nini_team.png"
+                    image={nini.image}
                 />
 
                 <Home_team
-                    title="Gjoni Ervin"
-                    subtitle="Etudiant Indépendant & Co-Fondateur"
-                    description="Passionné de technologie et d’innovation, j’évolue dans le domaine de l’informatique
-                    depuis plusieurs années. Actuellement en Master en Architecture des Systèmes à l’Hénallux, j’ai
-                    acquis une solide expertise en réseaux, programmation, cybersécurité, IoT et développement web.
-
-                    En parallèle de mes études, j'ai également pu travailler en milieux professionnel dans
-                    l'informatique ce qui m’a permis de développer une approche rigoureuse et efficace pour résoudre
-                    les problèmes techniques et optimiser les performances des équipements."
-                    mail="https://www.google.com"
-                    linkedin="https://www.linkedin.com"
+                    title={ervinou.title}
+                    subtitle={ervinou.subtitle}
+                    description={ervinou.description}
+                    mail={ervinou.mail}
+                    linkedin={ervinou.linkedin}
                     side="right"
-                    image="/images/ervinou_team.png"
+                    image={ervinou.image}
                 />
 
                 <Home_team
-                    title="Abs Luca"
-                    subtitle="Etudiant Indépendant & Co-Fondateur"
-                    description="Passionné d’informatique depuis toujours, je suis animé par l’envie de contribuer
-                    activement au monde digital qui nous entoure. Actuellement en Master en Architecture Informatique,
-                    après un bachelier en Technologie Informatique, je développe une expertise solide dans la conception
-                    et l’optimisation des systèmes informatiques. Curieux et motivé, je suis constamment en quête de
-                    nouveaux défis pour innover et apporter des solutions efficaces."
-                    mail="https://www.google.com"
-                    linkedin="https://www.linkedin.com"
+                    title={lvca.title}
+                    subtitle={lvca.subtitle}
+                    description={lvca.description}
+                    mail={lvca.mail}
+                    linkedin={lvca.linkedin}
                     side="left"
-                    image="/images/lvca_team.png"
+                    image={lvca.image}
                 />
 
                 <Home_team
-                    title="Van Eenoo Arnaud"
-                    subtitle="Etudiant Indépendant & Co-Fondateur"
-                    description="Passionné d’informatique depuis toujours, je suis animé par l’envie de contribuer
-                    activement au monde digital qui nous entoure. Actuellement en Master en Architecture Informatique,
-                    après un bachelier en Technologie Informatique, je développe une expertise solide dans la conception
-                    et l’optimisation des systèmes informatiques. Curieux et motivé, je suis constamment en quête de
-                    nouveaux défis pour innover et apporter des solutions efficaces."
-                    mail="https://www.google.com"
-                    linkedin="https://www.linkedin.com"
+                    title={arnaud.title}
+                    subtitle={arnaud.subtitle}
+                    description={arnaud.description}
+                    mail={arnaud.mail}
+                    linkedin={arnaud.linkedin}
                     side="right"
-                    image="/images/me_team.png"
+                    image={arnaud.image}
                 />
 
                 <Home_team_mobile
-                    title="Van Eenoo Arnaud"
-                    subtitle="Etudiant Indépendant & Co-Fondateur"
-                    description="Passionné d’informatique depuis toujours, je suis animé par l’envie de contribuer
-                    activement au monde digital qui nous entoure. Actuellement en Master en Architecture Informatique,
-                    après un bachelier en Technologie Informatique, je développe une expertise solide dans la conception
-                    et l’optimisation des systèmes informatiques. Curieux et motivé, je suis constamment en quête de
-                    nouveaux défis pour innover et apporter des solutions efficaces."
-                    mail="https://www.google.com"
-                    linkedin="https://www.linkedin.com"
-                    side="right"
-                    image="/images/me.png"
+                    title={nini.title}
+                    subtitle={nini.subtitle}
+                    description={nini.description}
+                    mail={nini.mail}
+                    linkedin={nini.linkedin}
+                    image={nini.image_mobile}
+                />
+
+                <Home_team_mobile
+                    title={ervinou.title}
+                    subtitle={ervinou.subtitle}
+                    description={ervinou.description}
+                    mail={ervinou.mail}
+                    linkedin={ervinou.linkedin}
+                    image={ervinou.image_mobile}
+                />
+
+                <Home_team_mobile
+                    title={lvca.title}
+                    subtitle={lvca.subtitle}
+                    description={lvca.description}
+                    mail={lvca.mail}
+                    linkedin={lvca.linkedin}
+                    image={lvca.image_mobile}
+                />
+
+                <Home_team_mobile
+                    title={arnaud.title}
+                    subtitle={arnaud.subtitle}
+                    description={arnaud.description}
+                    mail={arnaud.mail}
+                    linkedin={arnaud.linkedin}
+                    image={arnaud.image_mobile}
                 />
             </section>
         </>
