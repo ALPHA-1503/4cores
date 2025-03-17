@@ -24,7 +24,7 @@ export default function About(){
         }
         teams.forEach((team) => {
             observer.observe(team);
-        });
+        }); 
         teamRights.forEach((teamRight) => {
             observer.observe(teamRight);
         });

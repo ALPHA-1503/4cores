@@ -1,13 +1,14 @@
 @mixin Root_phone{
   .header{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     padding:3% 5% 1% 5%;
     border-bottom: 1px solid #D0D0D0;
     .left{
-      width: 25%;
+      width: 100%;
       display: flex;
+      justify-content: center;
       align-items: center;
       img{
         width: 8rem;
@@ -51,6 +52,8 @@
       text-decoration: none;
       color: #444;
       transition: all 0.3s ease;
+      padding: 0.3rem;
+      border-radius: 50%;
 
       img {
         width: 1.5rem;
@@ -63,6 +66,9 @@
       }
 
       &.active {
+        background-color: #EFF4F9;
+        padding: 0.5rem;
+        
         img {
           width: 2.5rem;
           margin-bottom: 15%;
