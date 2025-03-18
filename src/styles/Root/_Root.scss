@@ -239,6 +239,10 @@
         width: 50%;
         display: flex;
         justify-content: space-between;
+
+        a:hover{
+          color: #003566;
+        }
       }
 
       .right{

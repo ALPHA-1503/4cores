@@ -84,8 +84,7 @@
 
 
   .footer{
-    padding: 5% 2.5% 2.5%;
-    padding-bottom: 30%;
+    padding: 5% 2.5% 30%;
 
     .top{
       display: flex;
@@ -124,6 +123,10 @@
 
         p{
             font-size: 0.5rem;
+        }
+
+        a{
+          font-size: 0.5rem;
         }
       }
 

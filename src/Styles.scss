@@ -21,6 +21,7 @@
   @include Root.Root_laptop;
   @include Home.Home_laptop;
   @include About.About_laptop;
+  @include Cookie.Cookie_laptop;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -34,4 +35,5 @@
   @include Not_found.Not_found_phone;
   @include Contact.Contact_phone;
   @include About.About_phone;
+  @include Cookie.Cookie_phone;
 }
