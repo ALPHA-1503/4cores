@@ -35,7 +35,7 @@ const SuccessMessage = ({ formData }) => (
 );
 
 const ContactForm = ({ formData, handleChange, handleSubmit, isLoading }) => {
-    const services = ["Transition digitale", "Gestion", "Infrastructure", "Développement", "Cloud"];
+    const services = ["Transition digitale", "Gestion applications", "Infrastructure", "Développement", "Cloud"];
 
     return (
         <form onSubmit={handleSubmit}>
@@ -79,18 +79,22 @@ const ContactForm = ({ formData, handleChange, handleSubmit, isLoading }) => {
             <section className="services">
                 <h1>Services</h1>
                 <article className="checkbox">
-                    {services.map((service) => (
-                        <article key={service} className="row">
-                            <input
-                                type="checkbox"
-                                name={service}
-                                value={service}
-                                onChange={handleChange}
-                                disabled={isLoading}
-                            />
-                            <label>{service}</label>
-                        </article>
-                    ))}
+                    {services.map((service) => {
+                        const id = `service-${service}`;
+                        return (
+                            <article key={service} className="row">
+                                <input
+                                    type="checkbox"
+                                    id={id}
+                                    name={service}
+                                    value={service}
+                                    onChange={handleChange}
+                                    disabled={isLoading}
+                                />
+                                <label htmlFor={id}>{service}</label>
+                            </article>
+                        );
+                    })}
                 </article>
             </section>
 
@@ -187,6 +191,12 @@ export default function Contact() {
 
     const handleChange = (e) => {
         const { name, value, type, checked } = e.target;
+        let processedValue = value;
+
+        if (name === "email") {
+            processedValue = value.toLowerCase();
+        }
+
         if (type === "checkbox") {
             setFormData((prev) => ({
                 ...prev,
@@ -195,14 +205,13 @@ export default function Contact() {
                     : prev.services.filter((s) => s !== value),
             }));
         } else {
-            setFormData({ ...formData, [name]: value });
+            setFormData({ ...formData, [name]: processedValue });
         }
     };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        // Prevent multiple submissions
         if (isLoading || isSubmitted) {
             return;
         }
@@ -210,7 +219,6 @@ export default function Contact() {
         setIsLoading(true);
 
         try {
-            // Send notification email to your business
             const notificationResponse = await fetch("http://127.0.0.1:5000/send-email", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
@@ -229,7 +237,6 @@ export default function Contact() {
                 throw new Error(`Erreur lors de l'envoi de la notification: ${notificationResult.error}`);
             }
 
-            // Send confirmation email to the customer
             const confirmationResponse = await fetch("http://127.0.0.1:5000/send-email", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
@@ -248,7 +255,6 @@ export default function Contact() {
                 throw new Error(`Erreur lors de l'envoi de la confirmation: ${confirmationResult.error}`);
             }
 
-            // If both emails were sent successfully
             setIsSubmitted(true);
             setSubmitSuccess(true);
 
