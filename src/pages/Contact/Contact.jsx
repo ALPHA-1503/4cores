@@ -9,7 +9,6 @@ const ContactLeftSection = () => (
     </section>
 );
 
-// Loading spinner component
 const LoadingSpinner = () => (
     <div className="loading-spinner">
         <div className="spinner"></div>
@@ -17,7 +16,6 @@ const LoadingSpinner = () => (
     </div>
 );
 
-// Component for the success message display
 const SuccessMessage = ({ formData }) => (
     <div className="success-message">
         <h2>Merci pour votre message !</h2>
@@ -142,9 +140,6 @@ const createNotificationEmail = (formData) => {
 const createCustomerEmail = (formData) => {
     return `
     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #e0e0e0; border-radius: 8px;">
-      <div style="text-align: center; margin-bottom: 20px;">
-        <img src="https://votre-site.com/images/logo.png" alt="4CORES Logo" style="max-width: 150px;" />
-      </div>
       <h2 style="color: #004E96; text-align: center; margin-bottom: 20px;">Merci pour votre message !</h2>
       <p style="font-size: 16px; color: #333; margin-bottom: 20px;">
         Bonjour ${formData.name} ${formData.surname},
@@ -166,11 +161,11 @@ const createCustomerEmail = (formData) => {
       <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #ddd; text-align: center;">
         <p style="color: #004E96; font-weight: bold;">L'équipe 4CORES</p>
         <p style="font-size: 14px; color: #666;">
-          <a href="https://www.4cores.com" style="color: #004E96; text-decoration: none;">www.4cores.com</a>
+          <a href="https://www.4cores.be" style="color: #004E96; text-decoration: none;">www.4cores.be</a>
         </p>
         <div style="margin-top: 10px;">
           <a href="https://linkedin.com/company/4cores" style="margin: 0 10px; color: #004E96; text-decoration: none;">LinkedIn</a>
-          <a href="mailto:contact@4cores.com" style="margin: 0 10px; color: #004E96; text-decoration: none;">contact@4cores.com</a>
+          <a href="mailto:contact@4cores.com" style="margin: 0 10px; color: #004E96; text-decoration: none;">contact@4cores.be</a>
         </div>
       </div>
     </div>
