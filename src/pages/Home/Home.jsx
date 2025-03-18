@@ -156,6 +156,39 @@ export default function Home(){
                       ]}
                     />
                 </article>
+
+                <article className="banner">
+                    <article className="banner-top">
+                        <h2>Solutions informatique sur mesure pour votre entreprise</h2>
+                    </article>
+                    <article className="banner-bottom">
+                        <Service_card
+                        title="Personnalisation totale"
+                        services={[
+                            "Chaque entreprise a des besoins uniques : nous adaptons nos solutions pour répondre précisément à vos exigences.",
+                        ]}
+                        />
+                        <Service_card
+                        title="Optimisation de la productivité"
+                        services={[
+                            "Nos services informatiques permettent d’automatiser des tâches, d’améliorer les flux de travail et d’optimiser les performances.",
+                        ]}
+                        />
+                        <Service_card
+                        title="Intégration cloud et solutions hybrides"
+                        services={[
+                            "Mise en place d’infrastructures évolutives et flexibles via le cloud pour faciliter la collaboration et la gestion des ressources.",
+                        ]}
+                        />
+                        <Service_card
+                        title="Support technique et maintenance proactive"
+                        services={[
+                            "Assistance continue et surveillance des systèmes pour minimiser les interruptions et garantir un fonctionnement fluide."
+                        ]}
+                        />
+                    </article>
+                    
+                </article>
             </section>
             <section className="home-team">
                 <article className="top">
