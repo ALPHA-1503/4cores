@@ -17,15 +17,22 @@
   @include Cookie.Cookie;
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1600px) {
+@media screen and (min-width: 1025px) and (max-width: 1600px) {
   @include Root.Root_laptop;
   @include Home.Home_laptop;
   @include About.About_laptop;
   @include Cookie.Cookie_laptop;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   //tablet
+  @include Home.Home_tablet;
+  @include Root.Root_tablet;
+  @include Soon.Soon_tablet;
+  @include Not_found.Not_found_tablet;
+  @include About.About_tablet;
+  @include Cookie.Cookie_phone;
+  @include Contact.Contact_tablet;
 }
 
 @media screen and (max-width: 767px) {
