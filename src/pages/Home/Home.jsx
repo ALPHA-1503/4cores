@@ -49,11 +49,11 @@ export default function Home(){
     const lvca = {
         title: "Abs Luca",
         subtitle: "Etudiant Indépendant & Co-Fondateur",
-        description: `Passionné d’informatique depuis toujours, je suis animé par l’envie de contribuer
-        activement au monde digital qui nous entoure. Actuellement en Master en Architecture Informatique,
-        après un bachelier en Technologie Informatique, je développe une expertise solide dans la conception
-        et l’optimisation des systèmes informatiques. Curieux et motivé, je suis constamment en quête de
-        nouveaux défis pour innover et apporter des solutions efficaces.`,
+        description: "Passionné d’informatique depuis toujours, je suis animé par l’envie de contribuer activement " +
+            "au monde digital qui nous entoure. Actuellement en Master en Architecture Informatique, après " +
+            "un bachelier en Technologie Informatique, je développe une expertise solide dans la conceptionet " +
+            "l’optimisation des systèmes informatiques. Curieux et motivé, je suis constamment en quête de nouveaux " +
+            "défis pour innover et apporter des solutions efficaces.",
         mail: "https://www.google.com",
         linkedin: "https://www.linkedin.com",
         image: "/images/lvca_team.png",
@@ -64,10 +64,10 @@ export default function Home(){
         title: "Gjoni Ervin",
         subtitle: "Etudiant Indépendant & Co-Fondateur",
         description:"Passionné de technologie et d’innovation, j’évolue dans le domaine de l’informatique depuis " +
-            "plusieurs années. Actuellement en Master en Architecture des Systèmes à l’Hénallux, j’aiacquis une " +
-            "solide expertise en réseaux, programmation, cybersécurité, IoT et développement web.En parallèle de mes " +
-            "études, j'ai également pu travailler en milieux professionnel dansl'informatique ce qui m’a permis de " +
-            "développer une approche rigoureuse et efficace pour résoudreles problèmes techniques et optimiser " +
+            "plusieurs années. Actuellement en Master en Architecture des Systèmes à l’Hénallux, j’ai acquis une " +
+            "solide expertise en réseaux, programmation, cybersécurité, IoT et développement web. En parallèle de mes " +
+            "études, j'ai également pu travailler en milieux professionnel dans l'informatique ce qui m’a permis de " +
+            "développer une approche rigoureuse et efficace pour résoudre les problèmes techniques et optimiser " +
             "les performances des équipements.",
         mail: "https://www.google.com",
         linkedin: "https://www.linkedin.com",
@@ -78,10 +78,10 @@ export default function Home(){
     const nini = {
         title: "Jaunart Noé",
         subtitle: "Etudiant Indépendant & Co-Fondateur",
-        description: "Passionné d’informatique depuis toujours, je suis animé par l’envie de contribueractivement " +
-            "au monde digital qui nous entoure. Actuellement en Master en Architecture Informatique,après " +
+        description: "Passionné d’informatique depuis toujours, je suis animé par l’envie de contribuer activement " +
+            "au monde digital qui nous entoure. Actuellement en Master en Architecture Informatique, après " +
             "un bachelier en Technologie Informatique, je développe une expertise solide dans la conceptionet " +
-            "l’optimisation des systèmes informatiques. Curieux et motivé, je suis constamment en quête denouveaux " +
+            "l’optimisation des systèmes informatiques. Curieux et motivé, je suis constamment en quête de nouveaux " +
             "défis pour innover et apporter des solutions efficaces.",
         mail: "https://www.google.com",
         linkedin: "https://www.linkedin.com",
@@ -92,10 +92,10 @@ export default function Home(){
     const arnaud = {
         title: "Van Eenoo Arnaud",
         subtitle: "Etudiant Indépendant & Co-Fondateur",
-        description: "Passionné d’informatique depuis toujours, je suis animé par l’envie de contribueractivement " +
-            "au monde digital qui nous entoure. Actuellement en Master en Architecture Informatique,après " +
+        description: "Passionné d’informatique depuis toujours, je suis animé par l’envie de contribuer activement " +
+            "au monde digital qui nous entoure. Actuellement en Master en Architecture Informatique, après " +
             "un bachelier en Technologie Informatique, je développe une expertise solide dans la conceptionet " +
-            "l’optimisation des systèmes informatiques. Curieux et motivé, je suis constamment en quête denouveaux " +
+            "l’optimisation des systèmes informatiques. Curieux et motivé, je suis constamment en quête de nouveaux " +
             "défis pour innover et apporter des solutions efficaces.",
         mail: "https://www.google.com",
         linkedin: "https://www.linkedin.com",
