@@ -7,6 +7,7 @@ import Contact from "./pages/Contact/Contact.jsx";
 import Soon from "./pages/Soon/Soon.jsx";
 import About from "./pages/About/About.jsx";
 import {CookieProvider} from "./pages/scripts/CookieContext.jsx";
+import Cookie from "./pages/Cookie/Cookie.jsx";
 
 function App() {
     const router = createBrowserRouter([
@@ -19,6 +20,7 @@ function App() {
                 { path: 'Contact', element: <Contact /> },
                 { path: 'Soon', element: <Soon /> },
                 { path: 'About', element: <About /> },
+                { path: 'Cookie', element: <Cookie /> },
                 { path: '*', element: <Not_found /> },
             ],
         },

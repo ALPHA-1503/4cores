@@ -84,7 +84,7 @@ export default function Root(){
                     <article className="left">
                         <p>[SA SPJ] © 4CORES {currentYear} - Tous droits réservés</p>
                         <p>Conditions générales</p>
-                        <p>Politique de cookies</p>
+                        <NavLink to={"/cookie"}>Politique de cookies</NavLink>
                         <p>TVA XXXXXX</p>
                     </article>
                     <article className="right">

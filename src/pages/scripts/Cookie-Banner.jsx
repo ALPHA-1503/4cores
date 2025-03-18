@@ -3,8 +3,25 @@ import { CookieContext } from './CookieContext.jsx';
 import Cookies from 'js-cookie';
 import SimpleBar from 'simplebar-react';
 import 'simplebar-react/dist/simplebar.min.css';
+import {NavLink} from "react-router-dom";
 
 export default function CookieBanner() {
+    const cookiesData = [
+        {
+            name: 'cookieConsent',
+            domain: 'www.4cores.be',
+            expiration: '1 an',
+            description: 'Cookie utilisé pour vérifier le consentement de l\'utilisateur concernant l\'utilisation de cookies.'
+        },
+        {
+            name: '_ga',
+            domain: 'www.google.com',
+            expiration: '2 ans',
+            description: 'Cookies utilisés pour analyser le trafic au sein de notre site web. Ces cookies sont ' +
+                'supprimés si l\'utilisateur ne donne pas son consentement.'
+        },
+    ];
+
     const { handleCookieChoice, cookieConsent } = useContext(CookieContext);
     const [isVisible, setIsVisible] = useState(true);
     const [showCookieInfo, setShowCookieInfo] = useState(false);
@@ -55,40 +72,20 @@ export default function CookieBanner() {
                                             <thead>
                                             <tr>
                                                 <th>Cookie</th>
-                                                <th>Type</th>
+                                                <th>Domaine</th>
                                                 <th>Description</th>
                                                 <th>Durée</th>
                                             </tr>
                                             </thead>
                                             <tbody>
-                                            <tr>
-                                                <td>cookieConsent</td>
-                                                <td><span className="type-tag">Nécessaire</span></td>
-                                                <td>Enregistre vos préférences concernant l'utilisation des cookies sur
-                                                    notre site
-                                                </td>
-                                                <td><span className="duration-tag">1 an</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>lang</td>
-                                                <td><span className="type-tag">Facultatif</span></td>
-                                                <td>Stocke en mémoire le choix de votre langue</td>
-                                                <td><span className="duration-tag">session</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>_ga</td>
-                                                <td><span className="type-tag">Analytique</span></td>
-                                                <td>Utilisé par Google Analytics pour distinguer les utilisateurs
-                                                    uniques
-                                                </td>
-                                                <td><span className="duration-tag">2 ans</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Maps</td>
-                                                <td><span className="type-tag">Analytique</span></td>
-                                                <td>Utilisé par Google pour générer la carte dans la page contact</td>
-                                                <td><span className="duration-tag">1 à 2 ans</span></td>
-                                            </tr>
+                                            {cookiesData.map((cookie, index) => (
+                                                <tr key={index}>
+                                                    <td>{cookie.name}</td>
+                                                    <td>{cookie.domain}</td>
+                                                    <td>{cookie.description}</td>
+                                                    <td>{cookie.expiration}</td>
+                                                </tr>
+                                            ))}
                                             </tbody>
                                         </table>
                                     </div>

@@ -5,6 +5,7 @@
 @use "./styles/Not_found" as Not_found;
 @use "./styles/Soon" as Soon;
 @use "./styles/About" as About;
+@use "./styles/Cookie" as Cookie;
 
 @media screen and (min-width: 1601px) {
   @include Root.Root;
@@ -13,6 +14,7 @@
   @include Not_found.Not_found;
   @include Soon.Soon;
   @include About.About;
+  @include Cookie.Cookie;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1600px) {
