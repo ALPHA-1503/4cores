@@ -72,7 +72,7 @@ export default function Contact() {
                 alert("Erreur : " + result.error);
             }
         } catch (error) {
-            alert("Erreur lors de l'envoi");
+            alert("Erreur lors de l'envoi!");
         }
     };
 
