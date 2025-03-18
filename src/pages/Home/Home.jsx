@@ -1,8 +1,10 @@
 import { NavLink, Outlet } from 'react-router-dom';
 import Service_card from "./Home-service-card.jsx";
+import BannerCard from './Home-banner-card.jsx';
 import Home_team from "./Home-team.jsx";
 import { useEffect } from 'react';
 import Home_team_mobile from "./Home-team-mobile.jsx";
+import BannerKiosk from './Home-swiper-banner.jsx';
 
 export default function Home(){
     useEffect(() => {
@@ -159,36 +161,30 @@ export default function Home(){
 
                 <article className="banner">
                     <article className="banner-top">
-                        <h2>Solutions informatique sur mesure pour votre entreprise</h2>
+                        <h2>Solutions informatiques sur mesure pour votre entreprise</h2>
                     </article>
-                    <article className="banner-bottom">
-                        <Service_card
-                        title="Personnalisation totale"
-                        services={[
-                            "Chaque entreprise a des besoins uniques : nous adaptons nos solutions pour répondre précisément à vos exigences.",
-                        ]}
-                        />
-                        <Service_card
-                        title="Optimisation de la productivité"
-                        services={[
-                            "Nos services informatiques permettent d’automatiser des tâches, d’améliorer les flux de travail et d’optimiser les performances.",
-                        ]}
-                        />
-                        <Service_card
-                        title="Intégration cloud et solutions hybrides"
-                        services={[
-                            "Mise en place d’infrastructures évolutives et flexibles via le cloud pour faciliter la collaboration et la gestion des ressources.",
-                        ]}
-                        />
-                        <Service_card
-                        title="Support technique et maintenance proactive"
-                        services={[
-                            "Assistance continue et surveillance des systèmes pour minimiser les interruptions et garantir un fonctionnement fluide."
-                        ]}
-                        />
+                        <article className="banner-bottom">
+                            <BannerCard
+                            title="Personnalisation totale"
+                            description="Chaque entreprise a des besoins uniques : nous adaptons nos solutions pour répondre précisément à vos exigences."
+                            />
+                            <BannerCard
+                            title="Optimisation de la productivité"
+                            description="Nos services informatiques permettent d’automatiser des tâches, d’améliorer les flux de travail et d’optimiser les performances."
+                            />
+                            <BannerCard
+                            title="Intégration cloud et solutions hybrides"
+                            description="Mise en place d’infrastructures évolutives et flexibles via le cloud pour faciliter la collaboration et la gestion des ressources."
+                            />
+                            <BannerCard
+                            title="Support technique et maintenance proactive"
+                            description="Assistance continue et surveillance des systèmes pour minimiser les interruptions et garantir un fonctionnement fluide."
+                            />
+                        </article>
                     </article>
-                    
-                </article>
+                    <BannerKiosk>
+                        slides
+                    </BannerKiosk>
             </section>
             <section className="home-team">
                 <article className="top">

@@ -191,7 +191,7 @@
   }
 }
 
-.banner{
+.banner {
   padding-top: 2%;
   display: flex;
   flex-direction: column;
@@ -199,80 +199,52 @@
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
-  background-color:#031C43;
+  background-color: #031c43;
   padding: 5% 0;
 
-  .banner-top{
-    h2{
+  .banner-top {
+    h2 {
       text-align: center;
       color: #ffffff;
+      font-size: 2rem;
+      font-weight: 700;
     }
   }
 }
 
-
-
-
-.banner-bottom{
+.banner-bottom {
   display: flex;
   flex-direction: row;
   gap: 2.5%;
   padding: 0 15%;
+  justify-content: center;
+  flex-wrap: wrap;
 
-  h2{
-    text-align: center;
-  }
-
-  .service-card {
-    width: 25%;
+  .banner-card {
+    width: 20%;
     background-color: #003566;
     border-radius: 15px;
-    padding: 2% 0 0 2%;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
 
     h2 {
       color: #ffffff;
       font-size: 1.5rem;
       font-weight: 600;
-      line-height: normal;
-      padding-bottom: 5%;
+      margin-bottom: 1rem;
     }
 
-    .service-top {
-      padding-right: 10%;
-      .service-row {
-        display: flex;
-        align-items: center;
-        padding-bottom: 5%;
-
-        img {
-          width: 1.2rem;
-          height: 1.2rem;
-          margin-right: 5%;
-        }
-
-        p {
-          color: #ffffff;
-          font-size: 1.25rem;
-          font-weight: 600;
-        }
-      }
+    p {
+      color: #ffffff;
+      font-size: 1.1rem;
+      font-weight: 400;
     }
 
-    .service-bottom {
-      display: flex;
-      justify-content: flex-end;
-
-      a {
-        border-radius: 15px 0;
-        background: rgba(255, 255, 255, 0.1);
-        padding: 2.5% 5%;
-        color: #ffffff;
-      }
-
-      a:hover {
-        background: rgba(255, 255, 255, 0.2);
-        transform: translateX(1%);
-      }
+    &:hover {
+      transform: translateY(-5px);
+      background-color: #004080;
     }
   }
 }

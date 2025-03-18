@@ -207,6 +207,55 @@
   }
 }
 
+.banner{
+  display: none;
+}
+
+.banner-kiosk {
+  width: 100;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  padding: 10% 5%;
+  background-color: #031c43;
+  text-align: center;
+
+  .swiper {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .swiper-pagination-bullet {
+    background: #ffffff; // Couleur des points de pagination
+  }
+
+  .banner-card {
+    background-color: #003566;
+    border-radius: 15px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+
+    h2 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: #FFF;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #FFF
+    }
+
+    &:hover {
+      transform: translateY(-3px);
+      background-color: #004080;
+    }
+  }
+}
+
+
 .home-team{
   .top{
     h1{
