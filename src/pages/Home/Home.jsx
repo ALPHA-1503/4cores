@@ -182,9 +182,11 @@ export default function Home(){
                             />
                         </article>
                     </article>
-                    <BannerKiosk>
-                        slides
-                    </BannerKiosk>
+                    <article className="banner-kiosk">
+                        <BannerKiosk>
+                            slides
+                        </BannerKiosk>
+                    </article>
             </section>
             <section className="home-team">
                 <article className="top">
