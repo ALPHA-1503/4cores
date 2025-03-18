@@ -6,6 +6,7 @@ import "./Styles.scss";
 import Contact from "./pages/Contact/Contact.jsx";
 import Soon from "./pages/Soon/Soon.jsx";
 import About from "./pages/About/About.jsx";
+import {CookieProvider} from "./pages/scripts/CookieContext.jsx";
 
 function App() {
     const router = createBrowserRouter([
@@ -24,7 +25,9 @@ function App() {
     ]);
 
     return (
-        <RouterProvider router={router}/>
+        <CookieProvider>
+            <RouterProvider router={router}/>
+        </CookieProvider>
     );
 }
 

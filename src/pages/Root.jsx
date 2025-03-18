@@ -2,6 +2,7 @@ import { NavLink, Outlet } from 'react-router-dom';
 import {useState} from "react";
 import ScrollToTop from './scripts/ScrollTop.jsx';
 import { Twirl as Hamburger } from 'hamburger-react';
+import CookieBanner from "./scripts/Cookie-Banner.jsx";
 
 export default function Root(){
     const currentYear = new Date().getFullYear();
@@ -64,6 +65,7 @@ export default function Root(){
                 </nav>
             </section>
 
+            <CookieBanner/>
 
             <div className="content">
                 <Outlet/>
