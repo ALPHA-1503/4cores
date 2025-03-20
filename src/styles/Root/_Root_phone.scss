@@ -35,12 +35,15 @@
 
     .nav-container {
       display: flex;
-      padding: 3% 6% 6%;
-      width: 99%;
+      padding: 3% 6% 4%;
+      width: 100%;
       background-color: #EFF4F9;
-      height: 10vh;
+      height: 8vh;
+      min-height: 80px;
+      max-height: 15vh;
       justify-content: space-between;
       align-items: flex-end;
+      position: relative;
     }
 
     .nav-item {
