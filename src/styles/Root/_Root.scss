@@ -53,27 +53,28 @@
   }
 
   .cookie{
+    display: flex;
     position: fixed;
-    background: rgba(165, 165, 165, 0.1);
-    backdrop-filter: blur(5px);
     z-index: 9998;
     width: 100%;
-    height: 100%;
+    height: 90%;
+    justify-content: flex-end;
+    align-items: flex-end;
 
     .cookie_banner{
       width: 30%;
       position: fixed;
-      top: 40%;
-      left: 50%;
-      transform: translate(-50%, -50%);
       z-index: 9999;
       background-color: white;
       padding: 1.5% 2%;
       border-radius: 5px;
+      box-shadow: 0 4px 39.5px 0 rgba(101, 101, 101, 0.25);
+      margin-bottom: 1.5%;
+      margin-right: 1%;
 
       .cookie_banner_top{
         h1{
-          font-size: 1.75rem;
+          font-size: 1.5rem;
           font-weight: 600;
           padding-bottom: 2.5%;
         }
@@ -82,7 +83,7 @@
       .cookie_banner_mid{
         .cookie_banner_mid_top{
           p{
-            font-size: 1.2rem;
+            font-size: 1rem;
             padding-bottom: 2%;
           }
         }
@@ -111,56 +112,6 @@
               color:#0054A1;
               cursor: pointer;
             }
-
-            .cookie-table-container {
-              margin-top: 4%;
-              font-family: Arial, sans-serif;
-
-              .cookie-table {
-                width: 100%;
-                border-collapse: collapse;
-                background-color: white;
-                box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-                border-radius: 8px;
-                overflow: hidden;
-
-                th {
-                  background-color: #2c3e50;
-                  color: white;
-                  padding: 15px;
-                  text-align: left;
-                }
-
-                td {
-                  padding: 12px 15px;
-                  border-bottom: 1px solid #ddd;
-                }
-
-                tr {
-                  &:hover {
-                    background-color: #f5f5f5;
-                  }
-
-                  &:last-child td {
-                    border-bottom: none;
-                  }
-                }
-              }
-
-              .type-tag {
-                background-color: #3498db;
-                color: white;
-                padding: 4px 8px;
-                border-radius: 4px;
-                font-size: 0.9em;
-              }
-
-              .duration-tag {
-                color: #7f8c8d;
-                font-size: 0.9em;
-                font-weight: 500;
-              }
-            }
           }
         }
       }
@@ -171,10 +122,10 @@
         justify-content: space-between;
 
         button{
-          width: 48%;
-          padding: 4% 0;
+          width: 49%;
+          padding: 3.5% 0;
           border: none;
-          font-size: 1.2rem;
+          font-size: 1.1rem;
           font-family: 'Eurostile-bold', sans-serif;
           border-radius: 5px;
         }
