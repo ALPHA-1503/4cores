@@ -38,7 +38,7 @@
     a{
       background-color:#003566;
       color: #ffffff;
-      padding: 0.65rem 1.25rem;
+      padding: 1rem 1.5rem;
       border-radius: 50px;
     }
 
@@ -207,5 +207,9 @@
         }
       }
     }
+  }
+
+  .footer-mobile{
+    display: none;
   }
 }

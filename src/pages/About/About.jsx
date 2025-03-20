@@ -46,11 +46,14 @@ export default function About(){
     const lvca = {
         title: "Abs Luca",
         subtitle: "Etudiant Indépendant & Co-Fondateur",
-        description: `Passionné d’informatique depuis toujours, je suis animé par l’envie de contribuer
-        activement au monde digital qui nous entoure. Actuellement en Master en Architecture Informatique,
-        après un bachelier en Technologie Informatique, je développe une expertise solide dans la conception
-        et l’optimisation des systèmes informatiques. Curieux et motivé, je suis constamment en quête de
-        nouveaux défis pour innover et apporter des solutions efficaces.`,
+        description: `Passionné d'informatique et de technologies, je possède une expertise en développement, 
+        administration système et réseaux. Je maîtrise plusieurs langages de programmation, dont Python, 
+        Java, C, Html/js (React Vite), PHP, SQL et Kotlin (Mobile). J’ai également une solide expérience 
+        en administration et programmation Linux et Windows, ainsi qu’en sécurité et gestion réseau avec 
+        Cisco, Ubiquiti, Palo Alto et les firewalls. Mon parcours inclut aussi des projets en IoT avec Arduino, 
+        où je combine programmation et électronique. Toujours curieux et en quête d’innovation, j’aime relever de 
+        nouveaux défis et explorer les dernières avancées technologiques. Mon défi actuel est un Master en Architecture 
+        des Systèmes Informatique.`,
         mail: "https://www.google.com",
         linkedin: "https://www.linkedin.com",
         image: "/images/lvca_team.png",
@@ -91,7 +94,7 @@ export default function About(){
         subtitle: "Etudiant Indépendant & Co-Fondateur",
         description: "Passionné d’informatique depuis toujours, je suis animé par l’envie de contribueractivement " +
             "au monde digital qui nous entoure. Actuellement en Master en Architecture Informatique,après " +
-            "un bachelier en Technologie Informatique, je développe une expertise solide dans la conceptionet " +
+            "un bachelier en Technologie Informatique, je développe une expertise solide dans la conception et " +
             "l’optimisation des systèmes informatiques. Curieux et motivé, je suis constamment en quête denouveaux " +
             "défis pour innover et apporter des solutions efficaces.",
         mail: "https://www.google.com",

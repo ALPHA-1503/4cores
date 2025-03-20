@@ -30,7 +30,8 @@ export default function Root(){
                     <NavLink to="/Home" className="nav-item">
                         {({isActive}) => (
                             <>
-                                <img src={isActive ? "/images/home-selected.png" : "/images/home-mobile.png"} alt="home icon"/>
+                                <img src={isActive ? "/images/home-selected.png" : "/images/home-mobile.png"}
+                                     alt="home icon"/>
                                 <h1>Accueil</h1>
                             </>
                         )}
@@ -91,6 +92,20 @@ export default function Root(){
                         <img src="/images/courrier-b.png" alt="mail logo"/>
                         <img src="/images/linkedin.png" alt="linkedin logo"/>
                     </article>
+                </section>
+            </section>
+            <section className="footer-mobile">
+                <section className="top">
+                    <img src="/images/courrier-b.png" alt="mail logo"/>
+                    <img src="/images/linkedin.png" alt="linkedin logo"/>
+                    <NavLink to="/Contact">Contactez-nous</NavLink>
+                </section>
+                <section className="bottom">
+                    <p>Conditions générales</p>
+                    <NavLink to="/cookie">Politique de cookies</NavLink>
+                    <p>TVA XXXXXX</p>
+                    <img src="/images/FULL_v1_white.png" alt="Avetech Logo"/>
+                    <p>© {currentYear} 4CORES SSPJ - Tous droits réservés</p>
                 </section>
             </section>
         </div>
