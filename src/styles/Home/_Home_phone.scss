@@ -6,11 +6,12 @@
   width: 100%;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 69.2%, #ffffff 93.75%), url(/images/home-bg.png) lightgray -80px 0px / 111.111% 100% no-repeat;
   background-position: center;
-  height:40vh;
+  height:fit-content;
   flex-shrink: 0;
   padding-top: 7.5%;
   transition: ease-in 0.1s;
   animation: fadeIn 1s ease-in-out;
+  padding-bottom: 15%;
 
   h1{
     width: 85%;
@@ -32,7 +33,6 @@
 
   .buttons{
     min-width: 65vw;
-
     display: flex;
     justify-content: space-between;
     border-radius: 50px;
