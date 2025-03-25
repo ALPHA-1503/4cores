@@ -220,7 +220,7 @@ export default function Contact() {
         setIsLoading(true);
 
         try {
-            const notificationResponse = await fetch("http://mailapi.4cores.be/send-email", {
+            const notificationResponse = await fetch("https://mailapi.4cores.be/send-email", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
@@ -238,7 +238,7 @@ export default function Contact() {
                 throw new Error(`Erreur lors de l'envoi de la notification: ${notificationResult.error}`);
             }
 
-            const confirmationResponse = await fetch("http://mailapi.4cores.be/send-email", {
+            const confirmationResponse = await fetch("https://mailapi.4cores.be/send-email", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
