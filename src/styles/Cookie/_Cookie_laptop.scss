@@ -1,6 +1,6 @@
 @mixin Cookie_laptop{
-.cookies{
-  .cookies-top{
+  .cookies{
+    .cookies-top{
       display: flex;
       flex-direction: column;
       width: 100%;
@@ -33,47 +33,47 @@
         padding-bottom: 5%;
       }
 
-    .cookies-table {
-      width: 60%;
-      border-collapse: collapse;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      .cookies-table {
+        width: 60%;
+        border-collapse: collapse;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 
-      table {
-        width: 100%;
+        table {
+          width: 100%;
 
-        thead {
-          background-color: #004E96;
-          color: #ffffff;
-          text-align: left;
+          thead {
+            background-color: #004E96;
+            color: #ffffff;
+            text-align: left;
 
-          th {
-            padding: 12px 15px;
-            font-weight: 500;
-            font-size: 1.1rem;
-          }
-        }
-
-        tbody {
-          tr {
-            border-bottom: 1px solid #dddddd;
-
-            &:nth-of-type(even) {
-              background-color: #f3f3f3;
-            }
-
-            &:last-of-type {
-              border-bottom: 2px solid #004E96;
-            }
-
-            td {
+            th {
               padding: 12px 15px;
-              font-size: 1rem;
-              color: #000814;
+              font-weight: 500;
+              font-size: 1.1rem;
+            }
+          }
+
+          tbody {
+            tr {
+              border-bottom: 1px solid #dddddd;
+
+              &:nth-of-type(even) {
+                background-color: #f3f3f3;
+              }
+
+              &:last-of-type {
+                border-bottom: 2px solid #004E96;
+              }
+
+              td {
+                padding: 12px 15px;
+                font-size: 1rem;
+                color: #000814;
+              }
             }
           }
         }
       }
     }
-    }
-}
+  }
 }

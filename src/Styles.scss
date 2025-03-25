@@ -32,6 +32,7 @@
   @include Home.Home_laptop;
   @include About.About_laptop;
   @include Cookie.Cookie_laptop;
+  @include Contact.Contact_laptop;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
