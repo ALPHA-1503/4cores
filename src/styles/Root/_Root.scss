@@ -53,13 +53,17 @@
   }
 
   .cookie{
-    display: flex;
+    display: none;
     position: fixed;
     z-index: 9998;
     width: 100%;
     height: 90%;
     justify-content: flex-end;
     align-items: flex-end;
+
+    &.active{
+      display: flex;
+    }
 
     .cookie_banner{
       width: 30%;
@@ -214,6 +218,7 @@
   }
 
   .references-baneer{
+    padding-bottom: 5%;
     .top{
       display: flex;
       justify-content: center;

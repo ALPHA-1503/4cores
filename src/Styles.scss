@@ -33,11 +33,12 @@
   @include About.About_laptop;
   @include Cookie.Cookie_laptop;
   @include Contact.Contact_laptop;
+  @include Soon.Soon_laptop;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   @include Root.Root_phone;
-  @include Home.Home_phone;
+  @include Home.Home_tablet;
   @include Soon.Soon_phone;
   @include Not_found.Not_found_phone;
   @include Contact.Contact_phone;
