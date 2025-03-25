@@ -66,10 +66,33 @@ html, body{
 
 
 .references-baneer{
-  display: flex;
-  justify-content: center;
-  background: #F8F8F8;
 
+  .top{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2.5%;
 
+    h1{
+      color: #FFC300;
+      font-family: Inter, sans-serif;
+      font-size: 3rem;
+    }
+  }
 
+  .references-content{
+    background: #F8F8F8;
+    padding: 2.5% 1%;
+
+    .images {
+      width: 180px;
+      height:80px;
+      object-fit: contain;
+      margin: 20px;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
 }
