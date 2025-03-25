@@ -149,7 +149,7 @@ const createCustomerEmail = (formData) => {
         Bonjour ${formData.name} ${formData.surname},
       </p>
       <p style="font-size: 16px; color: #333; margin-bottom: 20px;">
-        Nous vous confirmons la bonne réception de votre message. Un membre de notre équipe vous contactera dans les plus brefs délais.
+        Nous vous confirmons la bonne réception de votre demande de contact. Un membre de notre équipe vous contactera dans les plus brefs délais.
       </p>
       <div style="background-color: #f5f5f5; padding: 15px; border-radius: 8px; margin-bottom: 20px;">
         <h3 style="color: #003566; margin-bottom: 10px;">Récapitulatif de votre demande :</h3>
@@ -160,7 +160,8 @@ const createCustomerEmail = (formData) => {
         <p style="background-color: #fff; padding: 10px; border-left: 3px solid #FFC300; white-space: pre-line; font-style: italic;">${formData.message}</p>
       </div>
       <p style="font-size: 16px; color: #333; margin-bottom: 20px;">
-        Si vous avez d'autres questions ou informations à nous communiquer, n'hésitez pas à répondre directement à cet email.
+        Si vous avez d'autres questions ou informations à nous communiquer, n'hésitez pas à nous contacter via 
+        contact@4cores.be
       </p>
       <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #ddd; text-align: center;">
         <p style="color: #004E96; font-weight: bold;">L'équipe 4CORES</p>
@@ -219,7 +220,7 @@ export default function Contact() {
         setIsLoading(true);
 
         try {
-            const notificationResponse = await fetch("http://127.0.0.1:5000/send-email", {
+            const notificationResponse = await fetch("http://mailapi.4cores.be/send-email", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
@@ -237,7 +238,7 @@ export default function Contact() {
                 throw new Error(`Erreur lors de l'envoi de la notification: ${notificationResult.error}`);
             }
 
-            const confirmationResponse = await fetch("http://127.0.0.1:5000/send-email", {
+            const confirmationResponse = await fetch("http://mailapi.4cores.be/send-email", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
