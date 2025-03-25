@@ -86,7 +86,7 @@ export default function About(){
         mail: "https://www.google.com",
         linkedin: "https://www.linkedin.com",
         image:"/images/nini_team.png",
-        image_mobile:"/images/nini.png",
+        image_mobile:"/images/ninilesot.jpg",
     }
 
     const arnaud = {
