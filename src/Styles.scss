@@ -7,6 +7,16 @@
 @use "./styles/About" as About;
 @use "./styles/Cookie" as Cookie;
 
+@font-face {
+  font-family: 'Oxanium-medium';
+  src: url('/public/fonts/Oxanium/Oxanium-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Oxanium-light';
+  src: url('/public/fonts/Oxanium/Oxanium-Light.ttf') format('truetype');
+}
+
 @media screen and (min-width: 1601px) {
   @include Root.Root;
   @include Home.Home;

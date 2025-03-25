@@ -15,7 +15,7 @@ export default function Service_card({title, services}){
                     ))}
                 </article>
                 <article className="service-bottom">
-                    <NavLink to="/Contact">Devis ➜</NavLink>
+                    <NavLink to="/Contact">Contact ➜</NavLink>
                 </article>
             </section>
         </>
