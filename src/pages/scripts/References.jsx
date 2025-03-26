@@ -1,9 +1,8 @@
 export default function References(){
-
-    const images = ["/images/cisco.png","/images/apple.png","/images/php.png","/images/ubiquiti.png",
-        "/images/sql.png","/images/PaloAlto.png","/images/linux.png","/images/windows-server.png","/images/ansible.png",
-    "/images/docker.png","/images/k8s.svg","/images/vmware.png","/images/proxmox.png","/images/react.png",
-        "/images/rpi.png","/images/arduino.png"]
+    const images = ["cisco.png","apple.png","php.png","ubiquiti.png",
+        "sql.png","PaloAlto.png","linux.png","windows-server.png","ansible.png",
+        "docker.png","k8s.svg","vmware.png","proxmox.png","react.png",
+        "rpi.png","arduino.png","python.png","java.png","sass.png", "js.png", "figma.png"]
 
     return(
         <section className="references-baneer">
@@ -13,7 +12,7 @@ export default function References(){
             <section className="references-content">
                 {images.map((image, index) => {
                     return (
-                        <img className="images" key={index} src={image} alt="references images"/>
+                        <img className="images" key={index} src={`/images/${image}`} alt={`logo ${image}`}/>
                     )
                 })}
             </section>

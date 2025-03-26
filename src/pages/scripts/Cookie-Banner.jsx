@@ -1,40 +1,30 @@
 import { useContext, useEffect, useState } from 'react';
 import { CookieContext } from './CookieContext.jsx';
 import Cookies from 'js-cookie';
-import SimpleBar from 'simplebar-react';
-import 'simplebar-react/dist/simplebar.min.css';
 import {NavLink} from "react-router-dom";
 
 export default function CookieBanner() {
     const { handleCookieChoice, cookieConsent } = useContext(CookieContext);
-    const [isVisible, setIsVisible] = useState(true);
-    const [showCookieInfo, setShowCookieInfo] = useState(false);
+    const [showBanner, setShowBanner] = useState(false);
 
     useEffect(() => {
         const storedConsent = Cookies.get('cookieConsent');
-        if (storedConsent !== undefined) {
-            setIsVisible(false);
+
+        if (storedConsent === undefined) {
+            setShowBanner(true);
         }
     }, []);
 
     const handleChoice = (choice) => {
         handleCookieChoice(choice);
-        setIsVisible(false);
+        setShowBanner(false);
         Cookies.set('cookieConsent', choice.toString(), { expires: 365 });
     };
 
-    const toggleCookieInfo = () => {
-        setShowCookieInfo(!showCookieInfo);
-    };
-
-    const handleClose = () => {
-        setShowCookieInfo(false);
-    };
-
-    if (!isVisible) return null;
+    const cookieClassName = showBanner ? "cookie active" : "cookie";
 
     return (
-        <div className="cookie">
+        <div className={cookieClassName}>
             <div className="cookie_banner">
                 <div className="cookie_banner_top">
                     <h1>Nous respectons votre vie privée</h1>

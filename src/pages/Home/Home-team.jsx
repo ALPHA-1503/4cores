@@ -13,14 +13,14 @@ export default function Home_team({ title, subtitle, description, mail, linkedin
                         <h2>{subtitle}</h2>
                         <p>{description}</p>
                         <article className="social">
-                            {mail ? (
-                                <a href={mail} target="_blank" rel="noreferrer">
+                            {linkedin ? (
+                                <a href={linkedin} target="_blank" rel="noreferrer">
                                     <img src="/images/linkedin.png" alt="linkedin" />
                                 </a>
                             ) : null}
-                            {linkedin ? (
-                                <a href={linkedin} target="_blank" rel="noreferrer">
-                                    <img src="/images/courrier-b.png" alt="mail" />
+                            {mail ? (
+                                <a href={`mailto:${mail}`} target="_blank" rel="noreferrer">
+                                    <img src="/images/courrier-b.png" alt="mail"/>
                                 </a>
                             ) : null}
                         </article>
@@ -33,14 +33,14 @@ export default function Home_team({ title, subtitle, description, mail, linkedin
                         <h2>{subtitle}</h2>
                         <p>{description}</p>
                         <article className="social">
-                            {mail ? (
-                                <a href={mail} target="_blank" rel="noreferrer">
+                            {linkedin ? (
+                                <a href={linkedin} target="_blank" rel="noreferrer">
                                     <img src="/images/linkedin.png" alt="linkedin" />
                                 </a>
                             ) : null}
-                            {linkedin ? (
-                                <a href={linkedin} target="_blank" rel="noreferrer">
-                                    <img id="mail" src="/images/courrier-b.png" alt="mail" />
+                            {mail ? (
+                                <a href={`mailto:${mail}`} target="_blank" rel="noreferrer">
+                                    <img id="mail" src="/images/courrier-b.png" alt="mail"/>
                                 </a>
                             ) : null}
                         </article>
