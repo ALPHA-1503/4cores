@@ -154,7 +154,6 @@
 
       a:hover{
         background: #B3CCE3;
-        transform:translateX(1%);
       }
     }
   }
@@ -236,12 +235,15 @@
         font-size: 2.2rem;
         font-weight: 800;
         padding-bottom: 1%;
+        font-family: 'Roboto', sans-serif;
       }
 
       h2{
         font-size: 1.2rem;
-        font-weight: 600;
+        font-weight: 800;
         padding-bottom: 2%;
+        font-family: 'Roboto', sans-serif;
+        color: #4B4B4B;
       }
 
       p{
@@ -256,6 +258,10 @@
         width: 2.5rem;
         margin-right: 1%;
         margin-top: 1%;
+      }
+
+      img:hover {
+        transform: scale(1.05);
       }
     }
   }
@@ -291,12 +297,15 @@
         font-size: 2.2rem;
         font-weight: 800;
         padding-bottom: 1%;
+        font-family: 'Roboto', sans-serif;
       }
 
       h2{
         font-size: 1.2rem;
-        font-weight: 600;
+        font-weight: 800;
         padding-bottom: 2%;
+        font-family: 'Roboto', sans-serif;
+        color: #4B4B4B;
       }
 
       p{
@@ -312,6 +321,10 @@
         img{
           width: 3.25rem;
           padding-left: 20%;
+        }
+
+        img:hover {
+          transform: scale(1.05);
         }
       }
     }

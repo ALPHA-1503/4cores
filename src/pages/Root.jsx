@@ -27,41 +27,37 @@ export default function Root(){
             </section>
             <section className="bottom-navigation">
                 <nav className="nav-container">
-                    <NavLink to="/Home" className="nav-item">
-                        {({isActive}) => (
-                            <>
-                                <img src={isActive ? "/images/home-selected.png" : "/images/home-mobile.png"}
-                                     alt="home icon"/>
-                                <h1>Accueil</h1>
-                            </>
-                        )}
+                    <NavLink to="/Home" className={({isActive}) => isActive ? "nav-item active" : "nav-item"}>
+                        <article className="top">
+                            <img src="/images/home.svg" alt="home icon"/>
+                        </article>
+                        <article className="bottom">
+                            <h1>Accueil</h1>
+                        </article>
                     </NavLink>
-                    <NavLink to="/About" className="nav-item">
-                        {({isActive}) => (
-                            <>
-                                <img src={isActive ? "/images/a-propos-selected.png" : "/images/a-propos.png"}
-                                     alt="about icon"/>
-                                <h1>A propos</h1>
-                            </>
-                        )}
+                    <NavLink to="/About" className={({isActive}) => isActive ? "nav-item active" : "nav-item"}>
+                        <article className="top">
+                            <img src="/images/info.svg" alt="home icon"/>
+                        </article>
+                        <article className="bottom">
+                            <h1>A propos</h1>
+                        </article>
                     </NavLink>
-                    <NavLink to="/Soon" className="nav-item">
-                        {({isActive}) => (
-                            <>
-                                <img src={isActive ? "/images/realisation-selected.png" : "/images/realisation.png"}
-                                     alt="projects icon"/>
-                                <h1>Réalisations</h1>
-                            </>
-                        )}
+                    <NavLink to="/Soon" className={({isActive}) => isActive ? "nav-item active" : "nav-item"}>
+                        <article className="top">
+                            <img src="/images/code.svg" alt="home icon"/>
+                        </article>
+                        <article className="bottom">
+                            <h1>Réalisations</h1>
+                        </article>
                     </NavLink>
-                    <NavLink to="/Contact" className="nav-item">
-                        {({isActive}) => (
-                            <>
-                                <img src={isActive ? "/images/contact-selected.png" : "/images/contact.png"}
-                                     alt="contact icon"/>
-                                <h1>Contact</h1>
-                            </>
-                        )}
+                    <NavLink to="/Contact" className={({isActive}) => isActive ? "nav-item active" : "nav-item"}>
+                        <article className="top">
+                            <img src="/images/contact.svg" alt="home icon"/>
+                        </article>
+                        <article className="bottom">
+                            <h1>Contact</h1>
+                        </article>
                     </NavLink>
                 </nav>
             </section>
