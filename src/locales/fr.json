@@ -1,0 +1,21 @@
+{
+  "about": "A propos",
+  "home": "Accueil",
+  "projects": "Réalisations",
+  "contact": "Contactez-nous",
+  "rootpage": {
+    "4cores" : "[SA SPJ] © 4CORES {currentYear} - Tous droits réservés",
+    "conditions": "Conditions générales",
+    "cookies-policy": "Politique de cookies",
+    "general-conditions": "Conditions générales"
+  },
+  "homepage": {
+    "title": "Des <span class='blue'>solutions</span> technologiques intégrées pour une performance optimale de <span class='blue'>votre entreprise.",
+    "subtitle": "Ne laissez pas la technologie vous freiner ! Modernisez vos outils pour plus d’efficacité, de compétitivité et de rentabilité.",
+    "services": "Services",
+    "transition": "Transition digitale",
+    "development": "Développement Web/Mobile",
+    "app-monitoring": "Surveillance d'application",
+    "infras": "Infrastructure & Cloud"
+  }
+}

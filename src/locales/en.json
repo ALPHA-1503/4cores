@@ -1,0 +1,21 @@
+{
+  "home": "Home",
+  "about": "About",
+  "projects": "Projects",
+  "contact": "Contact-us",
+  "rootpage": {
+    "4cores": "[SA SPJ] © 4CORES {currentYear} - All rights reserved",
+    "conditions": "Terms and conditions",
+    "cookies-policy": "Cookies policy",
+    "general-conditions": "General conditions"
+  },
+  "homepage": {
+    "title": "Integrated technological <span class='blue'>solutions</span> for optimal performance of <span class='blue'>your business.</span>",
+    "subtitle": "Don't let technology hold you back! Modernize your tools for greater efficiency, competitiveness, and profitability.",
+    "services": "Services",
+    "transition": "Digital transition",
+    "development": "Web/Mobile development",
+    "app-monitoring": "Application monitoring",
+    "infras": "Infrastructure & Cloud"
+  }
+}

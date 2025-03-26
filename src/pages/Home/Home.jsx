@@ -1,10 +1,11 @@
-import { NavLink, Outlet } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import Service_card from "./Home-service-card.jsx";
-import Home_team from "./Home-team.jsx";
-import { useEffect } from 'react';
-import Home_team_mobile from "./Home-team-mobile.jsx";
+import {useEffect} from 'react';
+import {useTranslation} from "react-i18next";
 
 export default function Home(){
+    const { t } = useTranslation();
+
     useEffect(() => {
         const observer = new IntersectionObserver(
             (entries) => {
@@ -48,21 +49,20 @@ export default function Home(){
     return(
         <>
         <section className="home-top">
-            <h1>Des <span className="blue">solutions</span> technologiques intégrées pour une performance optimale de <span className="blue">votre entreprise.</span></h1>
-            <h2>Ne laissez pas la technologie vous freiner ! Modernisez vos outils pour plus d’efficacité,
-                de compétitivité et de rentabilité.</h2>
+            <h1 dangerouslySetInnerHTML={{__html: (t('homepage.title'))}} />
+            <h2 dangerouslySetInnerHTML={{__html: (t('homepage.subtitle'))}} />
             <article className="buttons">
-                <NavLink to="/About" id="propos">A propos</NavLink>
-                <NavLink to="/Soon" id="realisations">Réalisations</NavLink>
+                <NavLink to="/About" id="propos" dangerouslySetInnerHTML={{__html: (t('about'))}} />
+                <NavLink to="/Soon" id="realisations" dangerouslySetInnerHTML={{__html: (t('projects'))}} />
             </article>
         </section>
             <section className="home-services">
                 <article className="top">
-                    <h1>Services</h1>
+                    <h1 dangerouslySetInnerHTML={{__html: (t('homepage.services'))}} />
                 </article>
                 <article className="menu">
                     <Service_card
-                      title="Transition digitale"
+                      title={t('homepage.transition')}
                       services={[
                           "Audit et conseil en transformation numérique",
                           "Automatisation des processus métiers",
@@ -70,7 +70,7 @@ export default function Home(){
                       ]}
                     />
                     <Service_card
-                      title="Développement web/mobile"
+                      title={t('homepage.development')}
                       services={[
                           "Développement front-end & backend (Php, Python, Javascript, Typescript, Nodejs,..)",
                           "Création d’applications web et mobiles sur mesure",
@@ -78,7 +78,7 @@ export default function Home(){
                       ]}
                     />
                     <Service_card
-                      title="Gestion des applications"
+                      title={t('homepage.app-monitoring')}
                       services={[
                           "Déploiement et maintenance d’applications",
                           "Sécurisation et gestion des mises à jour",
@@ -89,7 +89,7 @@ export default function Home(){
                 </article>
                 <article className="menu-bottom">
                     <Service_card
-                      title="Infrastructure & Cloud"
+                      title={t('homepage.infras')}
                       services={[
                           "Architecture réseau - Conception et déploiement d’un réseau interne",
                           "Configuration et sécurisation - Switches, routeurs, access point, VLAN, VPN, Firewall",
