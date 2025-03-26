@@ -252,6 +252,10 @@ export default function Contact() {
 
             const notificationResult = await notificationResponse.json();
 
+            if (!notificationResponse.ok) {
+                throw new Error(`Erreur lors de l'envoi de la notification: ${notificationResult.error}`);
+            }
+
             const confirmationResponse = await fetch("https://mailapi.4cores.be/send-email", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
@@ -263,6 +267,8 @@ export default function Contact() {
                     isHtml: true
                 }),
             });
+
+            const confirmationResult = await confirmationResponse.json();
 
             if (!confirmationResponse.ok) {
                 const errorText = await confirmationResponse.text();
