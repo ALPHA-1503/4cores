@@ -65,6 +65,19 @@ const ContactForm = ({ formData, handleChange, handleSubmit, isLoading }) => {
             </section>
 
             <section className="email">
+                <h1>Entreprise</h1>
+                <input
+                    type="company"
+                    name="company"
+                    placeholder="Mon entreprise"
+                    required
+                    onChange={handleChange}
+                    disabled={isLoading}
+                />
+                <br>
+                </br>
+                <br>
+                </br>
                 <h1>Email</h1>
                 <input
                     type="email"
@@ -125,6 +138,7 @@ const createNotificationEmail = (formData) => {
       </p>
       <div style="background-color: #f5f5f5; padding: 15px; border-radius: 8px; margin-bottom: 20px;">
         <p><strong>Nom :</strong> ${formData.name} ${formData.surname}</p>
+        <p><strong>Entreprise :</strong> ${formData.company}</p>
         <p><strong>Email :</strong> ${formData.email}</p>
         ${formData.services.length > 0 ?
         `<p><strong>Services demandés :</strong> ${formData.services.join(", ")}</p>` :
@@ -181,6 +195,7 @@ export default function Contact() {
     const [formData, setFormData] = useState({
         name: "",
         surname: "",
+        company: "",
         email: "",
         services: [],
         message: "",
