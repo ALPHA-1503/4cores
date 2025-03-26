@@ -250,7 +250,10 @@ export default function Contact() {
                 throw new Error(`Erreur lors de l'envoi de la notification: ${errorText}`);
             }
 
-            const notificationResult = await notificationResponse.json();
+            const contentType = notificationResponse.headers.get("content-type");
+            const notificationResult = contentType && contentType.includes("application/json")
+                ? await notificationResponse.json()
+                : await notificationResponse.text();
 
             if (!notificationResponse.ok) {
                 throw new Error(`Erreur lors de l'envoi de la notification: ${notificationResult.error}`);
