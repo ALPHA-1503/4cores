@@ -278,8 +278,6 @@ export default function Contact() {
                 throw new Error(`Erreur lors de l'envoi de la confirmation: ${errorText}`);
             }
 
-            const confirmationResult = await confirmationResponse.json();
-
             setIsSubmitted(true);
             setSubmitSuccess(true);
 
