@@ -22,6 +22,7 @@ const SuccessMessage = ({ formData }) => (
         <p>Nous avons bien reçu votre demande de contact. Un membre de l'équipe 4CORES vous répondra dans les plus brefs délais.</p>
         <div className="contact-details">
             <p><strong>Nom :</strong> {formData.name} {formData.surname}</p>
+            {formData.company && <p><strong>Entreprise :</strong> {formData.company}</p>}
             <p><strong>Email :</strong> {formData.email}</p>
             {formData.services.length > 0 && (
                 <p><strong>Services demandés :</strong> {formData.services.join(", ")}</p>
@@ -71,6 +72,16 @@ const ContactForm = ({ formData, handleChange, handleSubmit, isLoading }) => {
                     name="email"
                     placeholder="jeandupont@example.com"
                     required
+                    onChange={handleChange}
+                    disabled={isLoading}
+                />
+            </section>
+            <section className="email">
+                <h1>Entreprise</h1>
+                <input
+                    type="text"
+                    name="company"
+                    placeholder="Nom de l'entreprise"
                     onChange={handleChange}
                     disabled={isLoading}
                 />
@@ -125,6 +136,7 @@ const createNotificationEmail = (formData) => {
       </p>
       <div style="background-color: #f5f5f5; padding: 15px; border-radius: 8px; margin-bottom: 20px;">
         <p><strong>Nom :</strong> ${formData.name} ${formData.surname}</p>
+        ${formData.company ? `<p><strong>Entreprise :</strong> ${formData.company}</p>` : ''}
         <p><strong>Email :</strong> ${formData.email}</p>
         ${formData.services.length > 0 ?
         `<p><strong>Services demandés :</strong> ${formData.services.join(", ")}</p>` :
@@ -181,6 +193,7 @@ export default function Contact() {
     const [formData, setFormData] = useState({
         name: "",
         surname: "",
+        company:"",
         email: "",
         services: [],
         message: "",
@@ -232,11 +245,12 @@ export default function Contact() {
                 }),
             });
 
-            const notificationResult = await notificationResponse.json();
-
             if (!notificationResponse.ok) {
-                throw new Error(`Erreur lors de l'envoi de la notification: ${notificationResult.error}`);
+                const errorText = await notificationResponse.text();
+                throw new Error(`Erreur lors de l'envoi de la notification: ${errorText}`);
             }
+
+            const notificationResult = await notificationResponse.json();
 
             const confirmationResponse = await fetch("https://mailapi.4cores.be/send-email", {
                 method: "POST",
@@ -250,11 +264,12 @@ export default function Contact() {
                 }),
             });
 
-            const confirmationResult = await confirmationResponse.json();
-
             if (!confirmationResponse.ok) {
-                throw new Error(`Erreur lors de l'envoi de la confirmation: ${confirmationResult.error}`);
+                const errorText = await confirmationResponse.text();
+                throw new Error(`Erreur lors de l'envoi de la confirmation: ${errorText}`);
             }
+
+            const confirmationResult = await confirmationResponse.json();
 
             setIsSubmitted(true);
             setSubmitSuccess(true);
