@@ -1,11 +1,11 @@
 @mixin Contact{
 .Contact{
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 69.2%, #FFF 93.75%), url(/images/home-bg.png) lightgray -111.833px 0px / 111.111% 100% no-repeat;
-  height: 115vh;
-  min-height: fit-content;
+  min-height: 120vh;
   display: flex;
   justify-content: space-between;
   padding: 5% 10% 10%;
+  align-self: stretch;
 
   .contact-left{
     display: flex;
@@ -14,8 +14,8 @@
     width: 35%;
     border-radius: 15px;
     background: linear-gradient(0deg, rgba(3, 28, 67, 0.50) 0%, rgba(3, 28, 67, 0.50) 100%), url(/images/srv.jpg) lightgray 50% / cover no-repeat;
-    height: 100%;
     padding: 2% 2% 7.5%;
+    align-self: stretch;
 
     h1{
         color: #FFF;
@@ -39,7 +39,6 @@
     display: flex;
     width: 64%;
     height: 100%;
-    min-height: 75vh;
     padding: 3%;
     border-radius: 15px;
     border: 1px solid #FFC300;
@@ -174,7 +173,7 @@
     }
 
     .checkbox{
-      width: 80%;
+      width: 100%;
       display: flex;
       flex-wrap: wrap;
       padding-bottom: 2%;
