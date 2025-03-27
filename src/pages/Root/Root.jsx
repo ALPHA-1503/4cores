@@ -87,6 +87,7 @@ export default function Root(){
                     </section>
                     <section className="bottom">
                         <article className="left">
+                            {currentYear}
                             <p dangerouslySetInnerHTML={{__html: (t('rootpage.4cores'))}} />
                             <p dangerouslySetInnerHTML={{__html: (t('rootpage.conditions'))}} />
                             <NavLink to={"/cookie"} dangerouslySetInnerHTML={{__html: (t('rootpage.cookies-policy'))}} />

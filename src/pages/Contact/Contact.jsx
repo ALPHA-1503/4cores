@@ -1,18 +1,20 @@
 import { useState } from "react";
+import {useTranslation} from "react-i18next";
+import {t} from "i18next";
 
 // Component for the left section of the contact page
 const ContactLeftSection = () => (
     <section className="contact-left">
         <img src="/images/contact_white.png" alt="Contact"/>
-        <h1>Contactez-nous</h1>
-        <p>Vous avez une question ou une suggestion ? N'hésitez pas à nous contacter via notre formulaire.</p>
+        <h1>{t('contactpage.title')}</h1>
+        <p>{t('contactpage.description')}</p>
     </section>
 );
 
 const LoadingSpinner = () => (
     <div className="loading-spinner">
         <div className="spinner"></div>
-        <p>Envoi en cours...</p>
+        <p>{t('contactpage.sending')}</p>
     </div>
 );
 
@@ -36,13 +38,14 @@ const SuccessMessage = ({ formData }) => (
 );
 
 const ContactForm = ({ formData, handleChange, handleSubmit, isLoading }) => {
-    const services = ["Transition digitale", "Gestion applications", "Infrastructure", "Développement", "Cloud"];
+    const {t} = useTranslation();
+    const services = [t('contactpage.transition'), t('contactpage.web-dev'), t('contactpage.mobile-dev'), t('contactpage.dev'), "Cloud", "Infrastructure", t('contactpage.security'), t('contactpage.other')];
 
     return (
         <form onSubmit={handleSubmit}>
             <section className="name">
                 <article className="left">
-                    <h1>Nom</h1>
+                    <h1>{t('contactpage.name')}</h1>
                     <input
                         type="text"
                         name="name"
@@ -53,7 +56,7 @@ const ContactForm = ({ formData, handleChange, handleSubmit, isLoading }) => {
                     />
                 </article>
                 <article className="right">
-                    <h1>Prénom</h1>
+                    <h1>{t('contactpage.surname')}</h1>
                     <input
                         type="text"
                         name="surname"
@@ -77,18 +80,18 @@ const ContactForm = ({ formData, handleChange, handleSubmit, isLoading }) => {
                 />
             </section>
             <section className="email">
-                <h1>Entreprise</h1>
+                <h1>{t('contactpage.company')}</h1>
                 <input
                     type="text"
                     name="company"
-                    placeholder="Nom de l'entreprise"
+                    placeholder={t('contactpage.company-placeholder')}
                     onChange={handleChange}
                     disabled={isLoading}
                 />
             </section>
 
             <section className="services">
-                <h1>Services</h1>
+                <h1>{t('contactpage.services')}</h1>
                 <article className="checkbox">
                     {services.map((service) => {
                         const id = `service-${service}`;
@@ -110,10 +113,10 @@ const ContactForm = ({ formData, handleChange, handleSubmit, isLoading }) => {
             </section>
 
             <section className="message">
-                <h1>Commentaire</h1>
+                <h1>{t('contactpage.comments')}</h1>
                 <textarea
                     name="message"
-                    placeholder="commentaire..."
+                    placeholder={t('contactpage.comments-placeholder')}
                     required
                     onChange={handleChange}
                     disabled={isLoading}
@@ -121,7 +124,7 @@ const ContactForm = ({ formData, handleChange, handleSubmit, isLoading }) => {
             </section>
 
             <button type="submit" disabled={isLoading}>
-                {isLoading ? 'Envoi en cours...' : 'Envoyer'}
+                {isLoading ? t('contactpage.sending') : t('contactpage.send')}
             </button>
         </form>
     );

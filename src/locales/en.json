@@ -1,60 +1,117 @@
 {
-  "home": "Home",
   "about": "About",
+  "home": "Home",
   "projects": "Projects",
-  "contact": "Contact-us",
+  "contact": "Contact us",
   "rootpage": {
-    "4cores": "[SA SPJ] © 4CORES {currentYear} - All rights reserved",
+    "4cores": "SASPJ © 4CORES - All rights reserved",
     "conditions": "Terms and conditions",
     "cookies-policy": "Cookies policy",
     "general-conditions": "General conditions"
   },
   "homepage": {
-    "title": "Integrated technological <span class='blue'>solutions</span> for optimal performance of <span class='blue'>your business.</span>",
+    "title": "Integrated technological <span class='blue'>solutions</span> for optimal performance of <span class='blue'>your business</span>.",
     "subtitle": "Don't let technology hold you back! Modernize your tools for greater efficiency, competitiveness, and profitability.",
     "services": "Services",
     "services-menu": {
-        "transition": "Digital transition",
-        "transition-elem": {
-          "audit": "Audit and consulting in digital transformation",
-          "automatisation": "Mobile development",
-          "integration": "Integration of tailored digital solutions"
-        },
-        "development": "Web/Mobile development",
-        "development-elem" : {
-            "web": "Web development frontend & backend",
-            "mobile": "Mobile development (iOS, Android)",
-            "pwa": "Progressive Web Apps",
-            "hybrid": "Hybrid mobile applications",
-            "design": "Web design UI/UX"
-        },
-        "app-monitoring": "Application monitoring",
-        "app-monitoring-elem": {
-            "monitoring": "Deployment of applications",
-            "support": "Sécurity & Update management",
-            "maintenance": "Maintenance & Support"
-        },
-        "infras": "Infrastructure & Cloud",
-        "infras-elem": {
-            "network": "Network architecture & deployment of servers",
-            "configuration": "Network configuration layer 2 & 3 (VLAN, VPN, FIREWALL,...)",
-            "cloud": "Cloud solutions (AWS, Azure, Google Cloud)",
-            "servers": "Installation and configuration of servers (VMware, Proxmox, Docker, Kubernetes, VMware Tanzu)"
-        }
+      "transition": "Digital transition",
+      "transition-elem": {
+        "audit": "Audit and consulting in digital transformation",
+        "automatisation": "Business process automation",
+        "integration": "Integration of tailored digital solutions"
+      },
+      "development": "Web/Mobile development",
+      "development-elem": {
+        "web": "Web development frontend & backend",
+        "mobile": "Mobile development (iOS, Android)",
+        "pwa": "Progressive Web Application (PWA)",
+        "hybrid": "Hybrid mobile applications",
+        "design": "Web design UI/UX"
+      },
+      "app-monitoring": "Application management",
+      "app-monitoring-elem": {
+        "monitoring": "Application deployment and maintenance",
+        "support": "Security and update management",
+        "maintenance": "Maintenance and technical support"
+      },
+      "infras": "Infrastructure & Cloud",
+      "infras-elem": {
+        "network": "Network architecture and server deployment",
+        "configuration": "Network configuration layer 2 and 3 (VLAN, VPN, FIREWALL,...)",
+        "cloud": "Cloud solutions (AWS, Azure, Google Cloud)",
+        "servers": "Server installation and configuration (VMware, Proxmox, Docker, Kubernetes, VMware Tanzu)"
+      }
     },
     "relation": {
-      "title": "Client relationship",
-      "description": "Our commitment is to support you with tailor-made services, designed to precisely meet your needs and the specific challenges of your business. Through a personalized approach, we offer you scalable solutions, responsive support, and rigorous follow-up",
+      "title": "Client Relationship",
+      "description": "Our commitment is to support you with tailor-made services, designed to precisely meet your needs and the specific challenges of your business. Through a personalized approach, we offer you scalable solutions, responsive support, and rigorous follow-up.",
       "relation-menu": {
-        "tracking" : "Personnal tracking",
-        "tracking-desc" : "We adapt our solutions to your needs by offering you a personalized and scalable service. Benefit from dedicated support to optimize your IT environment and quickly integrate new features as your business evolves.",
-        "warranty" : "Warranty",
+        "tracking": "Personalized follow-up",
+        "tracking-desc": "We adapt our solutions to your needs by offering you a personalized and scalable service. Benefit from dedicated support to optimize your IT environment and quickly integrate new features as your business evolves.",
+        "warranty": "Warranty",
         "warranty-desc": "Benefit from a 6-month warranty on our services and solutions, ensuring peace of mind. Our commitment is to provide you with a reliable and sustainable IT environment, with complete peace of mind.",
-        "security" : "Security",
+        "security": "Security",
         "security-desc": "The protection of your data is our priority. Our solutions ensure a high level of security to preserve the integrity and confidentiality of your sensitive information.",
-        "experience" : "Experience",
+        "experience": "Experience",
         "experience-desc": "During our training, we placed paramount importance on the client relationship. Through practical scenarios, we developed our collaboration skills and strengthened our soft skills, which are essential for effective and professional communication."
       }
+    },
+    "references": "References"
+  },
+  "aboutpage": {
+    "title": "About us",
+    "top-description1": "We are an association of four independent students, currently in our first year of a Master's degree in IT systems architecture. Graduated in 2024 with a Bachelor's degree in IT technology from Henallux, we combine our skills and passion to offer solutions tailored <span class='blue'>to your needs.</span>",
+    "top-description2": "Thanks to our complementary expertise, we cover various fields: networking, web development, IoT, and system administration (Linux and Windows). This synergy allows us to support your company in its technological challenges and optimize its performance with innovative solutions.",
+    "team": {
+      "title": "Our team",
+      "nini": {
+        "name": "Jaunart Noé",
+        "role": "Independent Student & Co-Founder",
+        "description": "Passionate about IT from a young age, I celebrated my 20th birthday at the end of 2024. Motivated by the realization of projects outside the academic framework, I am currently pursuing a Master's degree in IT Architecture, after obtaining a Bachelor's degree in IT Technology. I want to develop solid expertise in the design and optimization of IT systems. Curious and motivated, I am particularly attracted to infrastructure and Cloud. I like to take on new challenges to innovate and provide effective solutions."
+      },
+      "ervinou": {
+        "name": "Gjoni Ervin",
+        "role": "Independent Student & Co-Founder",
+        "description": "Passionate about technology and innovation, I have been evolving in the IT field for several years. Currently pursuing a Master's degree in Systems Architecture at Hénallux, I have acquired solid expertise in networks, programming, cybersecurity, IoT, and web development. Alongside my studies, I have also been able to work professionally in IT, which has allowed me to develop a rigorous and effective approach to solving technical problems and optimizing equipment performance."
+      },
+      "lvca": {
+        "name": "Abs Luca",
+        "role": "Independent Student & Co-Founder",
+        "description": "Passionate about IT and technology, I have expertise in development, system administration, and networks. I master several programming languages, including Python, Java, C, Html/js (React Vite), PHP, SQL, and Kotlin (Mobile). I also have solid experience in Linux and Windows administration and programming, as well as in security and network management with Cisco, Ubiquiti, Palo Alto, and firewalls. My background also includes IoT projects with Arduino, where I combine programming and electronics. Always curious and seeking innovation, I enjoy taking on new challenges and exploring the latest technological advances. My current challenge is a Master's degree in IT Systems Architecture."
+      },
+      "sac": {
+        "name": "Van Eenoo Arnaud",
+        "role": "Independent Student & Co-Founder",
+        "description": "Passionate about IT since always, I am driven by the desire to actively contribute to the digital world around us. Currently pursuing a Master's degree in IT Systems Architecture following the completion of a Bachelor's degree in IT Technology, I have developed solid expertise in the design and optimization of digital infrastructures. Curious and motivated, I am constantly seeking new challenges to innovate, provide effective solutions, and secure our digital footprint."
+      }
     }
+  },
+  "soonpage": {
+    "title": "Just a bit more ✨ <span id=\"blue\">magic</span> ✨ to add... Stay connected!",
+    "redirect": "Home"
+  },
+  "contactpage": {
+    "title": "Contact us",
+    "description": "Do you have a question or suggestion? Don't hesitate to contact us via our form.",
+    "name": "Last name",
+    "surname": "First name",
+    "company": "Company",
+    "services": "Services",
+    "company-placeholder": "My company",
+    "transition": "Digital transition",
+    "web-dev": "Web development",
+    "mobile-dev": "iOS/Android development",
+    "dev": "Programming & development",
+    "app-monitoring": "Application management",
+    "security": "Security",
+    "other" : "Other",
+    "comments": "Comments",
+    "comments-placeholder": "Your message...",
+    "send": "Send",
+    "sending": "Sending..."
+  },
+  "notfoundpage": {
+    "title": "<span id=\"blue\">Oops! </span>This page doesn't exist...",
+    "redirect": "Home"
   }
 }

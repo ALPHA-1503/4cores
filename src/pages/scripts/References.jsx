@@ -1,4 +1,7 @@
+import {useTranslation} from "react-i18next";
+
 export default function References(){
+    const { t } = useTranslation();
     const images = ["cisco.png","apple.png","php.png","ubiquiti.png",
         "sql.png","PaloAlto.png","linux.png","windows-server.png","ansible.png",
         "docker.png","k8s.svg","vmware.png","proxmox.png","react.png",
@@ -7,7 +10,7 @@ export default function References(){
     return(
         <section className="references-baneer">
             <section className="top">
-                <h1>Références</h1>
+                <h1>{t('homepage.references')}</h1>
             </section>
             <section className="references-content">
                 {images.map((image, index) => {
