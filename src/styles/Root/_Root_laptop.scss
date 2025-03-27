@@ -35,6 +35,26 @@
     justify-content: flex-end;
     width: 25%;
 
+    .language-buttons{
+      margin-left: 0.5rem;
+
+      .flags-button{
+        background-color: transparent;
+        border: none;
+        color: #000000;
+        margin-left: 0.5rem;
+        cursor: pointer;
+      }
+
+      .flags{
+        width: 2rem;
+      }
+
+      .flags:hover{
+        transform: scale(1.05);
+      }
+    }
+
     a{
       background-color:#003566;
       color: #ffffff;

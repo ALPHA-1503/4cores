@@ -2,6 +2,8 @@
   .header{
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
     padding:3% 5% 1% 5%;
     border-bottom: 1px solid #D0D0D0;
@@ -20,7 +22,31 @@
     }
 
     .right{
-      display: none;
+      display: flex;
+
+      a{
+        display: none;
+      }
+
+      .language-buttons{
+        display: flex;
+
+        .flags-button{
+          background-color: transparent;
+          border: none;
+          color: #000000;
+          margin-left: 1rem;
+          cursor: pointer;
+        }
+
+        .flags{
+          width: 1.5rem;
+        }
+
+        .flags:hover{
+          transform: scale(1.05);
+        }
+      }
     }
   }
 

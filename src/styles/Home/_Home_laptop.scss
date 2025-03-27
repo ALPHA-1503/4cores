@@ -34,18 +34,26 @@
   }
 
   .buttons{
-    min-width: 20vw;
+    width: fit-content;
     display: flex;
     justify-content: space-between;
     border-radius: 50px;
     background: #F3F6F9;
-    padding: 0.4%;
+    padding: 0.4rem 0;
+
+    .left{
+      padding: 1rem;
+    }
+
+    .right{
+      padding: 1rem;
+    }
 
     a{
       color: #003566;
-      font-size: 1.05rem;
+      font-size: 1.25rem;
       font-weight: 700;
-      padding: 1rem 1.25rem;
+      padding: 1rem 1.5rem;
       border-radius: 50px;
       background: #FFF;
     }

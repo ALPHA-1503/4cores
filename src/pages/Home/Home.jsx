@@ -54,8 +54,13 @@ export default function Home(){
             <h1 dangerouslySetInnerHTML={{__html: (t('homepage.title'))}} />
             <h2 dangerouslySetInnerHTML={{__html: (t('homepage.subtitle'))}} />
             <article className="buttons">
-                <NavLink to="/About" id="propos" dangerouslySetInnerHTML={{__html: (t('about'))}} />
-                <NavLink to="/Soon" id="realisations" dangerouslySetInnerHTML={{__html: (t('projects'))}} />
+                <article className="left">
+                    <NavLink to="/About" id="propos" dangerouslySetInnerHTML={{__html: (t('about'))}}/>
+                </article>
+                <article className="right">
+                    <NavLink to="/Soon" id="realisations" dangerouslySetInnerHTML={{__html: (t('projects'))}}/>
+                </article>
+
             </article>
         </section>
             <section className="home-services">

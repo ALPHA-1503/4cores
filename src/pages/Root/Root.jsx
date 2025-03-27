@@ -20,12 +20,12 @@ export default function Root(){
                         </NavLink>
                     </section>
                     <section className="middle">
-                        <NavLink to="/Home" dangerouslySetInnerHTML={{__html: (t('home'))}} />
-                        <NavLink to="/About" dangerouslySetInnerHTML={{__html: (t('about'))}} />
-                        <NavLink to="/Soon" dangerouslySetInnerHTML={{__html: (t('projects'))}} />
+                        <NavLink to="/Home" dangerouslySetInnerHTML={{__html: (t('home'))}}/>
+                        <NavLink to="/About" dangerouslySetInnerHTML={{__html: (t('about'))}}/>
+                        <NavLink to="/Soon" dangerouslySetInnerHTML={{__html: (t('projects'))}}/>
                     </section>
                     <section className="right">
-                        <NavLink to="/Contact" dangerouslySetInnerHTML={{__html: (t('contact'))}} />
+                        <NavLink to="/Contact" dangerouslySetInnerHTML={{__html: (t('contact'))}}/>
                         <LanguageSwitcher/>
                     </section>
                 </section>
