@@ -1,10 +1,20 @@
 export default function References(){
+    const images = ["cisco.png","apple.png","php.png","ubiquiti.png",
+        "sql.png","PaloAlto.png","linux.png","windows-server.png","ansible.png",
+        "docker.png","k8s.svg","vmware.png","proxmox.png","react.png",
+        "rpi.png","arduino.png","python.png","java.png","sass.png", "js.png", "figma.png"]
 
     return(
-        <section className="references">
-            <h1>Références</h1>
-            <section className="references-banner">
-                
+        <section className="references-baneer">
+            <section className="top">
+                <h1>Références</h1>
+            </section>
+            <section className="references-content">
+                {images.map((image, index) => {
+                    return (
+                        <img className="images" key={index} src={`/images/${image}`} alt={`logo ${image}`}/>
+                    )
+                })}
             </section>
         </section>
     )

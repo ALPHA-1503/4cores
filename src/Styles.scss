@@ -7,6 +7,16 @@
 @use "./styles/About" as About;
 @use "./styles/Cookie" as Cookie;
 
+@font-face {
+  font-family: 'Oxanium-medium';
+  src: url('/public/fonts/Oxanium/Oxanium-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Oxanium-light';
+  src: url('/public/fonts/Oxanium/Oxanium-Light.ttf') format('truetype');
+}
+
 @media screen and (min-width: 1601px) {
   @include Root.Root;
   @include Home.Home;
@@ -22,11 +32,13 @@
   @include Home.Home_laptop;
   @include About.About_laptop;
   @include Cookie.Cookie_laptop;
+  @include Contact.Contact_laptop;
+  @include Soon.Soon_laptop;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   @include Root.Root_phone;
-  @include Home.Home_phone;
+  @include Home.Home_tablet;
   @include Soon.Soon_phone;
   @include Not_found.Not_found_phone;
   @include Contact.Contact_phone;

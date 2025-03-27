@@ -54,8 +54,8 @@ export default function About(){
         où je combine programmation et électronique. Toujours curieux et en quête d’innovation, j’aime relever de 
         nouveaux défis et explorer les dernières avancées technologiques. Mon défi actuel est un Master en Architecture 
         des Systèmes Informatique.`,
-        mail: "https://www.google.com",
-        linkedin: "https://www.linkedin.com",
+        mail: "absluca419@gmail.com",
+        linkedin: "https://www.linkedin.com/in/abs-luca/",
         image: "/images/lvca_team.png",
         image_mobile: "/images/lvca.png"
     };
@@ -66,11 +66,11 @@ export default function About(){
         description:"Passionné de technologie et d’innovation, j’évolue dans le domaine de l’informatique depuis " +
             "plusieurs années. Actuellement en Master en Architecture des Systèmes à l’Hénallux, j’ai acquis une " +
             "solide expertise en réseaux, programmation, cybersécurité, IoT et développement web. En parallèle de mes " +
-            "études, j'ai également pu travailler en milieux professionnel dans l'informatique ce qui m’a permis de " +
+            "études, j'ai également pu travailler en milieu professionnel dans l'informatique ce qui m’a permis de " +
             "développer une approche rigoureuse et efficace pour résoudre les problèmes techniques et optimiser " +
             "les performances des équipements.",
-        mail: "https://www.google.com",
-        linkedin: "https://www.linkedin.com",
+        mail: "ervingjoni3@gmail.com",
+        linkedin: "https://www.linkedin.com/in/ervin-gjoni-04995927a/",
         image:"/images/ervinou_team.png",
         image_mobile:"/images/ervinou.png"
     }
@@ -78,13 +78,8 @@ export default function About(){
     const nini = {
         title: "Jaunart Noé",
         subtitle: "Etudiant Indépendant & Co-Fondateur",
-        description: "Passionné d’informatique depuis toujours, je suis animé par l’envie de contribuer activement " +
-            "au monde digital qui nous entoure. Actuellement en Master en Architecture Informatique,après " +
-            "un bachelier en Technologie Informatique, je développe une expertise solide dans la conception et " +
-            "l’optimisation des systèmes informatiques. Curieux et motivé, je suis constamment en quête de nouveaux " +
-            "défis pour innover et apporter des solutions efficaces.",
-        mail: "https://www.google.com",
-        linkedin: "https://www.linkedin.com",
+        description: "Passionné par l'informatique depuis mon plus jeune âge, j'ai fêté mes 20 ans à la fin de l'année 2024. Motivé par la concrétisation de projets en dehors du cadre académique, je poursuis actuellement un Master en Architecture Informatique, après avoir obtenu un bachelier en Technologie Informatique. Je souhaite développer une expertise solide dans la conception et l’optimisation des systèmes informatiques. Curieux et motivé, je suis particulièrement attiré par l'infrastructure et le Cloud. J'aime relever de nouveaux défis pour innover et apporter des solutions efficaces.",
+        mail: "noe.jaunart24@gmail.com",
         image:"/images/nini_team.png",
         image_mobile:"/images/ninilesot.jpg",
     }
@@ -92,13 +87,14 @@ export default function About(){
     const arnaud = {
         title: "Van Eenoo Arnaud",
         subtitle: "Etudiant Indépendant & Co-Fondateur",
-        description: "Passionné d’informatique depuis toujours, je suis animé par l’envie de contribueractivement " +
-            "au monde digital qui nous entoure. Actuellement en Master en Architecture Informatique,après " +
-            "un bachelier en Technologie Informatique, je développe une expertise solide dans la conception et " +
-            "l’optimisation des systèmes informatiques. Curieux et motivé, je suis constamment en quête denouveaux " +
-            "défis pour innover et apporter des solutions efficaces.",
-        mail: "https://www.google.com",
-        linkedin: "https://www.linkedin.com",
+        description: "Passionné d’informatique depuis toujours, je suis animé par l’envie de contribuer activement " +
+            "au monde digital qui nous entoure. Actuellement en Master en Architecture des Systèmes Informatiques " +
+            "faisant suite à l'obtention d'un Bachelier en Technologie de l'Informatique, j'ai développé une solide " +
+            "expertise "
+        + "dans la conception et l'optimisation des infrastructures numériques. Curieux et motivé, je suis constamment"+
+        " en quête de nouveaux défis pour innover, apporter des solutions efficaces et sécuriser notre emprunte digitale.",
+        mail: "arnaud.vaneenoo10@gmail.com",
+        linkedin: "https://www.linkedin.com/in/arnaud-van-eenoo-986bb2275/",
         image:"/images/me_team.png",
         image_mobile:"/images/me.png"
     }
