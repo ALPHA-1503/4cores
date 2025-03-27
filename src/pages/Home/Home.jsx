@@ -1,8 +1,5 @@
 import { NavLink } from 'react-router-dom';
 import Service_card from "./Home-service-card.jsx";
-import Home_team from "./Home-team.jsx";
-import { useEffect } from 'react';
-import Home_team_mobile from "./Home-team-mobile.jsx";
 import References from "../scripts/References.jsx";
 import Home_relation from "./Home-relation.jsx";
 import {useEffect} from 'react';
@@ -67,45 +64,53 @@ export default function Home(){
                 </article>
                 <article className="menu">
                     <Service_card
-                      title={t('homepage.transition')}
+                      title={t('homepage.services-menu.transition')}
                       services={[
-                          "Audit et conseil en transformation numérique",
-                          "Automatisation des processus métiers",
-                          "Intégration de solutions digitales adaptées"
+                          t('homepage.services-menu.transition-elem.audit'),
+                          t('homepage.services-menu.transition-elem.automatisation'),
+                          t('homepage.services-menu.transition-elem.integration'),
                       ]}
                     />
                     <Service_card
-                      title={t('homepage.development')}
+                      title={t('homepage.services-menu.development')}
                       services={[
-                          "Développement front-end & backend (Php, Python, Javascript, Typescript, Nodejs,..)",
-                          "Création d’applications web et mobiles sur mesure",
-                          "Design UI/UX"
+                          t('homepage.services-menu.development-elem.web'),
+                          t('homepage.services-menu.development-elem.mobile'),
+                          t('homepage.services-menu.development-elem.pwa'),
+                          t('homepage.services-menu.development-elem.hybrid'),
+                          t('homepage.services-menu.development-elem.design'),
                       ]}
                     />
                     <Service_card
-                      title={t('homepage.app-monitoring')}
+                      title={t('homepage.services-menu.app-monitoring')}
                       services={[
-                          "Déploiement et maintenance d’applications",
-                          "Sécurisation et gestion des mises à jour",
-                          "Monitoring "
+                          t('homepage.services-menu.app-monitoring-elem.monitoring'),
+                          t('homepage.services-menu.app-monitoring-elem.support'),
+                          t('homepage.services-menu.app-monitoring-elem.maintenance'),
                       ]}
                     />
 
                 </article>
                 <article className="menu-bottom">
                     <Service_card
-                      title={t('homepage.infras')}
+                      title={t('homepage.services-menu.infras')}
                       services={[
-                          "Architecture réseau - Conception et déploiement d’un réseau interne",
-                          "Configuration et sécurisation - Switches, routeurs, access point, VLAN, VPN, Firewall",
-                          "Cloud computing - Déploiement et gestion d’infrastructure en cloud ",
-                          "Installation et configuration de serveurs - Gestion VMware, Proxmox, Docker, Kubernetes, " +
-                          "VMware Tanzu "
+                          t('homepage.services-menu.infras-elem.network'),
+                          t('homepage.services-menu.infras-elem.configuration'),
+                          t('homepage.services-menu.infras-elem.cloud'),
+                          t('homepage.services-menu.infras-elem.servers'),
                       ]}
                     />
                 </article>
             </section>
-            <Home_relation />
+            <Home_relation
+                title={t('homepage.relation.title')}
+                description={t('homepage.relation.description')}
+                cards={[
+                    { title: t('homepage.relation.relation-menu.tracking'), text: t('homepage.relation.relation-menu.tracking-desc') },
+                    { title: t('homepage.relation.relation-menu.warranty'), text: t('homepage.relation.relation-menu.warranty-desc') }
+                ]}
+            />
             <References />
         </>
     );

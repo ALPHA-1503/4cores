@@ -10,19 +10,23 @@ function Relation_card({title, text}){
     )
 }
 
-export default function Home_relation() {
+export default function Home_relation({title, description, cards}) {
 
     return (
         <section className="home-relation">
             <article className="top">
-                <h1>Relation client</h1>
-                <p>Notre engagement est de vous accompagner avec des services sur mesure, conçus pour répondre
-                    précisément
-                    à vos besoins et aux défis spécifiques de votre activité. Grâce à une approche personnalisée,
-                    nous vous offrons des solutions évolutives, un support réactif et un suivi rigoureux. </p>
+                <h1>{title}</h1>
+                <p>{description}</p>
             </article>
             <section className="bottom">
                 <article className="left">
+                    {cards.map(card => (
+                        <Relation_card
+                            key={card.title}
+                            title={card.title}
+                            text={card.text}
+                        />
+                    ))}
                     <Relation_card
                         title={"Suivi personnalisé"}
                         text={"Nous adaptons nos solutions à vos besoins en vous offrant un service personnalisé et évolutif." +

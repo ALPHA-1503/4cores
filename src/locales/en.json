@@ -13,9 +13,48 @@
     "title": "Integrated technological <span class='blue'>solutions</span> for optimal performance of <span class='blue'>your business.</span>",
     "subtitle": "Don't let technology hold you back! Modernize your tools for greater efficiency, competitiveness, and profitability.",
     "services": "Services",
-    "transition": "Digital transition",
-    "development": "Web/Mobile development",
-    "app-monitoring": "Application monitoring",
-    "infras": "Infrastructure & Cloud"
+    "services-menu": {
+        "transition": "Digital transition",
+        "transition-elem": {
+          "audit": "Audit and consulting in digital transformation",
+          "automatisation": "Mobile development",
+          "integration": "Integration of tailored digital solutions"
+        },
+        "development": "Web/Mobile development",
+        "development-elem" : {
+            "web": "Web development frontend & backend",
+            "mobile": "Mobile development (iOS, Android)",
+            "pwa": "Progressive Web Apps",
+            "hybrid": "Hybrid mobile applications",
+            "design": "Web design UI/UX"
+        },
+        "app-monitoring": "Application monitoring",
+        "app-monitoring-elem": {
+            "monitoring": "Deployment of applications",
+            "support": "Sécurity & Update management",
+            "maintenance": "Maintenance & Support"
+        },
+        "infras": "Infrastructure & Cloud",
+        "infras-elem": {
+            "network": "Network architecture & deployment of servers",
+            "configuration": "Network configuration layer 2 & 3 (VLAN, VPN, FIREWALL,...)",
+            "cloud": "Cloud solutions (AWS, Azure, Google Cloud)",
+            "servers": "Installation and configuration of servers (VMware, Proxmox, Docker, Kubernetes, VMware Tanzu)"
+        }
+    },
+    "relation": {
+      "title": "Client relationship",
+      "description": "Our commitment is to support you with tailor-made services, designed to precisely meet your needs and the specific challenges of your business. Through a personalized approach, we offer you scalable solutions, responsive support, and rigorous follow-up",
+      "relation-menu": {
+        "tracking" : "Personnal tracking",
+        "tracking-desc" : "We adapt our solutions to your needs by offering you a personalized and scalable service. Benefit from dedicated support to optimize your IT environment and quickly integrate new features as your business evolves.",
+        "warranty" : "Warranty",
+        "warranty-desc": "Benefit from a 6-month warranty on our services and solutions, ensuring peace of mind. Our commitment is to provide you with a reliable and sustainable IT environment, with complete peace of mind.",
+        "security" : "Security",
+        "security-desc": "The protection of your data is our priority. Our solutions ensure a high level of security to preserve the integrity and confidentiality of your sensitive information.",
+        "experience" : "Experience",
+        "experience-desc": "During our training, we placed paramount importance on the client relationship. Through practical scenarios, we developed our collaboration skills and strengthened our soft skills, which are essential for effective and professional communication."
+      }
+    }
   }
 }
