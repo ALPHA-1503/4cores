@@ -108,7 +108,9 @@ export default function Home(){
                 description={t('homepage.relation.description')}
                 cards={[
                     { title: t('homepage.relation.relation-menu.tracking'), text: t('homepage.relation.relation-menu.tracking-desc') },
-                    { title: t('homepage.relation.relation-menu.warranty'), text: t('homepage.relation.relation-menu.warranty-desc') }
+                    { title: t('homepage.relation.relation-menu.warranty'), text: t('homepage.relation.relation-menu.warranty-desc') },
+                    { title: t('homepage.relation.relation-menu.security'), text: t('homepage.relation.relation-menu.security-desc') },
+                    { title: t('homepage.relation.relation-menu.experience'), text: t('homepage.relation.relation-menu.experience-desc') },
                 ]}
             />
             <References />

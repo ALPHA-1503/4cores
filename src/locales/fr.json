@@ -13,6 +13,35 @@
     "title": "Des <span class='blue'>solutions</span> technologiques intégrées pour une performance optimale de <span class='blue'>votre entreprise.",
     "subtitle": "Ne laissez pas la technologie vous freiner ! Modernisez vos outils pour plus d’efficacité, de compétitivité et de rentabilité.",
     "services": "Services",
+    "services-menu": {
+        "transition": "Transition digitale",
+        "transition-elem": {
+          "audit": "Audit et conseil en transformation digitale",
+          "automatisation": "Automatisation des processus métiers",
+          "integration": "Intégration de solutions digitales adaptées"
+        },
+        "development": "Développement web/mobile",
+        "development-elem" : {
+          "web": "Développement web frontend & backend",
+          "mobile": "Développement mobile (iOS, Android)",
+          "pwa": "Application web progressive (PWA)",
+          "hybrid": "Applications mobiles hybrides",
+          "design": "Design web UI/UX"
+        },
+        "app-monitoring": "Gestion des applications",
+        "app-monitoring-elem": {
+          "monitoring": "Déploiement et maintenance d’applications",
+          "support": "Sécurity & Update management",
+          "maintenance": "Maintenance & Support"
+        },
+        "infras": "Infrastructure & Cloud",
+        "infras-elem": {
+          "network": "Network architecture & deployment of servers",
+          "configuration": "Network configuration layer 2 & 3 (VLAN, VPN, FIREWALL,...)",
+          "cloud": "Cloud solutions (AWS, Azure, Google Cloud)",
+          "servers": "Installation and configuration of servers (VMware, Proxmox, Docker, Kubernetes, VMware Tanzu)"
+        }
+    },
     "transition": "Transition digitale",
     "development": "Développement Web/Mobile",
     "app-monitoring": "Surveillance d'application",
