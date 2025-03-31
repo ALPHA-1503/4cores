@@ -34,24 +34,27 @@
   .buttons{
     width: fit-content;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     border-radius: 50px;
     background: #F3F6F9;
-    padding: 0.4rem 0;
+    padding: 0.1rem;
 
     .left{
-      padding: 1rem;
+      padding: 0.2rem;
     }
 
     .right{
-      padding: 1rem;
+      padding: 0.2rem;
     }
 
     a{
+      display: flex;
+      align-items: center;
       color: #003566;
       font-size: 1.25rem;
       font-weight: 700;
-      padding: 1rem 1.5rem;
+      padding: 0.6rem 1.25rem;
       border-radius: 50px;
       background: #FFF;
     }
