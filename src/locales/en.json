@@ -127,6 +127,11 @@
       "message": "Your message: ",
       "info": "If you have any other questions or information to share with us, please don't hesitate to contact us at contact@4cores.be",
       "team": "4CORES Team"
+    },
+    "email-content": {
+      "confirmation": "Contact form confirmation - 4CORES",
+      "sending-error": "Error while sending: ",
+      "error": "Error: "
     }
   },
   "notfoundpage": {

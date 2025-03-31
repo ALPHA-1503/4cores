@@ -40,6 +40,7 @@ const ContactForm = ({ formData, handleChange, handleSubmit, isLoading }) => {
     const {t} = useTranslation();
     const services = [t('contactpage.transition'), t('contactpage.web-dev'), t('contactpage.mobile-dev'), t('contactpage.dev'), "Cloud", "Infrastructure", t('contactpage.security'), t('contactpage.other')];
 
+
     return (
         <form onSubmit={handleSubmit}>
             <section className="name">
@@ -130,6 +131,7 @@ const ContactForm = ({ formData, handleChange, handleSubmit, isLoading }) => {
 };
 
 const createNotificationEmail = (formData) => {
+    const lang = localStorage.getItem("i18nextLng") || "en";
     return `
     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #e0e0e0; border-radius: 8px;">
       <h2 style="color: #004E96; border-bottom: 2px solid #FFC300; padding-bottom: 10px;">Nouveau message de contact</h2>
@@ -140,6 +142,7 @@ const createNotificationEmail = (formData) => {
         <p><strong>Nom :</strong> ${formData.name} ${formData.surname}</p>
         ${formData.company ? `<p><strong>Entreprise :</strong> ${formData.company}</p>` : ''}
         <p><strong>Email :</strong> ${formData.email}</p>
+        <p><strong>Langue : </strong>${lang}</p>
         ${formData.services.length > 0 ?
         `<p><strong>Services demandés :</strong> ${formData.services.join(", ")}</p>` :
         ''}
@@ -238,7 +241,7 @@ export default function Contact() {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
-                    recipientEmail: "arnaud.vaneenoo10@gmail.com", // Your business email
+                    recipientEmail: "arnaud.vaneenoo10@gmail.com",
                     recipientName: "4CORES",
                     subject: `Nouveau message de contact de ${formData.name} ${formData.surname}`,
                     text: createNotificationEmail(formData),
@@ -248,7 +251,7 @@ export default function Contact() {
 
             if (!notificationResponse.ok) {
                 const errorText = await notificationResponse.text();
-                throw new Error(`Erreur lors de l'envoi de la notification: ${errorText}`);
+                throw new Error(`${t('contactpage.email-content.sending-error')} ${errorText}`);
             }
 
             const contentType = notificationResponse.headers.get("content-type");
@@ -257,16 +260,16 @@ export default function Contact() {
                 : await notificationResponse.text();
 
             if (!notificationResponse.ok) {
-                throw new Error(`Erreur lors de l'envoi de la notification: ${notificationResult.error}`);
+                throw new Error(`${t('contactpage.email-content.sending-error')} ${notificationResult.error}`);
             }
 
             const confirmationResponse = await fetch("https://mailapi.4cores.be/send-email", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
-                    recipientEmail: formData.email, // Customer's email
+                    recipientEmail: formData.email,
                     recipientName: `${formData.name} ${formData.surname}`,
-                    subject: "Confirmation de réception de votre message - 4CORES",
+                    subject: t('contactpage.email-content.confirmation'),
                     text: createCustomerEmail(formData),
                     isHtml: true
                 }),
@@ -276,15 +279,15 @@ export default function Contact() {
 
             if (!confirmationResponse.ok) {
                 const errorText = await confirmationResponse.text();
-                throw new Error(`Erreur lors de l'envoi de la confirmation: ${errorText}`);
+                throw new Error(`${t('contactpage.email-content.sending-error')} ${errorText}`);
             }
 
             setIsSubmitted(true);
             setSubmitSuccess(true);
 
         } catch (err) {
-            alert(`Erreur: ${err.message || "Erreur lors de l'envoi!"}`);
-            console.error("Email sending error:", err);
+            alert(`${t('contactpage.email-content.error')} ${err.message || t('contactpage.email-content.sending-error')}`);
+            console.error(t('contactpage.email-content.sending-error'), err);
         } finally {
             setIsLoading(false);
         }
