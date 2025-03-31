@@ -2,7 +2,6 @@ import { useState } from "react";
 import {useTranslation} from "react-i18next";
 import {t} from "i18next";
 
-// Component for the left section of the contact page
 const ContactLeftSection = () => (
     <section className="contact-left">
         <img src="/images/contact_white.png" alt="Contact"/>
@@ -20,17 +19,17 @@ const LoadingSpinner = () => (
 
 const SuccessMessage = ({ formData }) => (
     <div className="success-message">
-        <h2>Merci pour votre message !</h2>
-        <p>Nous avons bien reçu votre demande de contact. Un membre de l'équipe 4CORES vous répondra dans les plus brefs délais.</p>
+        <h2>{t('contactpage.success-message.title')}</h2>
+        <p>{t('contactpage.success-message.description')}</p>
         <div className="contact-details">
-            <p><strong>Nom :</strong> {formData.name} {formData.surname}</p>
-            {formData.company && <p><strong>Entreprise :</strong> {formData.company}</p>}
-            <p><strong>Email :</strong> {formData.email}</p>
+            <p><strong>{t('contactpage.success-message.name')}</strong> {formData.name} {formData.surname}</p>
+            {formData.company && <p><strong>{t('contactpage.success-message.company')}</strong> {formData.company}</p>}
+            <p><strong>{t('contactpage.success-message.email')}</strong> {formData.email}</p>
             {formData.services.length > 0 && (
-                <p><strong>Services demandés :</strong> {formData.services.join(", ")}</p>
+                <p><strong>{t('contactpage.success-message.services')}</strong> {formData.services.join(", ")}</p>
             )}
             <div className="message-box">
-                <h3>Votre message :</h3>
+                <h3>{t('contactpage.success-message.message')}</h3>
                 <p>{formData.message}</p>
             </div>
         </div>
@@ -159,33 +158,32 @@ const createNotificationEmail = (formData) => {
 const createCustomerEmail = (formData) => {
     return `
     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #e0e0e0; border-radius: 8px;">
-      <h2 style="color: #004E96; text-align: center; margin-bottom: 20px;">Merci pour votre message !</h2>
+      <h2 style="color: #004E96; text-align: center; margin-bottom: 20px;">${t('contactpage.customer-email.greetings')}</h2>
       <p style="font-size: 16px; color: #333; margin-bottom: 20px;">
-        Bonjour ${formData.name} ${formData.surname},
+        ${t('contactpage.customer-email.title')} ${formData.name} ${formData.surname},
       </p>
       <p style="font-size: 16px; color: #333; margin-bottom: 20px;">
-        Nous vous confirmons la bonne réception de votre demande de contact. Un membre de notre équipe vous contactera dans les plus brefs délais.
+        ${t('contactpage.customer-email.description')}
       </p>
       <div style="background-color: #f5f5f5; padding: 15px; border-radius: 8px; margin-bottom: 20px;">
-        <h3 style="color: #003566; margin-bottom: 10px;">Récapitulatif de votre demande :</h3>
+        <h3 style="color: #003566; margin-bottom: 10px;">${t('contactpage.customer-email.recap')}</h3>
         ${formData.services.length > 0 ?
-        `<p><strong>Services demandés :</strong> ${formData.services.join(", ")}</p>` :
+        `<p><strong>${t('contactpage.customer-email.services')}</strong> ${formData.services.join(", ")}</p>` :
         ''}
-        <p><strong>Votre message :</strong></p>
+        <p><strong>${t('contactpage.customer-email.message')}</strong></p>
         <p style="background-color: #fff; padding: 10px; border-left: 3px solid #FFC300; white-space: pre-line; font-style: italic;">${formData.message}</p>
       </div>
       <p style="font-size: 16px; color: #333; margin-bottom: 20px;">
-        Si vous avez d'autres questions ou informations à nous communiquer, n'hésitez pas à nous contacter via 
-        contact@4cores.be
+        ${t('contactpage.customer-email.info')}
       </p>
       <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #ddd; text-align: center;">
-        <p style="color: #004E96; font-weight: bold;">L'équipe 4CORES</p>
+        <p style="color: #004E96; font-weight: bold;">${t('contactpage.customer-email.team')}</p>
         <p style="font-size: 14px; color: #666;">
           <a href="https://www.4cores.be" style="color: #004E96; text-decoration: none;">www.4cores.be</a>
         </p>
         <div style="margin-top: 10px;">
           <a href="https://linkedin.com/company/4cores" style="margin: 0 10px; color: #004E96; text-decoration: none;">LinkedIn</a>
-          <a href="mailto:contact@4cores.com" style="margin: 0 10px; color: #004E96; text-decoration: none;">contact@4cores.be</a>
+          <a href="mailto:contact@4cores.be" style="margin: 0 10px; color: #004E96; text-decoration: none;">contact@4cores.be</a>
         </div>
       </div>
     </div>

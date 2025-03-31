@@ -108,7 +108,26 @@
     "comments": "Comments",
     "comments-placeholder": "Your message...",
     "send": "Send",
-    "sending": "Sending..."
+    "sending": "Sending...",
+    "success-message": {
+      "title": "Thank you for your message!",
+      "description": "We have received your contact request. A member of the 4CORES team will get back to you as soon as possible.",
+      "name": "Name: ",
+      "company": "Company: ",
+      "email": "Email: ",
+      "services": "Requested services: ",
+      "message": "Your message: "
+    },
+    "customer-email": {
+      "greetings": "Thank you for your message!",
+      "title": "Hello ",
+      "description": "We confirm the receipt of your contact request. A member of our team will contact you as soon as possible.",
+      "recap": "Summary of your request: ",
+      "services": "Requested services: ",
+      "message": "Your message: ",
+      "info": "If you have any other questions or information to share with us, please don't hesitate to contact us at contact@4cores.be",
+      "team": "4CORES Team"
+    }
   },
   "notfoundpage": {
     "title": "<span id=\"blue\">Oops! </span>This page doesn't exist...",
