@@ -31,41 +31,37 @@ export default function Root(){
                 </section>
                 <section className="bottom-navigation">
                     <nav className="nav-container">
-                        <NavLink to="/Home" className="nav-item">
-                            {({isActive}) => (
-                                <>
-                                    <img src={isActive ? "/images/home-selected.png" : "/images/home-mobile.png"}
-                                         alt="home icon"/>
-                                    <h1>Accueil</h1>
-                                </>
-                            )}
+                        <NavLink to="/Home" className={({isActive}) => isActive ? "nav-item active" : "nav-item"}>
+                            <article className="top">
+                                <img src="/images/home.svg" alt="home icon"/>
+                            </article>
+                            <article className="bottom">
+                                <h1>Accueil</h1>
+                            </article>
                         </NavLink>
-                        <NavLink to="/About" className="nav-item">
-                            {({isActive}) => (
-                                <>
-                                    <img src={isActive ? "/images/a-propos-selected.png" : "/images/a-propos.png"}
-                                         alt="about icon"/>
-                                    <h1>A propos</h1>
-                                </>
-                            )}
+                        <NavLink to="/About" className={({isActive}) => isActive ? "nav-item active" : "nav-item"}>
+                            <article className="top">
+                                <img src="/images/info.svg" alt="home icon"/>
+                            </article>
+                            <article className="bottom">
+                                <h1>A propos</h1>
+                            </article>
                         </NavLink>
-                        <NavLink to="/Soon" className="nav-item">
-                            {({isActive}) => (
-                                <>
-                                    <img src={isActive ? "/images/realisation-selected.png" : "/images/realisation.png"}
-                                         alt="projects icon"/>
-                                    <h1>Réalisations</h1>
-                                </>
-                            )}
+                        <NavLink to="/Soon" className={({isActive}) => isActive ? "nav-item active" : "nav-item"}>
+                            <article className="top">
+                                <img src="/images/code.svg" alt="home icon"/>
+                            </article>
+                            <article className="bottom">
+                                <h1>Réalisations</h1>
+                            </article>
                         </NavLink>
-                        <NavLink to="/Contact" className="nav-item">
-                            {({isActive}) => (
-                                <>
-                                    <img src={isActive ? "/images/contact-selected.png" : "/images/contact.png"}
-                                         alt="contact icon"/>
-                                    <h1>Contact</h1>
-                                </>
-                            )}
+                        <NavLink to="/Contact" className={({isActive}) => isActive ? "nav-item active" : "nav-item"}>
+                            <article className="top">
+                                <img src="/images/contact.svg" alt="home icon"/>
+                            </article>
+                            <article className="bottom">
+                                <h1>Contact</h1>
+                            </article>
                         </NavLink>
                     </nav>
                 </section>
@@ -82,15 +78,15 @@ export default function Root(){
                             <img src="/images/FULL_v1_white.png" alt="Avetech Logo"/>
                         </article>
                         <article className="right">
-                            <NavLink to="/Contact" dangerouslySetInnerHTML={{__html: (t('contact'))}} />
+                            <NavLink to="/Contact" dangerouslySetInnerHTML={{__html: (t('contact'))}}/>
                         </article>
                     </section>
                     <section className="bottom">
                         <article className="left">
                             {currentYear}
-                            <p dangerouslySetInnerHTML={{__html: (t('rootpage.4cores'))}} />
-                            <p dangerouslySetInnerHTML={{__html: (t('rootpage.conditions'))}} />
-                            <NavLink to={"/cookie"} dangerouslySetInnerHTML={{__html: (t('rootpage.cookies-policy'))}} />
+                            <p dangerouslySetInnerHTML={{__html: (t('rootpage.4cores'))}}/>
+                            <p dangerouslySetInnerHTML={{__html: (t('rootpage.conditions'))}}/>
+                            <NavLink to={"/cookie"} dangerouslySetInnerHTML={{__html: (t('rootpage.cookies-policy'))}}/>
                             <p>TVA XXXXXX</p>
                         </article>
                         <article className="right">
@@ -103,7 +99,7 @@ export default function Root(){
                     <section className="top">
                         <img src="/images/courrier-b.png" alt="mail logo"/>
                         <img src="/images/linkedin.png" alt="linkedin logo"/>
-                        <NavLink to="/Contact" dangerouslySetInnerHTML={{__html: (t('contact'))}} />
+                        <NavLink to="/Contact" dangerouslySetInnerHTML={{__html: (t('contact'))}}/>
                     </section>
                     <section className="bottom">
                         <p dangerouslySetInnerHTML={{__html: (t('rootpage.general-conditions'))}} />
