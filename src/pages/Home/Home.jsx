@@ -51,7 +51,6 @@ export default function Home(){
     return(
         <>
         <section className="home-top">
-            LVCA NINI ERVINOU SAC
             <h1 dangerouslySetInnerHTML={{__html: (t('homepage.title'))}} />
             <h2 dangerouslySetInnerHTML={{__html: (t('homepage.subtitle'))}} />
             <article className="buttons">
