@@ -1,0 +1,161 @@
+{
+  "about": "A propos",
+  "home": "Accueil",
+  "projects": "Réalisations",
+  "contact": "Contactez-nous",
+  "rootpage": {
+    "4cores" : "[SA SPJ] © 4CORES {currentYear} - Tous droits réservés",
+    "conditions": "Conditions générales",
+    "cookies-policy": "Politique de cookies",
+    "general-conditions": "Conditions générales"
+  },
+  "homepage": {
+    "title": "Des <span class='blue'>solutions</span> technologiques intégrées pour une performance optimale de <span class='blue'>votre entreprise.",
+    "subtitle": "Ne laissez pas la technologie vous freiner ! Modernisez vos outils pour plus d’efficacité, de compétitivité et de rentabilité.",
+    "services": "Services",
+    "services-menu": {
+        "transition": "Transition digitale",
+        "transition-elem": {
+          "audit": "Audit et conseil en transformation digitale",
+          "automatisation": "Automatisation des processus métiers",
+          "integration": "Intégration de solutions digitales adaptées"
+        },
+        "development": "Développement web/mobile",
+        "development-elem" : {
+          "web": "Développement web frontend & backend",
+          "mobile": "Développement mobile (iOS, Android)",
+          "pwa": "Application web progressive (PWA)",
+          "hybrid": "Applications mobiles hybrides",
+          "design": "Design web UI/UX"
+        },
+        "app-monitoring": "Gestion des applications",
+        "app-monitoring-elem": {
+          "monitoring": "Déploiement et maintenance d’applications",
+          "support": "Gestion de la sécurité et des mises à jour",
+          "maintenance": "Maintenance et support technique"
+        },
+        "infras": "Infrastructure & Cloud",
+        "infras-elem": {
+          "network": "Architecture réseau et déploiement de serveurs",
+          "configuration": "Configuration réseau couche 2 et 3 (VLAN, VPN, PARE-FEU,...)",
+          "cloud": "Solutions cloud (AWS, Azure, Google Cloud)",
+          "servers": "Installation et configuration de serveurs (VMware, Proxmox, Docker, Kubernetes, VMware Tanzu)"
+        }
+    },
+    "relation": {
+      "title": "Relation Client",
+      "description": "Notre engagement est de vous accompagner avec des services sur mesure, conçus pour répondre précisément à vos besoins et aux défis spécifiques de votre activité. Grâce à une approche personnalisée, nous vous offrons des solutions évolutives, un support réactif et un suivi rigoureux. ",
+      "relation-menu": {
+        "tracking" : "Suivi personnalisé",
+        "tracking-desc" : "Nous adaptons nos solutions à vos besoins en vous offrant un service personnalisé et évolutif. Profitez d’un suivi dédié pour optimiser votre environnement informatique et intégrez rapidement de nouvelles fonctionnalités selon l’évolution de votre activité.",
+        "warranty" : "Garantie",
+        "warranty-desc": "Bénéficiez d’une garantie de 6 mois sur nos services et solutions, vous assurant une tranquillité d’esprit. Notre engagement est de vous fournir un environnement informatique fiable et durable, en toute sérénité.",
+        "security" : "Sécurité",
+        "security-desc": "La protection de vos données est notre priorité. Nos solutions garantissent un haut niveau de sécurité pour préserver l’intégrité et la confidentialité de vos informations sensibles.",
+        "experience" : "Expérience",
+        "experience-desc": "Au cours de notre formation, nous avons accordé une importance primordiale à la relation client. Grâce à des mises en situation concrètes, nous avons développé nos compétences en collaboration et renforcé nos soft skills, essentielles pour une communication efficace et professionnelle."
+      }
+    },
+    "references": "Références"
+  },
+  "aboutpage": {
+    "title": "A propos de nous",
+    "top-description1": "Nous sommes une association de quatre étudiants indépendants, actuellement en première année de Master en architecture des systèmes informatiques. Diplômés en 2024 d’un Bachelier en technologie de l’informatique à l’Hénallux, nous unissons nos compétences et notre passion pour offrir des solutions adaptées <span class='blue'>à vos besoins.</span>",
+    "top-description2": "Grâce à nos expertises complémentaires, nous couvrons divers domaines : réseau, développement web, IoT et administration système (Linux et Windows). Cette synergie nous permet d’accompagner votre entreprise dans ses défis technologiques et d’optimiser ses performances avec des solutions innovantes.",
+    "team": {
+      "title": "Notre équipe",
+      "nini": {
+        "name": "Jaunart Noé",
+        "role": "Etudiant Indépendant & Co-Fondateur",
+        "description": "Passionné par l'informatique depuis mon plus jeune âge, j'ai fêté mes 20 ans à la fin de l'année 2024. Motivé par la concrétisation de projets en dehors du cadre académique, je poursuis actuellement un Master en Architecture Informatique, après avoir obtenu un bachelier en Technologie Informatique. Je souhaite développer une expertise solide dans la conception et l’optimisation des systèmes informatiques. Curieux et motivé, je suis particulièrement attiré par l'infrastructure et le Cloud. J'aime relever de nouveaux défis pour innover et apporter des solutions efficaces."
+      },
+      "ervinou": {
+        "name": "Gjoni Ervin",
+        "role": "Etudiant Indépendant & Co-Fondateur",
+        "description": "Passionné de technologie et d’innovation, j’évolue dans le domaine de l’informatique depuis plusieurs années. Actuellement en Master en Architecture des Systèmes à l’Hénallux, j’ai acquis une solide expertise en réseaux, programmation, cybersécurité, IoT et développement web. En parallèle de mes études, j'ai également pu travailler en milieu professionnel dans l'informatique ce qui m’a permis de développer une approche rigoureuse et efficace pour résoudre les problèmes techniques et optimiser les performances des équipements."
+        },
+      "lvca": {
+        "name": "Abs Luca",
+        "role": "Etudiant Indépendant & Co-Fondateur",
+        "description": "Passionné d'informatique et de technologies, je possède une expertise en développement, administration système et réseaux. Je maîtrise plusieurs langages de programmation, dont Python, Java, C, Html/js (React Vite), PHP, SQL et Kotlin (Mobile). J’ai également une solide expérience en administration et programmation Linux et Windows, ainsi qu’en sécurité et gestion réseau avec Cisco, Ubiquiti, Palo Alto et les firewalls. Mon parcours inclut aussi des projets en IoT avec Arduino, où je combine programmation et électronique. Toujours curieux et en quête d’innovation, j’aime relever de nouveaux défis et explorer les dernières avancées technologiques. Mon défi actuel est un Master en Architecture des Systèmes Informatique."
+      },
+      "sac": {
+        "name": "Van Eenoo Arnaud",
+        "role": "Etudiant Indépendant & Co-Fondateur",
+        "description": "Passionné d’informatique depuis toujours, je suis animé par l’envie de contribuer activement au monde digital qui nous entoure. Actuellement en Master en Architecture des Systèmes Informatiques faisant suite à l'obtention d'un Bachelier en Technologie de l'Informatique, j'ai développé une solide expertise dans la conception et l'optimisation des infrastructures numériques. Curieux et motivé, je suis constamment en quête de nouveaux défis pour innover, apporter des solutions efficaces et sécuriser notre emprunte digitale."
+      }
+    }
+  },
+  "soonpage": {
+    "title" : "Encore un peu de ✨ <span id=\"blue\">magie</span> ✨ à ajouter... Restez connectés !",
+    "redirect" : "Accueil"
+  },
+  "contactpage": {
+    "title": "Contactez-nous",
+    "description": "Vous avez une question ou une suggestion ? N'hésitez pas à nous contacter via notre formulaire.",
+    "name" : "Nom",
+    "surname" : "Prénom",
+    "company" : "Entreprise",
+    "services" : "Services",
+    "company-placeholder" : "Mon entreprise",
+    "transition" : "Transition digitale",
+    "web-dev" : "Développement web",
+    "mobile-dev" : "Développement iOS/Android",
+    "dev" : "Programmation & développement",
+    "app-monitoring" : "Gestion applications",
+    "security" : "Sécurité",
+    "other" : "Autre",
+    "comments" : "Commentaires",
+    "comments-placeholder" : "Votre message...",
+    "send" : "Envoyer",
+    "sending" : "Envoi en cours...",
+    "success-message": {
+      "title" : "Merci pour votre message !",
+      "description" : "Nous avons bien reçu votre demande de contact. Un membre de l'équipe 4CORES vous répondra dans les plus brefs délais.",
+      "name" : "Nom :",
+      "company" : "Entreprise: ",
+      "email" : "Email : ",
+      "services" : "Services demandés : ",
+      "message" : "Votre message : "
+    },
+    "customer-email": {
+      "greetings" : "Merci pour votre message !",
+      "title" : "Bonjour ",
+      "description" : "Nous vous confirmons la bonne réception de votre demande de contact. Un membre de notre équipe vous contactera dans les plus brefs délais.",
+      "recap" : "Récapitulatif de votre demande : ",
+      "services" : "Services demandés : ",
+      "message" : "Votre message : ",
+      "info" : "Si vous avez d'autres questions ou informations à nous communiquer, n'hésitez pas à nous contacter via contact@4cores.be",
+      "team" : "L'équipe 4CORES"
+    },
+    "email-content" : {
+      "confirmation": "Confirmation formulaire contact - 4CORES",
+      "sending-error": "Erreur lors de l'envoi : ",
+      "error" : "Erreur: "
+    }
+  },
+  "notfoundpage": {
+    "title": "<span id=\"blue\">Oups! </span>Cette page n’existe pas...",
+    "redirect": "Accueil"
+  },
+  "cookiepage" : {
+    "title" : "Politique de cookies",
+    "description" : "Nous avons fait le choix d’utiliser le moins de cookies possible afin de préserver votre vie privée. Nous n’intégrons aucun cookie à des fins publicitaires, de revente de données ou de suivi intrusif, car ces pratiques vont à l’encontre de nos valeurs. Notre priorité est de vous offrir une expérience de navigation respectueuse et la plus anonyme possible. Seuls les cookies strictement nécessaires au bon fonctionnement du site peuvent être utilisés, et vous avez toujours le contrôle sur leur gestion.",
+    "name" : "Nom du cookie",
+    "domain" : "Domaine",
+    "expiration" : "Expiration",
+    "cookie-description" : "Description",
+    "cookie-consent" : {
+      "name" : "cookieConsent",
+      "domain" : "www.4cores.be",
+      "expiration" : "1 an",
+      "description": "Cookie utilisé pour vérifier le consentement de l'utilisateur concernant l'utilisation de cookies."
+    },
+    "cookie-ga": {
+      "name" : "_ga",
+      "domain" : "www.google.com",
+      "expiration" : "2 ans",
+      "description": "Cookies utilisés pour analyser le trafic au sein de notre site web. Ces cookies sont supprimés si l'utilisateur ne donne pas son consentement."
+    }
+  }
+}

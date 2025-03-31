@@ -1,12 +1,13 @@
-import { NavLink, Outlet } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import Service_card from "./Home-service-card.jsx";
-import Home_team from "./Home-team.jsx";
-import { useEffect } from 'react';
-import Home_team_mobile from "./Home-team-mobile.jsx";
 import References from "../scripts/References.jsx";
 import Home_relation from "./Home-relation.jsx";
+import {useEffect} from 'react';
+import {useTranslation} from "react-i18next";
 
 export default function Home(){
+    const { t } = useTranslation();
+
     useEffect(() => {
         const observer = new IntersectionObserver(
             (entries) => {
@@ -50,59 +51,73 @@ export default function Home(){
     return(
         <>
         <section className="home-top">
-            <h1>Des <span className="blue">solutions</span> technologiques intégrées pour une performance optimale de <span className="blue">votre entreprise.</span></h1>
-            <h2>Ne laissez pas la technologie vous freiner ! Modernisez vos outils pour plus d’efficacité,
-                de compétitivité et de rentabilité.</h2>
+            <h1 dangerouslySetInnerHTML={{__html: (t('homepage.title'))}} />
+            <h2 dangerouslySetInnerHTML={{__html: (t('homepage.subtitle'))}} />
             <article className="buttons">
-                <NavLink to="/About" id="propos">A propos</NavLink>
-                <NavLink to="/Soon" id="realisations">Réalisations</NavLink>
+                <article className="left">
+                    <NavLink to="/About" id="propos" dangerouslySetInnerHTML={{__html: (t('about'))}}/>
+                </article>
+                <article className="right">
+                    <NavLink to="/Soon" id="realisations" dangerouslySetInnerHTML={{__html: (t('projects'))}}/>
+                </article>
+
             </article>
         </section>
             <section className="home-services">
                 <article className="top">
-                    <h1>Services</h1>
+                    <h1 dangerouslySetInnerHTML={{__html: (t('homepage.services'))}} />
                 </article>
                 <article className="menu">
                     <Service_card
-                      title="Transition digitale"
+                      title={t('homepage.services-menu.transition')}
                       services={[
-                          "Audit et conseil en transformation numérique",
-                          "Automatisation des processus métiers",
-                          "Intégration de solutions digitales adaptées"
+                          t('homepage.services-menu.transition-elem.audit'),
+                          t('homepage.services-menu.transition-elem.automatisation'),
+                          t('homepage.services-menu.transition-elem.integration'),
                       ]}
                     />
                     <Service_card
-                      title="Développement web/mobile"
+                      title={t('homepage.services-menu.development')}
                       services={[
-                          "Développement front-end & backend (Php, Python, Javascript, Typescript, Nodejs,..)",
-                          "Création d’applications web et mobiles sur mesure",
-                          "Design UI/UX"
+                          t('homepage.services-menu.development-elem.web'),
+                          t('homepage.services-menu.development-elem.mobile'),
+                          t('homepage.services-menu.development-elem.pwa'),
+                          t('homepage.services-menu.development-elem.hybrid'),
+                          t('homepage.services-menu.development-elem.design'),
                       ]}
                     />
                     <Service_card
-                      title="Gestion des applications"
+                      title={t('homepage.services-menu.app-monitoring')}
                       services={[
-                          "Déploiement et maintenance d’applications",
-                          "Sécurisation et gestion des mises à jour",
-                          "Monitoring "
+                          t('homepage.services-menu.app-monitoring-elem.monitoring'),
+                          t('homepage.services-menu.app-monitoring-elem.support'),
+                          t('homepage.services-menu.app-monitoring-elem.maintenance'),
                       ]}
                     />
 
                 </article>
                 <article className="menu-bottom">
                     <Service_card
-                      title="Infrastructure & Cloud"
+                      title={t('homepage.services-menu.infras')}
                       services={[
-                          "Architecture réseau - Conception et déploiement d’un réseau interne",
-                          "Configuration et sécurisation - Switches, routeurs, access point, VLAN, VPN, Firewall",
-                          "Cloud computing - Déploiement et gestion d’infrastructure en cloud ",
-                          "Installation et configuration de serveurs - Gestion VMware, Proxmox, Docker, Kubernetes, " +
-                          "VMware Tanzu "
+                          t('homepage.services-menu.infras-elem.network'),
+                          t('homepage.services-menu.infras-elem.configuration'),
+                          t('homepage.services-menu.infras-elem.cloud'),
+                          t('homepage.services-menu.infras-elem.servers'),
                       ]}
                     />
                 </article>
             </section>
-            <Home_relation />
+            <Home_relation
+                title={t('homepage.relation.title')}
+                description={t('homepage.relation.description')}
+                cards={[
+                    { title: t('homepage.relation.relation-menu.tracking'), text: t('homepage.relation.relation-menu.tracking-desc') },
+                    { title: t('homepage.relation.relation-menu.warranty'), text: t('homepage.relation.relation-menu.warranty-desc') },
+                    { title: t('homepage.relation.relation-menu.security'), text: t('homepage.relation.relation-menu.security-desc') },
+                    { title: t('homepage.relation.relation-menu.experience'), text: t('homepage.relation.relation-menu.experience-desc') },
+                ]}
+            />
             <References />
         </>
     );

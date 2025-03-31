@@ -3,12 +3,13 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding:1% 5%;
+  padding:1% 3% 1% 5%;
   border-bottom: 1px solid #D0D0D0;
+
   .left{
     width: 25%;
     img{
-        width: 12rem;
+      width: 12rem;
     }
   }
 
@@ -18,14 +19,14 @@
     justify-content: center;
     width: 50%;
     a{
-        margin: 0 2rem;
-        color: #000000;
-        font-size: 1.2rem;
-        font-weight: 500;
+      margin: 0 2rem;
+      color: #000000;
+      font-size: 1.2rem;
+      font-weight: 500;
     }
 
     a:hover{
-        color: #003566;
+      color: #003566;
     }
   }
 
@@ -34,6 +35,26 @@
     align-items: center;
     justify-content: flex-end;
     width: 25%;
+
+    .language-buttons{
+      margin-left: 1rem;
+
+      .flags-button{
+        background-color: transparent;
+        border: none;
+        color: #000000;
+        margin-left: 1rem;
+        cursor: pointer;
+      }
+
+      .flags{
+        width: 2rem;
+      }
+
+      .flags:hover{
+        transform: scale(1.1);
+      }
+    }
 
     a{
       background-color:#003566;
