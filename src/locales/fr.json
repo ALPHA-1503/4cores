@@ -137,5 +137,25 @@
   "notfoundpage": {
     "title": "<span id=\"blue\">Oups! </span>Cette page n’existe pas...",
     "redirect": "Accueil"
+  },
+  "cookiepage" : {
+    "title" : "Politique de cookies",
+    "description" : "Nous avons fait le choix d’utiliser le moins de cookies possible afin de préserver votre vie privée. Nous n’intégrons aucun cookie à des fins publicitaires, de revente de données ou de suivi intrusif, car ces pratiques vont à l’encontre de nos valeurs. Notre priorité est de vous offrir une expérience de navigation respectueuse et la plus anonyme possible. Seuls les cookies strictement nécessaires au bon fonctionnement du site peuvent être utilisés, et vous avez toujours le contrôle sur leur gestion.",
+    "name" : "Nom du cookie",
+    "domain" : "Domaine",
+    "expiration" : "Expiration",
+    "cookie-description" : "Description",
+    "cookie-consent" : {
+      "name" : "cookieConsent",
+      "domain" : "www.4cores.be",
+      "expiration" : "1 an",
+      "description": "Cookie utilisé pour vérifier le consentement de l'utilisateur concernant l'utilisation de cookies."
+    },
+    "cookie-ga": {
+      "name" : "_ga",
+      "domain" : "www.google.com",
+      "expiration" : "2 ans",
+      "description": "Cookies utilisés pour analyser le trafic au sein de notre site web. Ces cookies sont supprimés si l'utilisateur ne donne pas son consentement."
+    }
   }
 }
