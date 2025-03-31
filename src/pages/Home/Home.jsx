@@ -165,20 +165,24 @@ export default function Home(){
                     </article>
                         <article className="banner-bottom">
                             <BannerCard
-                            title="Personnalisation totale"
-                            description="Chaque entreprise a des besoins uniques : nous adaptons nos solutions pour répondre précisément à vos exigences."
+                            icon="/images/icone_personnaliser.png"
+                            title="Développement Web sur Mesure"
+                            description="Nous concevons et développons des sites web modernes, performants et évolutifs, parfaitement adaptés à vos besoins. Que ce soit un site vitrine, un e-commerce ou une application web, nous utilisons les dernières technologies pour garantir une expérience utilisateur optimale et une sécurité renforcée."
                             />
                             <BannerCard
-                            title="Optimisation de la productivité"
-                            description="Nos services informatiques permettent d’automatiser des tâches, d’améliorer les flux de travail et d’optimiser les performances."
+                            icon="/images/optimisation.png"
+                            title="Hébergement Web et Maintenance"
+                            description="Nous proposons des solutions d’hébergement sécurisées et performantes pour assurer la disponibilité et la rapidité de votre site ou application. Notre service inclut des mises à jour régulières, des sauvegardes automatiques et une surveillance proactive pour prévenir toute interruption de service."
                             />
                             <BannerCard
+                            icon="/images/cloud.png"
                             title="Intégration cloud et solutions hybrides"
-                            description="Mise en place d’infrastructures évolutives et flexibles via le cloud pour faciliter la collaboration et la gestion des ressources."
+                            description="Optimisez votre infrastructure avec des solutions cloud flexibles et sécurisées. Nous vous accompagnons dans la migration de vos services vers le cloud, l’intégration d’environnements hybrides et la gestion de vos ressources numériques pour une collaboration fluide et une meilleure productivité."
                             />
                             <BannerCard
+                            icon="/images/maintenance.png"
                             title="Support technique et maintenance proactive"
-                            description="Assistance continue et surveillance des systèmes pour minimiser les interruptions et garantir un fonctionnement fluide."
+                            description="Bénéficiez d’un support technique réactif et d’une maintenance continue pour garantir le bon fonctionnement de vos systèmes informatiques. Nos experts surveillent et anticipent les éventuels problèmes pour minimiser les interruptions et assurer la pérennité de vos infrastructures."
                             />
                         </article>
                     </article>
@@ -186,6 +190,14 @@ export default function Home(){
                         <BannerKiosk>
                             slides
                         </BannerKiosk>
+                    </article>
+                    <article className="follow-up-banner">
+                        <article className="follow-up-content">
+                            <h2>Suivi</h2>
+                            <p>
+                                Nous garantissons un suivi personnalisé et réactif de vos projets. Notre équipe s’engage à être disponible pour vous fournir des mises à jour régulières, répondre à toutes vos questions, et vous offrir des solutions adaptées en temps réel. Avec notre approche transparente, vous aurez une vision claire de l’avancement de chaque étape de votre projet.
+                            </p>
+                        </article>
                     </article>
             </section>
             <section className="home-team">
