@@ -170,7 +170,7 @@ export default function Home(){
                             description="Nous concevons et développons des sites web modernes, performants et évolutifs, parfaitement adaptés à vos besoins. Que ce soit un site vitrine, un e-commerce ou une application web, nous utilisons les dernières technologies pour garantir une expérience utilisateur optimale et une sécurité renforcée."
                             />
                             <BannerCard
-                            icon="/images/optimisation.png"
+                            icon="/images/hebergement.png"
                             title="Hébergement Web et Maintenance"
                             description="Nous proposons des solutions d’hébergement sécurisées et performantes pour assurer la disponibilité et la rapidité de votre site ou application. Notre service inclut des mises à jour régulières, des sauvegardes automatiques et une surveillance proactive pour prévenir toute interruption de service."
                             />
