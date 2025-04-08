@@ -87,7 +87,7 @@ export default function Root(){
                             <p dangerouslySetInnerHTML={{__html: (t('rootpage.4cores'))}}/>
                             <p dangerouslySetInnerHTML={{__html: (t('rootpage.conditions'))}}/>
                             <NavLink to={"/cookie"} dangerouslySetInnerHTML={{__html: (t('rootpage.cookies-policy'))}}/>
-                            <p>TVA XXXXXX</p>
+                            <p>TVA : BE1021.374.168</p>
                         </article>
                         <article className="right">
                             <img src="/images/courrier-b.png" alt="mail logo"/>
@@ -104,7 +104,7 @@ export default function Root(){
                     <section className="bottom">
                         <p dangerouslySetInnerHTML={{__html: (t('rootpage.general-conditions'))}} />
                         <NavLink to="/cookie" dangerouslySetInnerHTML={{__html: (t('rootpage.cookies-policy'))}} />
-                        <p>TVA XXXXXX</p>
+                        <p>TVA : BE1021.374.168</p>
                         <img src="/images/FULL_v1_white.png" alt="Avetech Logo"/>
                         <p dangerouslySetInnerHTML={{__html: (t('rootpage.4cores'))}} />
                     </section>
