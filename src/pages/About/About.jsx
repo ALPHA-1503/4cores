@@ -2,8 +2,10 @@ import {NavLink} from "react-router-dom";
 import Home_team from "../Home/Home-team.jsx";
 import Home_team_mobile from "../Home/Home-team-mobile.jsx";
 import {useEffect} from "react";
+import {useTranslation} from "react-i18next";
 
 export default function About(){
+    const { t } = useTranslation();
     useEffect(() => {
         const observer = new IntersectionObserver(
             (entries) => {
@@ -44,58 +46,40 @@ export default function About(){
     }, []);
 
     const lvca = {
-        title: "Abs Luca",
-        subtitle: "Etudiant Indépendant & Co-Fondateur",
-        description: `Passionné d’informatique depuis toujours, je suis animé par l’envie de contribuer
-        activement au monde digital qui nous entoure. Actuellement en Master en Architecture Informatique,
-        après un bachelier en Technologie Informatique, je développe une expertise solide dans la conception
-        et l’optimisation des systèmes informatiques. Curieux et motivé, je suis constamment en quête de
-        nouveaux défis pour innover et apporter des solutions efficaces.`,
-        mail: "https://www.google.com",
-        linkedin: "https://www.linkedin.com",
+        title: t('aboutpage.team.lvca.name'),
+        subtitle: t('aboutpage.team.lvca.role'),
+        description: t('aboutpage.team.lvca.description'),
+        mail: "absluca419@gmail.com",
+        linkedin: "https://www.linkedin.com/in/abs-luca/",
         image: "/images/lvca_team.png",
         image_mobile: "/images/lvca.png"
     };
 
     const ervinou = {
-        title: "Gjoni Ervin",
-        subtitle: "Etudiant Indépendant & Co-Fondateur",
-        description:"Passionné de technologie et d’innovation, j’évolue dans le domaine de l’informatique depuis " +
-            "plusieurs années. Actuellement en Master en Architecture des Systèmes à l’Hénallux, j’ai acquis une " +
-            "solide expertise en réseaux, programmation, cybersécurité, IoT et développement web. En parallèle de mes " +
-            "études, j'ai également pu travailler en milieux professionnel dans l'informatique ce qui m’a permis de " +
-            "développer une approche rigoureuse et efficace pour résoudre les problèmes techniques et optimiser " +
-            "les performances des équipements.",
-        mail: "https://www.google.com",
-        linkedin: "https://www.linkedin.com",
+        title: t('aboutpage.team.ervinou.name'),
+        subtitle: t('aboutpage.team.ervinou.role'),
+        description:t('aboutpage.team.ervinou.description'),
+        mail: "ervingjoni3@gmail.com",
+        linkedin: "https://www.linkedin.com/in/ervin-gjoni-04995927a/",
         image:"/images/ervinou_team.png",
         image_mobile:"/images/ervinou.png"
     }
 
     const nini = {
-        title: "Jaunart Noé",
-        subtitle: "Etudiant Indépendant & Co-Fondateur",
-        description: "Passionné d’informatique depuis toujours, je suis animé par l’envie de contribuer activement " +
-            "au monde digital qui nous entoure. Actuellement en Master en Architecture Informatique,après " +
-            "un bachelier en Technologie Informatique, je développe une expertise solide dans la conception et " +
-            "l’optimisation des systèmes informatiques. Curieux et motivé, je suis constamment en quête de nouveaux " +
-            "défis pour innover et apporter des solutions efficaces.",
-        mail: "https://www.google.com",
-        linkedin: "https://www.linkedin.com",
+        title: t('aboutpage.team.nini.name'),
+        subtitle: t('aboutpage.team.nini.role'),
+        description: t('aboutpage.team.nini.description'),
+        mail: "noe.jaunart24@gmail.com",
         image:"/images/nini_team.png",
-        image_mobile:"/images/nini.png",
+        image_mobile:"/images/ninilesot.jpg",
     }
 
     const arnaud = {
-        title: "Van Eenoo Arnaud",
-        subtitle: "Etudiant Indépendant & Co-Fondateur",
-        description: "Passionné d’informatique depuis toujours, je suis animé par l’envie de contribueractivement " +
-            "au monde digital qui nous entoure. Actuellement en Master en Architecture Informatique,après " +
-            "un bachelier en Technologie Informatique, je développe une expertise solide dans la conceptionet " +
-            "l’optimisation des systèmes informatiques. Curieux et motivé, je suis constamment en quête denouveaux " +
-            "défis pour innover et apporter des solutions efficaces.",
-        mail: "https://www.google.com",
-        linkedin: "https://www.linkedin.com",
+        title: t('aboutpage.team.sac.name'),
+        subtitle: t('aboutpage.team.sac.role'),
+        description: t('aboutpage.team.sac.description'),
+        mail: "arnaud.vaneenoo10@gmail.com",
+        linkedin: "https://www.linkedin.com/in/arnaud-van-eenoo-986bb2275/",
         image:"/images/me_team.png",
         image_mobile:"/images/me.png"
     }
@@ -105,15 +89,9 @@ export default function About(){
             <section className="about">
                 <section className="about-top">
                     <h2>4CORES</h2>
-                    <h1>A propos de nous</h1>
-                    <p>Nous sommes une association de quatre étudiants indépendants, actuellement en première année de
-                        Master en architecture des systèmes informatiques. Diplômés en 2024 d’un Bachelier en
-                        technologie de l’informatique à l’Hénallux, nous unissons nos compétences et notre passion
-                        pour offrir des solutions adaptées <span id="blue">à vos besoins.</span></p>
-                    <p>Grâce à nos expertises complémentaires, nous couvrons divers domaines : réseau, développement
-                        web, IoT et administration système (Linux et Windows). Cette synergie nous permet d’accompagner
-                        votre entreprise dans ses défis technologiques et d’optimiser ses performances avec des
-                        solutions innovantes.</p>
+                    <h1>{t('aboutpage.title')}</h1>
+                    <p dangerouslySetInnerHTML={{__html: (t('aboutpage.top-description1'))}}></p>
+                    <p>{t('aboutpage.top-description2')}</p>
                 </section>
                 <section className="about-bottom">
                     <img className="about-img" src="/images/about.png" alt="about image"/>
@@ -121,7 +99,7 @@ export default function About(){
             </section>
             <section className="home-team">
                 <article className="top">
-                    <h1>Notre équipe</h1>
+                    <h1>{t('aboutpage.team.title')}</h1>
                 </article>
                 <Home_team
                     title={nini.title}

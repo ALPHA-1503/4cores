@@ -1,12 +1,13 @@
-import { NavLink, Outlet } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import Service_card from "./Home-service-card.jsx";
-import BannerCard from './Home-banner-card.jsx';
-import Home_team from "./Home-team.jsx";
-import { useEffect } from 'react';
-import Home_team_mobile from "./Home-team-mobile.jsx";
-import BannerKiosk from './Home-swiper-banner.jsx';
+import References from "../scripts/References.jsx";
+import Home_relation from "./Home-relation.jsx";
+import {useEffect} from 'react';
+import {useTranslation} from "react-i18next";
 
 export default function Home(){
+    const { t } = useTranslation();
+
     useEffect(() => {
         const observer = new IntersectionObserver(
             (entries) => {
@@ -46,242 +47,78 @@ export default function Home(){
         };
     }, []);
 
-    const lvca = {
-        title: "Abs Luca",
-        subtitle: "Etudiant Indépendant & Co-Fondateur",
-        description: "Passionné d’informatique depuis toujours, je suis animé par l’envie de contribuer activement " +
-            "au monde digital qui nous entoure. Actuellement en Master en Architecture Informatique, après " +
-            "un bachelier en Technologie Informatique, je développe une expertise solide dans la conceptionet " +
-            "l’optimisation des systèmes informatiques. Curieux et motivé, je suis constamment en quête de nouveaux " +
-            "défis pour innover et apporter des solutions efficaces.",
-        mail: "https://www.google.com",
-        linkedin: "https://www.linkedin.com",
-        image: "/images/lvca_team.png",
-        image_mobile: "/images/lvca.png"
-    };
-
-    const ervinou = {
-        title: "Gjoni Ervin",
-        subtitle: "Etudiant Indépendant & Co-Fondateur",
-        description:"Passionné de technologie et d’innovation, j’évolue dans le domaine de l’informatique depuis " +
-            "plusieurs années. Actuellement en Master en Architecture des Systèmes à l’Hénallux, j’ai acquis une " +
-            "solide expertise en réseaux, programmation, cybersécurité, IoT et développement web. En parallèle de mes " +
-            "études, j'ai également pu travailler en milieux professionnel dans l'informatique ce qui m’a permis de " +
-            "développer une approche rigoureuse et efficace pour résoudre les problèmes techniques et optimiser " +
-            "les performances des équipements.",
-        mail: "https://www.google.com",
-        linkedin: "https://www.linkedin.com",
-        image:"/images/ervinou_team.png",
-        image_mobile:"/images/ervinou.png"
-    }
-
-    const nini = {
-        title: "Jaunart Noé",
-        subtitle: "Etudiant Indépendant & Co-Fondateur",
-        description: "Passionné d’informatique depuis toujours, je suis animé par l’envie de contribuer activement " +
-            "au monde digital qui nous entoure. Actuellement en Master en Architecture Informatique, après " +
-            "un bachelier en Technologie Informatique, je développe une expertise solide dans la conceptionet " +
-            "l’optimisation des systèmes informatiques. Curieux et motivé, je suis constamment en quête de nouveaux " +
-            "défis pour innover et apporter des solutions efficaces.",
-        mail: "https://www.google.com",
-        linkedin: "https://www.linkedin.com",
-        image:"/images/nini_team.png",
-        image_mobile:"/images/nini.png",
-    }
-
-    const arnaud = {
-        title: "Van Eenoo Arnaud",
-        subtitle: "Etudiant Indépendant & Co-Fondateur",
-        description: "Passionné d’informatique depuis toujours, je suis animé par l’envie de contribuer activement " +
-            "au monde digital qui nous entoure. Actuellement en Master en Architecture Informatique, après " +
-            "un bachelier en Technologie Informatique, je développe une expertise solide dans la conceptionet " +
-            "l’optimisation des systèmes informatiques. Curieux et motivé, je suis constamment en quête de nouveaux " +
-            "défis pour innover et apporter des solutions efficaces.",
-        mail: "https://www.google.com",
-        linkedin: "https://www.linkedin.com",
-        image:"/images/me_team.png",
-        image_mobile:"/images/me.png"
-    }
-
 
     return(
         <>
         <section className="home-top">
-            <h1>Des <span className="blue">solutions</span> technologiques intégrées pour une performance optimale de <span className="blue">votre entreprise.</span></h1>
-            <h2>Ne laissez pas la technologie vous freiner ! Modernisez vos outils pour plus d’efficacité,
-                de compétitivité et de rentabilité.</h2>
+            <h1 dangerouslySetInnerHTML={{__html: (t('homepage.title'))}} />
+            <h2 dangerouslySetInnerHTML={{__html: (t('homepage.subtitle'))}} />
             <article className="buttons">
-                <NavLink to="/About" id="propos">A propos</NavLink>
-                <NavLink to="/Soon" id="realisations">Réalisations</NavLink>
+                <article className="left">
+                    <NavLink to="/About" id="propos" dangerouslySetInnerHTML={{__html: (t('about'))}}/>
+                </article>
+                <article className="right">
+                    <NavLink to="/Soon" id="realisations" dangerouslySetInnerHTML={{__html: (t('projects'))}}/>
+                </article>
+
             </article>
         </section>
             <section className="home-services">
                 <article className="top">
-                    <h1>Services</h1>
+                    <h1 dangerouslySetInnerHTML={{__html: (t('homepage.services'))}} />
                 </article>
                 <article className="menu">
                     <Service_card
-                      title="Transition digitale"
+                      title={t('homepage.services-menu.transition')}
                       services={[
-                          "Audit et conseil en transformation numérique",
-                          "Automatisation des processus métiers",
-                          "Intégration de solutions digitales adaptées"
+                          t('homepage.services-menu.transition-elem.audit'),
+                          t('homepage.services-menu.transition-elem.automatisation'),
+                          t('homepage.services-menu.transition-elem.integration'),
                       ]}
                     />
                     <Service_card
-                      title="Développement web/mobile"
+                      title={t('homepage.services-menu.development')}
                       services={[
-                          "Développement front-end & backend (Php, Python, Javascript, Typescript, Nodejs,..)",
-                          "Création d’applications web et mobiles sur mesure",
-                          "Design UI/UX"
+                          t('homepage.services-menu.development-elem.web'),
+                          t('homepage.services-menu.development-elem.mobile'),
+                          t('homepage.services-menu.development-elem.pwa'),
+                          t('homepage.services-menu.development-elem.hybrid'),
+                          t('homepage.services-menu.development-elem.design'),
                       ]}
                     />
                     <Service_card
-                      title="Gestion des applications"
+                      title={t('homepage.services-menu.app-monitoring')}
                       services={[
-                          "Déploiement et maintenance d’applications",
-                          "Sécurisation et gestion des mises à jour",
-                          "Monitoring "
+                          t('homepage.services-menu.app-monitoring-elem.monitoring'),
+                          t('homepage.services-menu.app-monitoring-elem.support'),
+                          t('homepage.services-menu.app-monitoring-elem.maintenance'),
                       ]}
                     />
 
                 </article>
                 <article className="menu-bottom">
                     <Service_card
-                      title="Infrastructure & Cloud"
+                      title={t('homepage.services-menu.infras')}
                       services={[
-                          "Architecture réseau - Conception et déploiement d’un réseau interne",
-                          "Configuration et sécurisation - Switches, routeurs, access point, VLAN, VPN, Firewall",
-                          "Cloud computing - Déploiement et gestion d’infrastructure en cloud ",
-                          "Installation et configuration de serveurs - Gestion VMware, Proxmox, Docker, Kubernetes, " +
-                          "VMware Tanzu "
+                          t('homepage.services-menu.infras-elem.network'),
+                          t('homepage.services-menu.infras-elem.configuration'),
+                          t('homepage.services-menu.infras-elem.cloud'),
+                          t('homepage.services-menu.infras-elem.servers'),
                       ]}
                     />
                 </article>
-
-                <article className="banner">
-                    <article className="banner-top">
-                        <h2>Solutions informatiques sur mesure pour votre entreprise</h2>
-                    </article>
-                        <article className="banner-bottom">
-                            <BannerCard
-                            icon="/images/icone_personnaliser.png"
-                            title="Développement Web sur Mesure"
-                            description="Nous concevons et développons des sites web modernes, performants et évolutifs, parfaitement adaptés à vos besoins. Que ce soit un site vitrine, un e-commerce ou une application web, nous utilisons les dernières technologies pour garantir une expérience utilisateur optimale et une sécurité renforcée."
-                            />
-                            <BannerCard
-                            icon="/images/hebergement.png"
-                            title="Hébergement Web et Maintenance"
-                            description="Nous proposons des solutions d’hébergement sécurisées et performantes pour assurer la disponibilité et la rapidité de votre site ou application. Notre service inclut des mises à jour régulières, des sauvegardes automatiques et une surveillance proactive pour prévenir toute interruption de service."
-                            />
-                            <BannerCard
-                            icon="/images/cloud.png"
-                            title="Intégration cloud et solutions hybrides"
-                            description="Optimisez votre infrastructure avec des solutions cloud flexibles et sécurisées. Nous vous accompagnons dans la migration de vos services vers le cloud, l’intégration d’environnements hybrides et la gestion de vos ressources numériques pour une collaboration fluide et une meilleure productivité."
-                            />
-                            <BannerCard
-                            icon="/images/maintenance.png"
-                            title="Support technique et maintenance proactive"
-                            description="Bénéficiez d’un support technique réactif et d’une maintenance continue pour garantir le bon fonctionnement de vos systèmes informatiques. Nos experts surveillent et anticipent les éventuels problèmes pour minimiser les interruptions et assurer la pérennité de vos infrastructures."
-                            />
-                        </article>
-                    </article>
-                    <article className="banner-kiosk">
-                        <BannerKiosk>
-                            slides
-                        </BannerKiosk>
-                    </article>
-                    <article className="follow-up-banner">
-                        <article className="follow-up-content">
-                            <h2>Suivi</h2>
-                            <p>
-                                Nous garantissons un suivi personnalisé et réactif de vos projets. Notre équipe s’engage à être disponible pour vous fournir des mises à jour régulières, répondre à toutes vos questions, et vous offrir des solutions adaptées en temps réel. Avec notre approche transparente, vous aurez une vision claire de l’avancement de chaque étape de votre projet.
-                            </p>
-                        </article>
-                    </article>
             </section>
-            <section className="home-team">
-                <article className="top">
-                    <h1>Notre équipe</h1>
-                </article>
-                <Home_team
-                    title={nini.title}
-                    subtitle={nini.subtitle}
-                    description={nini.description}
-                    mail={nini.mail}
-                    linkedin={nini.linkedin}
-                    side="left"
-                    image={nini.image}
-                />
-
-                <Home_team
-                    title={ervinou.title}
-                    subtitle={ervinou.subtitle}
-                    description={ervinou.description}
-                    mail={ervinou.mail}
-                    linkedin={ervinou.linkedin}
-                    side="right"
-                    image={ervinou.image}
-                />
-
-                <Home_team
-                    title={lvca.title}
-                    subtitle={lvca.subtitle}
-                    description={lvca.description}
-                    mail={lvca.mail}
-                    linkedin={lvca.linkedin}
-                    side="left"
-                    image={lvca.image}
-                />
-
-                <Home_team
-                    title={arnaud.title}
-                    subtitle={arnaud.subtitle}
-                    description={arnaud.description}
-                    mail={arnaud.mail}
-                    linkedin={arnaud.linkedin}
-                    side="right"
-                    image={arnaud.image}
-                />
-
-                <Home_team_mobile
-                    title={nini.title}
-                    subtitle={nini.subtitle}
-                    description={nini.description}
-                    mail={nini.mail}
-                    linkedin={nini.linkedin}
-                    image={nini.image_mobile}
-                />
-
-                <Home_team_mobile
-                    title={ervinou.title}
-                    subtitle={ervinou.subtitle}
-                    description={ervinou.description}
-                    mail={ervinou.mail}
-                    linkedin={ervinou.linkedin}
-                    image={ervinou.image_mobile}
-                />
-
-                <Home_team_mobile
-                    title={lvca.title}
-                    subtitle={lvca.subtitle}
-                    description={lvca.description}
-                    mail={lvca.mail}
-                    linkedin={lvca.linkedin}
-                    image={lvca.image_mobile}
-                />
-
-                <Home_team_mobile
-                    title={arnaud.title}
-                    subtitle={arnaud.subtitle}
-                    description={arnaud.description}
-                    mail={arnaud.mail}
-                    linkedin={arnaud.linkedin}
-                    image={arnaud.image_mobile}
-                />
-
-
-            </section>
+            <Home_relation
+                title={t('homepage.relation.title')}
+                description={t('homepage.relation.description')}
+                cards={[
+                    { title: t('homepage.relation.relation-menu.tracking'), text: t('homepage.relation.relation-menu.tracking-desc') },
+                    { title: t('homepage.relation.relation-menu.warranty'), text: t('homepage.relation.relation-menu.warranty-desc') },
+                    { title: t('homepage.relation.relation-menu.security'), text: t('homepage.relation.relation-menu.security-desc') },
+                    { title: t('homepage.relation.relation-menu.experience'), text: t('homepage.relation.relation-menu.experience-desc') },
+                ]}
+            />
+            <References />
         </>
     );
 }
