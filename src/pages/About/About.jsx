@@ -1,11 +1,11 @@
-import {NavLink} from "react-router-dom";
-import Home_team from "../Home/Home-team.jsx";
-import Home_team_mobile from "../Home/Home-team-mobile.jsx";
+import About_team from "./About-team.jsx";
+import Home_team_mobile from "./About-team-mobile.jsx";
 import {useEffect} from "react";
 import {useTranslation} from "react-i18next";
 
 export default function About(){
     const { t } = useTranslation();
+
     useEffect(() => {
         const observer = new IntersectionObserver(
             (entries) => {
@@ -97,11 +97,11 @@ export default function About(){
                     <img className="about-img" src="/images/about.png" alt="about image"/>
                 </section>
             </section>
-            <section className="home-team">
+            <section className="about-team">
                 <article className="top">
                     <h1>{t('aboutpage.team.title')}</h1>
                 </article>
-                <Home_team
+                <About_team
                     title={nini.title}
                     subtitle={nini.subtitle}
                     description={nini.description}
@@ -111,7 +111,7 @@ export default function About(){
                     image={nini.image}
                 />
 
-                <Home_team
+                <About_team
                     title={ervinou.title}
                     subtitle={ervinou.subtitle}
                     description={ervinou.description}
@@ -121,7 +121,7 @@ export default function About(){
                     image={ervinou.image}
                 />
 
-                <Home_team
+                <About_team
                     title={lvca.title}
                     subtitle={lvca.subtitle}
                     description={lvca.description}
@@ -131,7 +131,7 @@ export default function About(){
                     image={lvca.image}
                 />
 
-                <Home_team
+                <About_team
                     title={arnaud.title}
                     subtitle={arnaud.subtitle}
                     description={arnaud.description}

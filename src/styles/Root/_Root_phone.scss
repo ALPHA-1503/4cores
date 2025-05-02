@@ -292,41 +292,6 @@
       }
     }
   }
-
-  .references-baneer{
-    padding-bottom: 5%;
-    .top{
-      display: flex;
-      justify-content: center;
-      padding-bottom: 2.5%;
-
-      h1{
-        color: #FFC300;
-        font-family: Inter, sans-serif;
-        font-size: 3rem;
-      }
-    }
-
-    .references-content{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      background: #F8F8F8;
-      padding: 2.5% 5%;
-
-      .images {
-        width: 80px;
-        height:35px;
-        object-fit: contain;
-        margin: 5px;
-        transition: transform 0.3s ease;
-
-        &:hover {
-          transform: scale(1.05);
-        }
-      }
-    }
-  }
 }
 
 

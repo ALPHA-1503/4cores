@@ -90,17 +90,15 @@ export default function Root(){
                             <p>TVA : BE1021.374.168</p>
                         </article>
                         <article className="right">
-                            <a href="mailto:arnaud.vaneenoo10@gmail.com">
-                                <img src="/images/courrier-b.png" alt="mail logo"/>
-                            </a>
-                            <img src="/images/linkedin.png" alt="linkedin logo"/>
+                            <a href="mailto:contact@4cores.be"><img src="/images/courrier-b.png" alt="mail logo"/></a>
+                            <a href="https://www.linkedin.com/company/4coresolutions"><img src="/images/linkedin.png" alt="linkedin logo"/></a>
                         </article>
                     </section>
                 </section>
                 <section className="footer-mobile">
                     <section className="top">
-                        <a href="mailto:arnaud.vaneenoo10@gmail.com"><img src="/images/courrier-b.png" alt="mail logo"/></a>
-                        <img src="/images/linkedin.png" alt="linkedin logo"/>
+                        <a href="mailto:contact@4cores.be"><img src="/images/courrier-b.png" alt="mail logo"/></a>
+                        <a href="https://www.linkedin.com/company/4coresolutions"><img src="/images/linkedin.png" alt="linkedin logo"/></a>
                         <NavLink to="/Contact" dangerouslySetInnerHTML={{__html: (t('contact'))}}/>
                     </section>
                     <section className="bottom">

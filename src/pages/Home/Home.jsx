@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import Service_card from "./Home-service-card.jsx";
-import References from "../scripts/References.jsx";
+import Skills from "../scripts/Skills.jsx";
 import Home_relation from "./Home-relation.jsx";
 import {useEffect} from 'react';
 import {useTranslation} from "react-i18next";
@@ -118,7 +118,7 @@ export default function Home(){
                     { title: t('homepage.relation.relation-menu.experience'), text: t('homepage.relation.relation-menu.experience-desc') },
                 ]}
             />
-            <References />
+            <Skills />
         </>
     );
 }
