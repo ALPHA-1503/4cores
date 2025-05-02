@@ -56,7 +56,7 @@
         "experience-desc": "During our training, we placed paramount importance on the client relationship. Through practical scenarios, we developed our collaboration skills and strengthened our soft skills, which are essential for effective and professional communication."
       }
     },
-    "references": "References"
+    "skills": "Skills"
   },
   "aboutpage": {
     "title": "About us",
@@ -77,12 +77,12 @@
       "lvca": {
         "name": "Abs Luca",
         "role": "Independent Student & Co-Founder",
-        "description": "Passionate about IT and technology, I have expertise in development, system administration, and networks. I master several programming languages, including Python, Java, C, Html/js (React Vite), PHP, SQL, and Kotlin (Mobile). I also have solid experience in Linux and Windows administration and programming, as well as in security and network management with Cisco, Ubiquiti, Palo Alto, and firewalls. My background also includes IoT projects with Arduino, where I combine programming and electronics. Always curious and seeking innovation, I enjoy taking on new challenges and exploring the latest technological advances. My current challenge is a Master's degree in IT Systems Architecture."
+        "description": "With a strong foundation in IT systems, I specialize in development, system administration, and network management. I am proficient in several programming languages, including Python, Java, C, HTML/JS (React Vite), PHP, SQL, and Kotlin for mobile applications. My technical skills extend to both Linux and Windows environments, with practical experience in cybersecurity and network configuration using Cisco, Ubiquiti, Palo Alto, and various firewall solutions.<br>I gained professional experience at IBA, where I worked as a student and later as an intern for my Bachelor's thesis. This allowed me to contribute to infrastructure, and software development projects in a real-world setting, reinforcing my technical and problem-solving abilities.<br>Always eager to explore and innovate, I continuously seek out new challenges. I am currently challenging my-self through through a Master’s degree in IT Systems Architecture with my three colleagues."
       },
       "sac": {
         "name": "Van Eenoo Arnaud",
         "role": "Independent Student & Co-Founder",
-        "description": "Passionate about IT since always, I am driven by the desire to actively contribute to the digital world around us. Currently pursuing a Master's degree in IT Systems Architecture following the completion of a Bachelor's degree in IT Technology, I have developed solid expertise in the design and optimization of digital infrastructures. Curious and motivated, I am constantly seeking new challenges to innovate, provide effective solutions, and secure our digital footprint."
+        "description": "Passionate about IT forever, I am driven by the desire to actively contribute to the digital world around us. Currently pursuing a Master's degree in IT Systems Architecture following the completion of a Bachelor's degree in IT Technology, I have developed solid expertise in the design and optimization of digital infrastructures. Curious and motivated, I am constantly seeking new challenges to innovate, provide effective solutions, and secure our digital footprint."
       }
     }
   },

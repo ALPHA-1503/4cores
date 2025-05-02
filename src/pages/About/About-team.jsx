@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-export default function Home_team({ title, subtitle, description, mail, linkedin, side, image }) {
+export default function About_team({ title, subtitle, description, mail, linkedin, side, image }) {
     return (
         <>
             {side === "left" ? (
@@ -11,7 +11,7 @@ export default function Home_team({ title, subtitle, description, mail, linkedin
                     <article className="right">
                         <h1>{title}</h1>
                         <h2>{subtitle}</h2>
-                        <p>{description}</p>
+                        <p dangerouslySetInnerHTML={{__html: description}} />
                         <article className="social">
                             {linkedin ? (
                                 <a href={linkedin} target="_blank" rel="noreferrer">
@@ -31,7 +31,7 @@ export default function Home_team({ title, subtitle, description, mail, linkedin
                     <article className="left">
                         <h1>{title}</h1>
                         <h2>{subtitle}</h2>
-                        <p>{description}</p>
+                        <p dangerouslySetInnerHTML={{__html: description}} />
                         <article className="social">
                             {linkedin ? (
                                 <a href={linkedin} target="_blank" rel="noreferrer">
@@ -54,7 +54,7 @@ export default function Home_team({ title, subtitle, description, mail, linkedin
     );
 }
 
-Home_team.propTypes = {
+About_team.propTypes = {
     title: PropTypes.string.isRequired,
     subtitle: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
