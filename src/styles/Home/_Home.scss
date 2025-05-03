@@ -108,12 +108,12 @@
       padding-bottom: 5%;
     }
 
-    p{
-      color: #000814;
-      font-size: 1.25rem;
-      font-weight: 100;
-      line-height: 1.5;
-    }
+  p{
+    color: #000814;
+    font-size: 1.5rem;
+    font-weight: 100;
+    line-height: 1.5;
+  }
 
     .service-card{
       width: 32%;
@@ -170,9 +170,10 @@
       padding-bottom: 2%;
     }
 
-    .menu-bottom{
-      .service-card{
-        width: 100%;
+  .menu-bottom{
+    padding-bottom: 5%;
+    .service-card{
+      width: 100%;
 
         h2{
           padding-bottom: 1.5%;
@@ -187,14 +188,167 @@
           }
         }
 
-        .service-bottom{
-          a{
-            padding: 1% 2%;
-          }
+      .service-bottom{
+        a{
+          padding: 1% 2%;
         }
       }
     }
   }
+}
+.banner-kiosk{
+  display: none;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  margin-top: 10%;
+  background-color: #031c43;
+  padding: 5% 0;
+}
+
+.banner-top {
+  text-align: center;
+}
+
+.banner-top h2 {
+  color: #FFC300;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.banner-bottom {
+  display: flex;
+  width: 120vw;
+  flex-direction: row;
+  gap: 2%;
+  padding: 0   10%;
+  justify-content: center;
+  padding-left: 12%;
+  padding-right: 12%;
+}
+
+.banner-card {
+  width: 25%;
+  height: 25vw;
+  background-color: #003566;
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-card h2 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+.banner-card p {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: left;
+}
+
+
+
+
+.banner-icon {
+  width: 70px;  /* Ajuste la largeur selon ton design */
+  height: 70px; /* Ajuste la hauteur selon ton design */
+  object-fit: contain; /* Garde les proportions de l'image */
+  color: #FFC300;
+  display: block;
+  margin-bottom: 5%;
+}
+
+/* Effet de surbrillance au hover */
+.banner-card:hover {
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.36);
+  background: rgba(0, 81, 156, 0.50);
+  box-shadow: 0 4px 27.7px 0 rgba(255, 255, 255, 0.25);
+}
+
+.follow-up-banner {
+  background: linear-gradient(120deg, #003566, #FFC300); /* Dégradé moderne */
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 12px;
+  margin: 50px 0;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+  position: relative;
+  overflow: hidden;
+}
+
+.follow-up-banner::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: rotate(45deg);
+  z-index: 0;
+}
+
+.follow-up-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
+}
+
+.follow-up-content h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: white;
+  padding-bottom: 2.5%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.follow-up-content p {
+  text-align: justify;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #e0e0e0; /* Texte gris clair */
+  line-height: 1.5;
+  max-width: 800px;
+  margin: 0 auto;
+  letter-spacing: 0.5px;
+}
+
+/* Animation de fade-in */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.follow-up-banner {
+  animation: fadeIn 1s ease-out;
+}
+
 
   .home-relation{
     .top{
