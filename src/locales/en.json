@@ -155,7 +155,15 @@
       "name": "_ga",
       "domain": "www.google.com",
       "expiration": "2 years",
-      "description": "Cookies used to analyze traffic within our website. These cookies are deleted if the user does not give consent."
+      "description": "Cookies used to measure website audience. They are only activated with the user's consent and are deleted if consent is not given."
+    },
+    "accept": "Accept",
+    "deny": "Deny",
+    "more": "More information",
+    "less": "Less information",
+    "banner": {
+      "title": "Your privacy is important to us!",
+      "description": "This website only uses essential cookies to remember your preferred language and to collect audience statistics."
     }
   }
 }

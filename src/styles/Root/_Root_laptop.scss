@@ -152,28 +152,13 @@
           font-size: 1.1rem;
           font-family: 'Eurostile-bold', sans-serif;
           border-radius: 5px;
-        }
-
-        button:hover{
-          cursor: pointer;
-        }
-
-        #accept{
           background-color: #003566;
           color: white;
         }
 
-        #decline{
-          background-color: #E1E1E1;
-          color: #383838;
-        }
-
-        #accept:hover{
+        button:hover{
+          cursor: pointer;
           background-color: #004E96;
-        }
-
-        #decline:hover{
-          background-color: #d1d1d1;
         }
       }
     }
