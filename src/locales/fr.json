@@ -155,7 +155,15 @@
       "name" : "_ga",
       "domain" : "www.google.com",
       "expiration" : "2 ans",
-      "description": "Cookies utilisés pour analyser le trafic au sein de notre site web. Ces cookies sont supprimés si l'utilisateur ne donne pas son consentement."
+      "description": "Cookies utilisés pour mesurer l’audience de notre site web. Ils ne sont activés qu’avec le consentement de l’utilisateur."
+    },
+    "accept" : "Accepter",
+    "deny" : "Refuser",
+    "more": "En savoir plus",
+    "less": "Réduire",
+    "banner": {
+      "title": "Votre vie privée est une priorité",
+      "description": "Ce site web utilise uniquement des cookies essentiels pour mémoriser votre langue par défaut et réaliser des statistiques d’audience."
     }
   }
 }

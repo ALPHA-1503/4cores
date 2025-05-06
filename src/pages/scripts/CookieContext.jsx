@@ -35,7 +35,7 @@ export function CookieProvider({ children }) {
             }
 
             // Exemple de configuration de cookie
-            //Cookie.set('nomDuCookie', 'valeur', {
+            //CookieBanner.set('nomDuCookie', 'valeur', {
             //    expires: 7, // expire dans 7 jours
             //    path: '/',
             //    secure: true,  // cookie sécurisé (HTTPS uniquement)
