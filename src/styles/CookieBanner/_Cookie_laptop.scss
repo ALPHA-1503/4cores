@@ -1,72 +1,134 @@
 @mixin Cookie_laptop{
-  .cookies{
-    .cookies-top{
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 69.2%, #ffffff 93.75%), url(/images/home-bg.png) lightgray -80px 0px / 111.111% 100% no-repeat;
-      background-position: center;
-      height:100vh;
-      flex-shrink: 0;
-      padding-top: 7.5%;
-      padding-left: 5%;
-
-      h1{
-        width: 60%;
-        color: #031C43;
-        font-size: 3.5rem;
-        padding-bottom: 2%;
+  .page {
+    .cookie-container {
+      display: none;
+      position: fixed;
+      z-index: 9998;
+      bottom: 0;
+      right: 0;
+      justify-content: flex-end;
+      align-items: flex-end;
+      &.active {
+        display: flex;
       }
 
-      h2{
-        color: #000814;
-        font-size:1.5rem;
-        font-weight: 600;
-      }
+      .cookie_banner {
+        width: 35%;
+        max-height: calc(100vh - 7rem);
+        position: fixed;
+        z-index: 9999;
+        background-color: white;
+        padding: 1.5% 2%;
+        border-radius: 5px;
+        box-shadow: 0 4px 39.5px 0 rgba(101, 101, 101, 0.25);
+        margin-bottom: 1%;
+        margin-right: 1%;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
 
-      p{
-        width: 60%;
-        font-size: 1.4rem;
-        color: #031C43;
-        padding-bottom: 5%;
-      }
+        .cookie-banner-top {
+          display: flex;
+          justify-content: flex-start;
 
-      .cookies-table {
-        width: 60%;
-        border-collapse: collapse;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-
-        table {
-          width: 100%;
-
-          thead {
-            background-color: #004E96;
-            color: #ffffff;
-            text-align: left;
-
-            th {
-              padding: 12px 15px;
-              font-weight: 500;
-              font-size: 1.1rem;
-            }
+          img {
+            width: 30%;
+            height: auto;
           }
 
-          tbody {
-            tr {
-              border-bottom: 1px solid #dddddd;
+          .language-buttons {
+            display: none;
+          }
+        }
 
-              &:nth-of-type(even) {
-                background-color: #f3f3f3;
+        .cookie-banner-mid {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+
+          h1{
+            color: #031C43;
+            font-size: 1.7rem;
+            padding-bottom: 0.5rem;
+          }
+
+          p{
+            font-size: 1.2rem;
+            color: #031C43;
+            padding-bottom: 5%;
+          }
+
+          .cookies-table {
+            overflow-x: auto;
+            border-collapse: collapse;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+            table {
+              table-layout: auto;
+              width: max-content;
+              max-width: 800px;
+
+              thead {
+                background-color: #004E96;
+                color: #ffffff;
+                text-align: left;
+                white-space: nowrap;
+
+                th {
+                  padding: 12px 15px;
+                  font-weight: 500;
+                  font-size: 1.1rem;
+                }
               }
 
-              &:last-of-type {
-                border-bottom: 2px solid #004E96;
-              }
+              tbody {
 
-              td {
-                padding: 12px 15px;
-                font-size: 1rem;
-                color: #000814;
+                tr {
+                  &:nth-of-type(even) {
+                    background-color: #f3f3f3;
+                  }
+                  &:nth-of-type(odd) {
+                    background-color: #fbfbfb;
+                  }
+
+                  td {
+                    padding: 12px 15px;
+                    font-size: 1rem;
+                    color: #000814;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .cookie_banner_btm{
+          display: flex;
+          gap: 1rem;
+          width: 100%;
+          justify-content: space-between;
+
+          button{
+            width: 100%;
+            padding: 3% 0;
+            border: none;
+            font-size: 1rem;
+            font-family: 'Eurostile-bold', sans-serif;
+            border-radius: 5px;
+            background-color: #003566;
+            color: white;
+            text-transform: uppercase;
+            &#cookies-more{
+              background-color: white;
+              color: #003566;
+              border: 1px solid #003566;
+            }
+            &:hover {
+              cursor: pointer;
+              background-color: #004E96;
+              &#cookies-more {
+                background-color: #eaeaea;
               }
             }
           }
