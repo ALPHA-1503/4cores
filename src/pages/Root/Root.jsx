@@ -6,7 +6,7 @@ import {I18nextProvider, useTranslation} from "react-i18next";
 import i18n from "i18next";
 
 export default function Root(){
-    const currentYear = new Date().getFullYear();  // TODO: display the current year in the footer
+    const currentYear = new Date().getFullYear();
     const { t } = useTranslation();
 
     return(
@@ -16,7 +16,7 @@ export default function Root(){
                 <section className="header">
                     <section className="left">
                         <NavLink to="/Home">
-                            <img src="/images/FULL_v1_white.png" alt="Avetech Logo"/>
+                            <img src="/images/FULL_v1_white.png" alt="4Cores Logo"/>
                         </NavLink>
                     </section>
                     <section className="middle">
@@ -75,7 +75,7 @@ export default function Root(){
                 <section className="footer">
                     <section className="top">
                         <article className="left">
-                            <img src="/images/FULL_v1_white.png" alt="Avetech Logo"/>
+                            <img src="/images/FULL_v1_white.png" alt="4Cores Logo"/>
                         </article>
                         <article className="right">
                             <NavLink to="/Contact" dangerouslySetInnerHTML={{__html: (t('contact'))}}/>
@@ -90,24 +90,22 @@ export default function Root(){
                             <p>TVA : BE1021.374.168</p>
                         </article>
                         <article className="right">
-                            <a href="mailto:arnaud.vaneenoo10@gmail.com">
-                                <img src="/images/courrier-b.png" alt="mail logo"/>
-                            </a>
-                            <img src="/images/linkedin.png" alt="linkedin logo"/>
+                            <a href="mailto:contact@4cores.be"><img src="/images/courrier-b.png" alt="mail logo"/></a>
+                            <a href="https://www.linkedin.com/company/4coresolutions"><img src="/images/linkedin.png" alt="linkedin logo"/></a>
                         </article>
                     </section>
                 </section>
                 <section className="footer-mobile">
                     <section className="top">
-                        <a href="mailto:arnaud.vaneenoo10@gmail.com"><img src="/images/courrier-b.png" alt="mail logo"/></a>
-                        <img src="/images/linkedin.png" alt="linkedin logo"/>
+                        <a href="mailto:contact@4cores.be"><img src="/images/courrier-b.png" alt="mail logo"/></a>
+                        <a href="https://www.linkedin.com/company/4coresolutions"><img src="/images/linkedin.png" alt="linkedin logo"/></a>
                         <NavLink to="/Contact" dangerouslySetInnerHTML={{__html: (t('contact'))}}/>
                     </section>
                     <section className="bottom">
                         <p dangerouslySetInnerHTML={{__html: (t('rootpage.general-conditions'))}} />
                         <NavLink to="/cookie" dangerouslySetInnerHTML={{__html: (t('rootpage.cookies-policy'))}} />
                         <p>TVA : BE1021.374.168</p>
-                        <img src="/images/FULL_v1_white.png" alt="Avetech Logo"/>
+                        <img src="/images/FULL_v1_white.png" alt="4Cores Logo"/>
                         <p dangerouslySetInnerHTML={{__html: (t('rootpage.4cores'))}} />
                     </section>
                 </section>

@@ -5,16 +5,16 @@
 @use "./styles/Not_found" as Not_found;
 @use "./styles/Soon" as Soon;
 @use "./styles/About" as About;
-@use "./styles/Cookie" as Cookie;
+@use "./styles/CookieBanner" as Cookie;
 
 @font-face {
   font-family: 'Oxanium-medium';
-  src: url('/public/fonts/Oxanium/Oxanium-Medium.ttf') format('truetype');
+  src: url('/fonts/Oxanium/Oxanium-Medium.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Oxanium-light';
-  src: url('/public/fonts/Oxanium/Oxanium-Light.ttf') format('truetype');
+  src: url('/fonts/Oxanium/Oxanium-Light.ttf') format('truetype');
 }
 
 @media screen and (min-width: 1601px) {
