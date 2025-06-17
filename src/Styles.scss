@@ -6,6 +6,7 @@
 @use "./styles/Soon" as Soon;
 @use "./styles/About" as About;
 @use "./styles/CookieBanner" as Cookie;
+@use "./styles/Projects" as Projects;
 
 @font-face {
   font-family: "Bayon", sans-serif;
@@ -21,6 +22,7 @@
   @include Soon.Soon;
   @include About.About;
   @include Cookie.Cookie;
+  @include Projects.Projects;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1600px) {

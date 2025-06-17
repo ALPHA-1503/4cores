@@ -12,6 +12,7 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import en from "./locales/en.json";
 import fr from "./locales/fr.json";
 import i18n from "i18next";
+import Projects from "./pages/Projects/Projects.jsx";
 
 i18n
     .use(LanguageDetector)
@@ -38,6 +39,7 @@ function App() {
                 { path: 'Contact', element: <Contact /> },
                 { path: 'Soon', element: <Soon /> },
                 { path: 'About', element: <About /> },
+                { path: 'Projects', element: <Projects /> },
                 { path: '*', element: <Not_found /> },
             ],
         },

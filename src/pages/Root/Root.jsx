@@ -25,7 +25,7 @@ export default function Root(){
                         <NavLink to="/Soon" dangerouslySetInnerHTML={{__html: (t('projects'))}}/>
                     </section>
                     <section className="right">
-                        <NavLink to="/Contact" dangerouslySetInnerHTML={{__html: (t('contact'))}}/>
+                        <NavLink className="fancy-button" to="/Contact" dangerouslySetInnerHTML={{__html: (t('contact'))}}/>
                         <LanguageSwitcher/>
                     </section>
                 </section>
