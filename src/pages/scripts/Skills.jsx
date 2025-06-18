@@ -2,7 +2,7 @@ import {useTranslation} from "react-i18next";
 
 export default function Skills(){
     const { t } = useTranslation();
-    const images = ["cisco.png","ubiquiti.png","PaloAlto.png","proxmox.png",
+    const images = ["cisco.png","ubiquiti.png","PaloAlto.png","proxmox.png","Pfsense.png",
         "k8s.svg","ansible.png","docker.png","vmware.png",
         "apple.png","android.svg",
         "php.png","js.png","typescript.png","react.png","sass.png",
@@ -19,7 +19,7 @@ export default function Skills(){
             <section className="skills-content">
                 {images.map((image, index) => {
                     return (
-                        <img className="images" key={index} src={`/images/${image}`} alt={`logo ${image}`}/>
+                        <img className="images" key={index} src={`/images/skills/${image}`} alt={`logo ${image}`} title={image.split('.')[0]}/>
                     )
                 })}
             </section>
