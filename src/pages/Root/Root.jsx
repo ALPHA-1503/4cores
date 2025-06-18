@@ -90,8 +90,8 @@ export default function Root(){
                             <p>TVA : BE1021.374.168</p>
                         </article>
                         <article className="right">
-                            <a id="noblue" href="mailto:contact@4cores.be"><img src="/images/courrier-b.png" alt="mail logo"/></a>
-                            <a id="noblue" href="https://www.linkedin.com/company/4coresolutions"><img src="/images/linkedin.png" alt="linkedin logo"/></a>
+                            <a id="noblue" href="mailto:contact@4cores.be"><img src="/images/courrier-b.png" alt="mail logo" title="Email"/></a>
+                            <a id="noblue" href="https://www.linkedin.com/company/4coresolutions"><img src="/images/linkedin.png" alt="linkedin logo" title="LinkedIn"/></a>
                         </article>
                     </section>
                 </section>

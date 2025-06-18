@@ -15,12 +15,12 @@ export default function About_team({ title, subtitle, description, mail, linkedi
                         <article className="social">
                             {linkedin ? (
                                 <a href={linkedin} target="_blank" rel="noreferrer">
-                                    <img src="/images/linkedin.png" alt="linkedin" />
+                                    <img src="/images/linkedin.png" alt="linkedin" title="LinkedIn"/>
                                 </a>
                             ) : null}
                             {mail ? (
                                 <a href={`mailto:${mail}`} target="_blank" rel="noreferrer">
-                                    <img src="/images/courrier-b.png" alt="mail"/>
+                                    <img src="/images/courrier-b.png" alt="mail" title="Email"/>
                                 </a>
                             ) : null}
                         </article>
@@ -35,12 +35,12 @@ export default function About_team({ title, subtitle, description, mail, linkedi
                         <article className="social">
                             {linkedin ? (
                                 <a href={linkedin} target="_blank" rel="noreferrer">
-                                    <img src="/images/linkedin.png" alt="linkedin" />
+                                    <img src="/images/linkedin.png" alt="linkedin" title="LinkedIn"/>
                                 </a>
                             ) : null}
                             {mail ? (
                                 <a href={`mailto:${mail}`} target="_blank" rel="noreferrer">
-                                    <img id="mail" src="/images/courrier-b.png" alt="mail"/>
+                                    <img id="mail" src="/images/courrier-b.png" alt="mail" title="Email"/>
                                 </a>
                             ) : null}
                         </article>
