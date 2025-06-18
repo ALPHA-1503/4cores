@@ -2,14 +2,14 @@ import {useTranslation} from "react-i18next";
 
 export default function Skills(){
     const { t } = useTranslation();
-    const images = ["cisco.png","ubiquiti.png","PaloAlto.png","proxmox.png","Pfsense.png",
-        "k8s.svg","ansible.png","docker.png","vmware.png",
-        "apple.png","android.svg",
-        "php.png","js.png","typescript.png","react.png","sass.png",
-        "python.png","java.png","sql.png",
-        "linux.png","windows-server.png",
-        "rpi.png","arduino.png",
-        "figma.png"]
+    const images = ["Cisco.png","Ubiquiti.png","PaloAlto.png","Proxmox.png","Pfsense.png",
+        "Kubernetes.svg","Ansible.png","Docker.png","VMware.png",
+        "Apple.png","Android.svg",
+        "PHP.png","JavaScript.png","TypeScript.png","React.png","Sass.png",
+        "Python.png","Java.png","SQL.png",
+        "Linux.png","Windows Server.png",
+        "Raspberry PI.png","Arduino.png",
+        "Figma.png"]
 
     return(
         <section className="home-skills">
