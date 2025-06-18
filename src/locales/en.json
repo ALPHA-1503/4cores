@@ -86,6 +86,23 @@
       }
     }
   },
+  "projectspage": {
+    "title": "Projects",
+    "description-pt1": "Throughout our projects, we have had the opportunity to collaborate with companies and organizations with diverse needs. Each achievement is the result of attentive listening, a tailored approach, and the implementation of our technical skills.",
+    "description-pt2": "Discover below some of our collaborations, which illustrate our ability to turn ideas into concrete solutions.",
+    "belgium-airsoft": {
+      "title": "BELGIUM AIRSOFT",
+      "description": "The Belgium Airsoft project was initiated by one of the founders of 4cores. The platform offers advice, equipment comparisons, and a practical guide to help both beginners and experienced players discover all aspects of airsoft safely."
+    },
+    "eurogreen": {
+      "title": "EUROGREEN",
+      "description": "Eurogreen is a company specialized in public works, particularly in the creation and development of green spaces. Founded in 1990 and based in Sombreffe, the company has a team of professional gardeners, a design office, a technical department with a landscape architect, and a mechanical workshop."
+    },
+    "eyup": {
+      "title": "PLAFONNAGE EYUP OZDIL",
+      "description": "This project concerns the services offered by Plafonnage Eyup Ozdil SRL. The company specializes in interior plastering services for new constructions and renovations, the installation of partition walls in plasterboard or insulating materials, and the application of coatings."
+    }
+  },
   "soonpage": {
     "title": "Just a bit more ✨ <span id=\"blue\">magic</span> ✨ to add... Stay connected!",
     "redirect": "Home"
@@ -165,5 +182,8 @@
       "title": "Your privacy is important to us!",
       "description": "This website only uses essential cookies to remember your preferred language and to collect audience statistics."
     }
-  }
+  },
+  "close" : "Close",
+  "consult" : "Consult",
+  "more": "More information"
 }

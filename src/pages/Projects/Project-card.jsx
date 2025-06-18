@@ -1,9 +1,12 @@
 import { useRef, useState, useEffect } from "react";
+import {useTranslation} from "react-i18next";
 
 export default function ProjectCard({ image, title, description, link }) {
     const [expanded, setExpanded] = useState(false);
     const [showReadMore, setShowReadMore] = useState(false);
     const descRef = useRef(null);
+    const { t } = useTranslation();
+
 
     useEffect(() => {
         if (descRef.current) {
@@ -22,16 +25,16 @@ export default function ProjectCard({ image, title, description, link }) {
             <section className="buttons-container">
                 {showReadMore && !expanded && (
                     <button className="fancy-button" onClick={() => setExpanded(true)}>
-                        En savoir plus
+                        {t('more')}
                     </button>
                 )}
                 {expanded && (
                     <button className="fancy-button" onClick={() => setExpanded(false)}>
-                        Fermer
+                        {t('close')}
                     </button>
                 )}
                 <a href={link} target="_blank" className="fancy-button" rel="noopener noreferrer">
-                    Consulter
+                    {t('consult')}
                 </a>
             </section>
         </section>
