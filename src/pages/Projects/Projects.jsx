@@ -1,4 +1,7 @@
+import React, { useState } from "react";
 import ProjectCard from "./Project-card.jsx";
+import { Pagination } from "antd";
+import "antd/dist/reset.css";
 
 export default function Projects() {
 
@@ -31,6 +34,11 @@ export default function Projects() {
         }
     ]
 
+    const [current, setCurrent] = useState(1);
+    const pageSize = 3;
+
+    const paginatedProjects = projects.slice((current - 1) * pageSize, current * pageSize);
+
     return(
         <section className="projects">
             <section className="projects-top">
@@ -43,8 +51,25 @@ export default function Projects() {
                     transformer des idées en solutions concrètes.</p>
             </section>
             <section className="projects-bottom">
-                {projects.map(p => <ProjectCard image={p.image} title={p.title} description={p.description} link={p.link} />)}
+                {paginatedProjects.map((p, idx) => (
+                    <ProjectCard
+                        key={p.title + idx}
+                        image={p.image}
+                        title={p.title}
+                        description={p.description}
+                        link={p.link}
+                    />
+                ))}
             </section>
+            <div style={{ display: "flex", justifyContent: "center", marginTop: 24 }}>
+                <Pagination
+                    current={current}
+                    pageSize={pageSize}
+                    total={projects.length}
+                    onChange={setCurrent}
+                    showSizeChanger={false}
+                />
+            </div>
         </section>
     );
 }

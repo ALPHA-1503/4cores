@@ -1,9 +1,11 @@
-@mixin Projects{
+@mixin Projects_phone{
   .projects{
     width: 100%;
+    padding-bottom: 30%;
     .projects-top{
       display: flex;
       flex-direction: column;
+      align-items: center;
       width: 100%;
       background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 69.2%, #ffffff 93.75%), url(/images/home-bg.png) lightgray -80px 0px / 111.111% 100% no-repeat;
       background-position: center;
@@ -11,51 +13,53 @@
       flex-shrink: 0;
       padding-top: 7.5%;
       transition: ease-in 0.1s;
-      padding-left: 5%;
 
       h1{
         width: 60%;
         color: #031C43;
-        font-size: 3.5rem;
+        font-size: 2.25rem;
+        text-align: center;
       }
 
       h2{
         font-family: "Oxanium", sans-serif;
         color: #000814;
-        font-size:2rem;
+        font-size:1.5rem;
         font-weight: 600;
       }
 
       p{
-        width: 60%;
-        font-size: 1.4rem;
+        width: 90%;
+        font-size: 1.1rem;
         color: #031C43;
+        text-align: center;
       }
     }
 
     .projects-bottom{
       width: 100%;
-      margin-top: -45vh;
+      margin-top: -50vh;
       display: flex;
-      flex-wrap: wrap;
-      gap: 2%;
-      padding: 10% 10% 10%;
+      flex-direction: column;
+      padding: 0 2% 5% 2% ;
 
       .project-card{
-        width: 25vw;
-        min-height: 56vh;
+        width: 100%;
+        min-height: 25vh;
+        max-height: 60vh;
         height: fit-content;
         overflow: hidden;
         position: relative;
         border-radius: 15px;
         background: #f3f3f3;
         margin-top: 2%;
-        padding: 0.5% 0.5% 1.5% 0.5%;
+        padding: 2% 2% 1.5% 2%;
+        margin-bottom: 5%;
 
         img{
           width: 100%;
           border-radius: 10px;
-          height: 25vh;
+          height: 20vh;
           object-fit: cover;
         }
 
@@ -66,11 +70,10 @@
         }
 
         p{
-          max-height: 15vh;
+          max-height: 10vh;
           overflow: hidden;
           text-overflow: ellipsis;
-          padding: 0 0 0 2%;
-          width: 90%;
+          width: 100%;
           font-size: 1.15rem;
           transition: max-height 0.3s;
         }
@@ -107,7 +110,7 @@
         align-items: flex-start;
 
         p {
-          max-height: 15vh;
+          max-height: 10vh;
           overflow: hidden;
           text-overflow: ellipsis;
           font-size: 1.15rem;

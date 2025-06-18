@@ -32,6 +32,7 @@
   @include Cookie.Cookie_laptop;
   @include Contact.Contact_laptop;
   @include Soon.Soon_laptop;
+  @include Projects.Projects_laptop;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -42,6 +43,7 @@
   @include Contact.Contact_phone;
   @include About.About_phone;
   @include Cookie.Cookie_phone;
+  @include Projects.Projects_tablet;
 }
 
 @media screen and (max-width: 767px) {
@@ -52,4 +54,5 @@
   @include Contact.Contact_phone;
   @include About.About_phone;
   @include Cookie.Cookie_phone;
+  @include Projects.Projects_phone;
 }
