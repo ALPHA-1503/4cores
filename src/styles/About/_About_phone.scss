@@ -49,9 +49,11 @@
       h1{
         color: #FFC300;
         text-align: center;
-        font-size: 2rem;
-        font-weight: 800;
+        font-size: 3rem;
+        font-weight: 600;
         padding-bottom: 2%;
+        font-family: 'bayon', sans-serif;
+        padding-top: 5%;
       }
     }
 
@@ -64,6 +66,7 @@
 
     .team-mobile{
       padding: 10%;
+      padding-top: 5%;
 
       .top{
         display: flex;

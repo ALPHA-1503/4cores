@@ -63,7 +63,7 @@
     "top-description1": "Nous sommes une association de quatre étudiants indépendants, actuellement en première année de Master en architecture des systèmes informatiques. Diplômés en 2024 d’un Bachelier en technologie de l’informatique à l’Hénallux, nous unissons nos compétences et notre passion pour offrir des solutions adaptées <span class='blue'>à vos besoins.</span>",
     "top-description2": "Grâce à nos expertises complémentaires, nous couvrons divers domaines : réseau, développement web, IoT et administration système (Linux et Windows). Cette synergie nous permet d’accompagner votre entreprise dans ses défis technologiques et d’optimiser ses performances avec des solutions innovantes.",
     "team": {
-      "title": "Notre équipe",
+      "title": "Notre equipe",
       "nini": {
         "name": "Jaunart Noé",
         "role": "Etudiant Indépendant & Co-Fondateur",
