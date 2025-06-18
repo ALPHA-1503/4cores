@@ -22,10 +22,10 @@ export default function Root(){
                     <section className="middle">
                         <NavLink to="/Home" dangerouslySetInnerHTML={{__html: (t('home'))}}/>
                         <NavLink to="/About" dangerouslySetInnerHTML={{__html: (t('about'))}}/>
-                        <NavLink to="/Soon" dangerouslySetInnerHTML={{__html: (t('projects'))}}/>
+                        <NavLink to="/Projects" dangerouslySetInnerHTML={{__html: (t('projects'))}}/>
                     </section>
                     <section className="right">
-                        <NavLink to="/Contact" dangerouslySetInnerHTML={{__html: (t('contact'))}}/>
+                        <NavLink className="fancy-button" to="/Contact" dangerouslySetInnerHTML={{__html: (t('contact'))}}/>
                         <LanguageSwitcher/>
                     </section>
                 </section>
@@ -47,7 +47,7 @@ export default function Root(){
                                 <h1>A propos</h1>
                             </article>
                         </NavLink>
-                        <NavLink to="/Soon" className={({isActive}) => isActive ? "nav-item active" : "nav-item"}>
+                        <NavLink to="/Projects" className={({isActive}) => isActive ? "nav-item active" : "nav-item"}>
                             <article className="top">
                                 <img src="/images/code.svg" alt="home icon"/>
                             </article>
@@ -90,15 +90,15 @@ export default function Root(){
                             <p>TVA : BE1021.374.168</p>
                         </article>
                         <article className="right">
-                            <a href="mailto:contact@4cores.be"><img src="/images/courrier-b.png" alt="mail logo"/></a>
-                            <a href="https://www.linkedin.com/company/4coresolutions"><img src="/images/linkedin.png" alt="linkedin logo"/></a>
+                            <a id="noblue" href="mailto:contact@4cores.be"><img src="/images/courrier-b.png" alt="mail logo"/></a>
+                            <a id="noblue" href="https://www.linkedin.com/company/4coresolutions"><img src="/images/linkedin.png" alt="linkedin logo"/></a>
                         </article>
                     </section>
                 </section>
                 <section className="footer-mobile">
                     <section className="top">
-                        <a href="mailto:contact@4cores.be"><img src="/images/courrier-b.png" alt="mail logo"/></a>
-                        <a href="https://www.linkedin.com/company/4coresolutions"><img src="/images/linkedin.png" alt="linkedin logo"/></a>
+                        <a id="noblue" href="mailto:contact@4cores.be"><img src="/images/courrier-b.png" alt="mail logo"/></a>
+                        <a id="noblue" href="https://www.linkedin.com/company/4coresolutions"><img src="/images/linkedin.png" alt="linkedin logo"/></a>
                         <NavLink to="/Contact" dangerouslySetInnerHTML={{__html: (t('contact'))}}/>
                     </section>
                     <section className="bottom">

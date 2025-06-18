@@ -80,8 +80,8 @@ export default function About(){
         description: t('aboutpage.team.sac.description'),
         mail: "arnaud.vaneenoo10@gmail.com",
         linkedin: "https://www.linkedin.com/in/arnaud-van-eenoo-986bb2275/",
-        image:"/images/me_team.png",
-        image_mobile:"/images/me.png"
+        image:"/images/arnaud_team.png",
+        image_mobile:"/images/arnaud.jpg"
     }
 
     return(

@@ -63,7 +63,7 @@
     "top-description1": "Nous sommes une association de quatre étudiants indépendants, actuellement en première année de Master en architecture des systèmes informatiques. Diplômés en 2024 d’un Bachelier en technologie de l’informatique à l’Hénallux, nous unissons nos compétences et notre passion pour offrir des solutions adaptées <span class='blue'>à vos besoins.</span>",
     "top-description2": "Grâce à nos expertises complémentaires, nous couvrons divers domaines : réseau, développement web, IoT et administration système (Linux et Windows). Cette synergie nous permet d’accompagner votre entreprise dans ses défis technologiques et d’optimiser ses performances avec des solutions innovantes.",
     "team": {
-      "title": "Notre équipe",
+      "title": "Notre equipe",
       "nini": {
         "name": "Jaunart Noé",
         "role": "Etudiant Indépendant & Co-Fondateur",
@@ -84,6 +84,23 @@
         "role": "Etudiant Indépendant & Co-Fondateur",
         "description": "Passionné d’informatique depuis toujours, je suis animé par l’envie de contribuer activement au monde digital qui nous entoure. Actuellement en Master en Architecture des Systèmes Informatiques faisant suite à l'obtention d'un Bachelier en Technologie de l'Informatique, j'ai développé une solide expertise dans la conception et l'optimisation des infrastructures numériques. Curieux et motivé, je suis constamment en quête de nouveaux défis pour innover, apporter des solutions efficaces et sécuriser notre emprunte digitale."
       }
+    }
+  },
+  "projectspage": {
+    "title" : "Réalisations",
+    "description-pt1" : "Au fil de nos projets, nous avons eu l’opportunité de collaborer avec des entreprises et organisations aux besoins variés. Chaque réalisation est le fruit d’une écoute attentive, d’une approche sur mesure et de la mise en œuvre de nos compétences techniques.",
+    "description-pt2" : "Découvrez ci-dessous quelques-unes de nos collaborations, qui illustrent notre capacité à transformer des idées en solutions concrètes.",
+    "belgium-airsoft" : {
+      "title" : "BELGIUM AIRSOFT",
+      "description" : "Le projet Belgium Airsoft est un projet initié par un des fondateurs de 4cores. La plateforme offre des conseils, des comparaisons d'équipements et un guide pratique pour aider les débutants et les joueurs expérimentés à découvrir tous les aspects de l'airsoft en toute sécurité."
+    },
+    "eurogreen" : {
+      "title" : "EUROGREEN",
+      "description" : "Eurogreen est une entreprise spécialisée dans les travaux publics, plus particulièrement dans la création et l'aménagement d'espaces verts. Fondée en 1990 et basée à Sombreffe, l'entreprise dispose d'une équipe de jardiniers professionnels, d'un bureau d'études, d'un service technique avec un architecte-paysagiste, et d'un atelier mécanique."
+    },
+    "eyup" : {
+      "title" : "PLAFONNAGE EYUP OZDIL",
+      "description" : "Ce projet concerne les services offerts par Plafonnage Eyup Ozdil SRL. L'entreprise est spécialisée dans les services de plafonnage intérieur pour les nouvelles constructions et les rénovations, l'installation de cloisons en plaques de plâtre ou en matériaux isolants, et l'application de revêtements."
     }
   },
   "soonpage": {
@@ -165,5 +182,8 @@
       "title": "Votre vie privée est une priorité",
       "description": "Ce site web utilise uniquement des cookies essentiels pour mémoriser votre langue par défaut et réaliser des statistiques d’audience."
     }
-  }
+  },
+  "more" : "En savoir plus",
+  "close" : "Fermer",
+  "consult" : "Consulter"
 }
