@@ -1,0 +1,167 @@
+@mixin Projects_phone{
+  .projects{
+    width: 100%;
+    padding-bottom: 30%;
+    .projects-top{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 69.2%, #ffffff 93.75%), url(/images/home-bg.png) lightgray -80px 0px / 111.111% 100% no-repeat;
+      background-position: center;
+      height:100vh;
+      flex-shrink: 0;
+      padding-top: 7.5%;
+      transition: ease-in 0.1s;
+
+      h1{
+        width: 60%;
+        color: #031C43;
+        font-size: 2.25rem;
+        text-align: center;
+      }
+
+      h2{
+        font-family: "Oxanium", sans-serif;
+        color: #000814;
+        font-size:1.5rem;
+        font-weight: 600;
+      }
+
+      p{
+        width: 90%;
+        font-size: 1.1rem;
+        color: #031C43;
+        text-align: center;
+      }
+    }
+
+    .projects-bottom{
+      width: 100%;
+      margin-top: -50vh;
+      display: flex;
+      flex-direction: column;
+      padding: 0 2% 5% 2% ;
+
+      .project-card{
+        width: 100%;
+        min-height: 25vh;
+        max-height: 60vh;
+        height: fit-content;
+        overflow: hidden;
+        position: relative;
+        border-radius: 15px;
+        background: #f3f3f3;
+        margin-top: 2%;
+        padding: 2% 2% 1.5% 2%;
+        margin-bottom: 5%;
+
+        img{
+          width: 100%;
+          border-radius: 10px;
+          height: 20vh;
+          object-fit: cover;
+        }
+
+        h1{
+          padding: 2.5% 0 2% 2%;
+          font-size: 1.5rem;
+          font-family: "Oxanium", sans-serif;
+        }
+
+        p{
+          max-height: 10vh;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          width: 100%;
+          font-size: 1.15rem;
+          transition: max-height 0.3s;
+        }
+
+        &.expanded p {
+          max-height: none;
+          overflow: visible;
+        }
+
+        .read-more-btn {
+          position: absolute;
+          bottom: 10px;
+          left: 2%;
+          background: none;
+          border: none;
+          color: #007bff;
+          cursor: pointer;
+          font-size: 1rem;
+          padding: 0;
+        }
+
+        a{
+          margin-left: 2%;
+          width: fit-content;
+        }
+      }
+
+      .description-container {
+        position: relative;
+        width: 90%;
+        margin: 0 0 6% 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        p {
+          max-height: 10vh;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          font-size: 1.15rem;
+          transition: max-height 0.3s;
+          position: relative;
+        }
+
+        p::after {
+          content: "";
+          display: block;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          height: 2.5em;
+          pointer-events: none;
+          background: linear-gradient(to bottom, rgba(228,228,228,0) 0%, #f3f3f3 100%);
+          // Adapter la couleur de fond si besoin
+        }
+
+        .project-card.expanded p::after {
+          display: none;
+        }
+
+        .read-more-btn,
+        .close-btn {
+          background: #fff;
+          border: 1px solid #007bff;
+          color: #007bff;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 1rem;
+          padding: 0.2rem 0.8rem;
+          margin-bottom: 0.5rem;
+          margin-top: 0.2rem;
+          transition: background 0.2s, color 0.2s;
+          &:hover {
+            background: #007bff;
+            color: #fff;
+          }
+        }
+      }
+
+      .project-card.expanded .description-container p::after {
+        display: none;
+      }
+
+      &.expanded .description-container p {
+        max-height: none;
+        overflow: visible;
+      }
+    }
+  }
+}

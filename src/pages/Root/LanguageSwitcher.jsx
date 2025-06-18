@@ -11,10 +11,10 @@ const LanguageSwitcher = () => {
     return (
         <section className="language-buttons">
             <button className="flags-button" onClick={() => changeLanguage('en')}>
-                <img className="flags" src="/flags/en.svg" alt="English" />
+                <img className="flags" src="/flags/en.svg" alt="English" title="English" />
             </button>
             <button className="flags-button" onClick={() => changeLanguage('fr')}>
-                <img className="flags" src="/flags/fr.svg" alt="French" />
+                <img className="flags" src="/flags/fr.svg" alt="French" title="Français"/>
             </button>
         </section>
     );
