@@ -237,11 +237,11 @@ export default function Contact() {
         setIsLoading(true);
 
         try {
-            const notificationResponse = await fetch("https://mailapi.4cores.be/send-email", {
+            const notificationResponse = await fetch("/api/send-email", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
-                    recipientEmail: "arnaud.vaneenoo10@gmail.com",
+                    recipientEmail: "contact@4cores.be",
                     recipientName: "4CORES",
                     subject: `Nouveau message de contact de ${formData.name} ${formData.surname}`,
                     text: createNotificationEmail(formData),
@@ -263,7 +263,7 @@ export default function Contact() {
                 throw new Error(`${t('contactpage.email-content.sending-error')} ${notificationResult.error}`);
             }
 
-            const confirmationResponse = await fetch("https://mailapi.4cores.be/send-email", {
+            const confirmationResponse = await fetch("/api/send-email", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
@@ -274,8 +274,6 @@ export default function Contact() {
                     isHtml: true
                 }),
             });
-
-            const confirmationResult = await confirmationResponse.json();
 
             if (!confirmationResponse.ok) {
                 const errorText = await confirmationResponse.text();
