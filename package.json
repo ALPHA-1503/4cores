@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "antd": "^5.26.1",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
     "hamburger-react": "^2.5.2",
     "i18next": "^24.2.3",
     "i18next-browser-languagedetector": "^8.0.4",
