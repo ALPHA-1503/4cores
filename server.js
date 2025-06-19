@@ -9,6 +9,8 @@ const port = process.env.PORT || 3000;
 
 app.use(express.json());
 
+app.use(express.static(path.join(__dirname, 'dist')));
+
 const mailjetClient = mailjet.apiConnect(
     process.env.MJ_APIKEY_PUBLIC,
     process.env.MJ_APIKEY_PRIVATE
@@ -43,6 +45,10 @@ app.post('/api/send-email', async (req, res) => {
     } catch (error) {
         res.status(500).json({ success: false, error: error.message });
     }
+});
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
 
 app.listen(port, () => {
