@@ -4,15 +4,16 @@
   "version": "0.1.0",
   "type": "module",
   "main": "server.js",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "packageManager" : "pnpm@latest",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "start": "node server.js"
-  },
-  "engines": {
-    "node": ">=20.0.0"
   },
   "dependencies": {
     "antd": "^5.26.1",
