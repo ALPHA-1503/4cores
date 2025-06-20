@@ -11,6 +11,9 @@
     "preview": "vite preview",
     "start": "node server.js"
   },
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "dependencies": {
     "antd": "^5.26.1",
     "dotenv": "^16.5.0",
