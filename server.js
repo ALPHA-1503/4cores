@@ -3,6 +3,7 @@ import mailjet from 'node-mailjet';
 import dotenv from 'dotenv';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import process from 'node:process';
 
 dotenv.config();
 
