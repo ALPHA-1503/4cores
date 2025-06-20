@@ -1,13 +1,20 @@
 import express from 'express';
 import mailjet from 'node-mailjet';
 import dotenv from 'dotenv';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
 dotenv.config();
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const app = express();
 const port = process.env.PORT || 3000;
 
 app.use(express.json());
+
+app.use(express.static(path.join(__dirname, 'dist')));
 
 const mailjetClient = mailjet.apiConnect(
     process.env.MJ_APIKEY_PUBLIC,
@@ -43,6 +50,10 @@ app.post('/api/send-email', async (req, res) => {
     } catch (error) {
         res.status(500).json({ success: false, error: error.message });
     }
+});
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
 
 app.listen(port, () => {
