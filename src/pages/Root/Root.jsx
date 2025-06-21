@@ -66,8 +66,6 @@ export default function Root(){
                     </nav>
                 </section>
 
-                <CookieBanner/>
-
                 <div className="content">
                     <Outlet/>
                 </div>
