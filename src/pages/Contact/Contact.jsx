@@ -60,6 +60,7 @@ const ContactForm = ({ formData, handleChange, handleSubmit, isLoading }) => {
                         placeholder="Dupont"
                         required
                         onChange={handleChange}
+                        value={formData.name}
                         disabled={isLoading}
                     />
                 </article>
@@ -71,6 +72,7 @@ const ContactForm = ({ formData, handleChange, handleSubmit, isLoading }) => {
                         placeholder="Jean"
                         required
                         onChange={handleChange}
+                        value={formData.surname}
                         disabled={isLoading}
                     />
                 </article>
@@ -84,6 +86,7 @@ const ContactForm = ({ formData, handleChange, handleSubmit, isLoading }) => {
                     placeholder="jeandupont@example.com"
                     required
                     onChange={handleChange}
+                    value={formData.email}
                     disabled={isLoading}
                 />
             </section>
@@ -94,6 +97,7 @@ const ContactForm = ({ formData, handleChange, handleSubmit, isLoading }) => {
                     name="company"
                     placeholder={t('contactpage.company-placeholder')}
                     onChange={handleChange}
+                    value={formData.company}
                     disabled={isLoading}
                 />
             </section>
@@ -111,6 +115,7 @@ const ContactForm = ({ formData, handleChange, handleSubmit, isLoading }) => {
                                     name={service}
                                     value={service}
                                     onChange={handleChange}
+                                    checked={formData.services.includes(service)}
                                     disabled={isLoading}
                                 />
                                 <label htmlFor={id}>{service}</label>
@@ -127,6 +132,7 @@ const ContactForm = ({ formData, handleChange, handleSubmit, isLoading }) => {
                     placeholder={t('contactpage.comments-placeholder')}
                     required
                     onChange={handleChange}
+                    value={formData.message}
                     disabled={isLoading}
                 ></textarea>
             </section>
