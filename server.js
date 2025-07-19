@@ -54,9 +54,7 @@ app.post('/api/send-email', async (req, res) => {
 });
 
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'dist', 'index.html'));
-});
-
-app.listen(port, () => {
-    console.log(`Server running on port ${port}`);
+    const indexPath = path.join(__dirname, 'dist', 'index.html');
+    console.log('Attempting to send index.html from:', indexPath); // <-- Add this
+    res.sendFile(indexPath);
 });
