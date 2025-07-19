@@ -54,11 +54,6 @@ app.post('/api/send-email', async (req, res) => {
     }
 });
 
-const PORT =  3000;
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-});
-
 export default app;
 
 //app.get('*', (req, res) => {
