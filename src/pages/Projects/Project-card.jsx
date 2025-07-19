@@ -1,11 +1,11 @@
-import { useRef, useState, useEffect } from "react";
+import {useEffect, useRef, useState} from "react";
 import {useTranslation} from "react-i18next";
 
 export default function ProjectCard({ image, title, description, link }) {
     const [expanded, setExpanded] = useState(false);
     const [showReadMore, setShowReadMore] = useState(false);
     const descRef = useRef(null);
-    const { t } = useTranslation();
+    const {t} = useTranslation();
 
 
     useEffect(() => {
@@ -15,7 +15,7 @@ export default function ProjectCard({ image, title, description, link }) {
     }, [description]);
 
     return (
-        <section className={`project-card${expanded ? " expanded" : ""}`}>
+        <section className={`project-card ${expanded ? "expanded" : ""}`}>
             <img src={image} alt={title} />
             <h1>{title}</h1>
             <div className="description-container">
@@ -33,9 +33,9 @@ export default function ProjectCard({ image, title, description, link }) {
                         {t('close')}
                     </button>
                 )}
-                <a href={link} target="_blank" className="fancy-button" rel="noopener noreferrer">
+                <button className="fancy-button" onClick={() => window.open(link, "_blank")}>
                     {t('consult')}
-                </a>
+                </button>
             </section>
         </section>
     );

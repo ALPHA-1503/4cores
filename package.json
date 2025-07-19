@@ -7,7 +7,7 @@
   "engines": {
     "node": ">=20.0.0"
   },
-  "packageManager" : "pnpm@10.12.1",
+  "packageManager": "pnpm@10.12.1",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -30,7 +30,8 @@
     "react-i18next": "^15.4.1",
     "react-router-dom": "^7.2.0",
     "simplebar-react": "^3.3.0",
-    "swiper": "^11.2.5"
+    "swiper": "^11.2.5",
+    "tarteaucitronjs": "^1.21.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",

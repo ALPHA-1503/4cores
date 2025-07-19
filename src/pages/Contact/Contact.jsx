@@ -293,11 +293,11 @@ export default function Contact() {
 
     return (
         <section className="Contact">
-            <ContactLeftSection />
+            <ContactLeftSection/>
             <section className="contact-right">
-                {isLoading && <LoadingSpinner />}
+                {isLoading && <LoadingSpinner/>}
                 {submitSuccess ? (
-                    <SuccessMessage formData={formData} />
+                    <SuccessMessage formData={formData}/>
                 ) : (
                     <ContactForm
                         formData={formData}

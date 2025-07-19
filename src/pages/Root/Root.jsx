@@ -1,6 +1,5 @@
-import { NavLink, Outlet } from 'react-router-dom';
+import {NavLink, Outlet} from 'react-router-dom';
 import ScrollToTop from '../scripts/ScrollTop.jsx';
-import CookieBanner from "../scripts/Cookie-Banner.jsx";
 import LanguageSwitcher from "./LanguageSwitcher.jsx";
 import {I18nextProvider, useTranslation} from "react-i18next";
 import i18n from "i18next";
@@ -11,8 +10,8 @@ export default function Root(){
 
     return(
         <I18nextProvider i18n={i18n}>
+            <ScrollToTop />
             <div>
-                <ScrollToTop/>
                 <section className="header">
                     <section className="left">
                         <NavLink to="/Home">
@@ -66,9 +65,7 @@ export default function Root(){
                     </nav>
                 </section>
 
-                <CookieBanner/>
-
-                <div className="content">
+                <div className="content" id="content">
                     <Outlet/>
                 </div>
 

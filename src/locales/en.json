@@ -184,6 +184,6 @@
     }
   },
   "close" : "Close",
-  "consult" : "Consult",
-  "more": "More information"
+  "consult": "Take a look !",
+  "more": "Expand"
 }

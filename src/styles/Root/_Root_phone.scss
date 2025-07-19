@@ -1,4 +1,10 @@
 @mixin Root_phone{
+  .cky-revisit-bottom-right{
+    bottom: 0 !important;
+    right: 15px !important;
+    top: 15px !important;
+  }
+
   .header{
     display: flex;
     justify-content: center;

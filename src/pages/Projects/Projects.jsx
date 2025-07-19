@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 import ProjectCard from "./Project-card.jsx";
-import { Pagination } from "antd";
+import {Pagination} from "antd";
 import "antd/dist/reset.css";
 import {useTranslation} from "react-i18next";
 
@@ -35,6 +35,7 @@ export default function Projects() {
 
     return(
         <section className="projects">
+            <section className="top-bg"></section>
             <section className="projects-top">
                 <h2>4CORES</h2>
                 <h1>{t('projectspage.title')}</h1>
@@ -52,7 +53,7 @@ export default function Projects() {
                     />
                 ))}
             </section>
-            <div style={{ display: "flex", justifyContent: "center", marginTop: 24 }}>
+            <div style={{display: "flex", justifyContent: "center", marginTop: 24}}>
                 <Pagination
                     current={current}
                     pageSize={pageSize}

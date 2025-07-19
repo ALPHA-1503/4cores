@@ -7,6 +7,7 @@
 @use "./styles/About" as About;
 @use "./styles/CookieBanner" as Cookie;
 @use "./styles/Projects" as Projects;
+@use "./styles/Globals" as Globals;
 
 @font-face {
   font-family: "Bayon", sans-serif;
@@ -15,6 +16,7 @@
 }
 
 @media screen and (min-width: 1601px) {
+  @include Globals.globals;
   @include Root.Root;
   @include Home.Home;
   @include Contact.Contact;
@@ -26,6 +28,7 @@
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1600px) {
+  @include Globals.globals_laptop;
   @include Root.Root_laptop;
   @include Home.Home_laptop;
   @include About.About_laptop;
@@ -36,6 +39,7 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  @include Globals.globals_tablet;
   @include Root.Root_phone;
   @include Home.Home_tablet;
   @include Soon.Soon_phone;
@@ -47,6 +51,7 @@
 }
 
 @media screen and (max-width: 767px) {
+  @include Globals.globals_phone;
   @include Root.Root_phone;
   @include Home.Home_phone;
   @include Soon.Soon_phone;

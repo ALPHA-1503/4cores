@@ -87,96 +87,97 @@ export default function About(){
     return(
         <>
             <section className="about">
-                <section className="about-top">
-                    <h2>4CORES</h2>
-                    <h1>{t('aboutpage.title')}</h1>
-                    <p dangerouslySetInnerHTML={{__html: (t('aboutpage.top-description1'))}}></p>
-                    <p>{t('aboutpage.top-description2')}</p>
+                <section className="top-bg"></section>
+                    <section className="about-top">
+                        <h2>4CORES</h2>
+                        <h1>{t('aboutpage.title')}</h1>
+                        <p dangerouslySetInnerHTML={{__html: (t('aboutpage.top-description1'))}}></p>
+                        <p>{t('aboutpage.top-description2')}</p>
+                    </section>
+                    <section className="about-bottom">
+                        <img className="about-img" src="/images/about.png" alt="about image"/>
+                    </section>
                 </section>
-                <section className="about-bottom">
-                    <img className="about-img" src="/images/about.png" alt="about image"/>
+                <section className="about-team">
+                    <article className="top">
+                        <h1>{t('aboutpage.team.title')}</h1>
+                    </article>
+                    <About_team
+                        title={nini.title}
+                        subtitle={nini.subtitle}
+                        description={nini.description}
+                        mail={nini.mail}
+                        linkedin={nini.linkedin}
+                        side="left"
+                        image={nini.image}
+                    />
+
+                    <About_team
+                        title={ervinou.title}
+                        subtitle={ervinou.subtitle}
+                        description={ervinou.description}
+                        mail={ervinou.mail}
+                        linkedin={ervinou.linkedin}
+                        side="right"
+                        image={ervinou.image}
+                    />
+
+                    <About_team
+                        title={lvca.title}
+                        subtitle={lvca.subtitle}
+                        description={lvca.description}
+                        mail={lvca.mail}
+                        linkedin={lvca.linkedin}
+                        side="left"
+                        image={lvca.image}
+                    />
+
+                    <About_team
+                        title={arnaud.title}
+                        subtitle={arnaud.subtitle}
+                        description={arnaud.description}
+                        mail={arnaud.mail}
+                        linkedin={arnaud.linkedin}
+                        side="right"
+                        image={arnaud.image}
+                    />
+
+                    <Home_team_mobile
+                        title={nini.title}
+                        subtitle={nini.subtitle}
+                        description={nini.description}
+                        mail={nini.mail}
+                        linkedin={nini.linkedin}
+                        image={nini.image_mobile}
+                    />
+
+                    <Home_team_mobile
+                        title={ervinou.title}
+                        subtitle={ervinou.subtitle}
+                        description={ervinou.description}
+                        mail={ervinou.mail}
+                        linkedin={ervinou.linkedin}
+                        image={ervinou.image_mobile}
+                    />
+
+                    <Home_team_mobile
+                        title={lvca.title}
+                        subtitle={lvca.subtitle}
+                        description={lvca.description}
+                        mail={lvca.mail}
+                        linkedin={lvca.linkedin}
+                        image={lvca.image_mobile}
+                    />
+
+                    <Home_team_mobile
+                        title={arnaud.title}
+                        subtitle={arnaud.subtitle}
+                        description={arnaud.description}
+                        mail={arnaud.mail}
+                        linkedin={arnaud.linkedin}
+                        image={arnaud.image_mobile}
+                    />
                 </section>
-            </section>
-            <section className="about-team">
-                <article className="top">
-                    <h1>{t('aboutpage.team.title')}</h1>
-                </article>
-                <About_team
-                    title={nini.title}
-                    subtitle={nini.subtitle}
-                    description={nini.description}
-                    mail={nini.mail}
-                    linkedin={nini.linkedin}
-                    side="left"
-                    image={nini.image}
-                />
-
-                <About_team
-                    title={ervinou.title}
-                    subtitle={ervinou.subtitle}
-                    description={ervinou.description}
-                    mail={ervinou.mail}
-                    linkedin={ervinou.linkedin}
-                    side="right"
-                    image={ervinou.image}
-                />
-
-                <About_team
-                    title={lvca.title}
-                    subtitle={lvca.subtitle}
-                    description={lvca.description}
-                    mail={lvca.mail}
-                    linkedin={lvca.linkedin}
-                    side="left"
-                    image={lvca.image}
-                />
-
-                <About_team
-                    title={arnaud.title}
-                    subtitle={arnaud.subtitle}
-                    description={arnaud.description}
-                    mail={arnaud.mail}
-                    linkedin={arnaud.linkedin}
-                    side="right"
-                    image={arnaud.image}
-                />
-
-                <Home_team_mobile
-                    title={nini.title}
-                    subtitle={nini.subtitle}
-                    description={nini.description}
-                    mail={nini.mail}
-                    linkedin={nini.linkedin}
-                    image={nini.image_mobile}
-                />
-
-                <Home_team_mobile
-                    title={ervinou.title}
-                    subtitle={ervinou.subtitle}
-                    description={ervinou.description}
-                    mail={ervinou.mail}
-                    linkedin={ervinou.linkedin}
-                    image={ervinou.image_mobile}
-                />
-
-                <Home_team_mobile
-                    title={lvca.title}
-                    subtitle={lvca.subtitle}
-                    description={lvca.description}
-                    mail={lvca.mail}
-                    linkedin={lvca.linkedin}
-                    image={lvca.image_mobile}
-                />
-
-                <Home_team_mobile
-                    title={arnaud.title}
-                    subtitle={arnaud.subtitle}
-                    description={arnaud.description}
-                    mail={arnaud.mail}
-                    linkedin={arnaud.linkedin}
-                    image={arnaud.image_mobile}
-                />
-            </section>
-        </>
-    );
-}
+            </>
+            );
+            }
