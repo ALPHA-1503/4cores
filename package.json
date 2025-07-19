@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "main": "server.js",
+  "main": "backend/server.js",
   "engines": {
     "node": ">=20.0.0"
   },
@@ -13,7 +13,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start": "node server.js"
+    "start": "node backend/server.js"
   },
   "dependencies": {
     "antd": "^5.26.1",

@@ -1,12 +1,27 @@
+// vercel.json (à la racine de votre projet)
 {
-  "routes": [
+  "version": 2,
+  "builds": [
     {
-      "src": "/api/(.*)",
-      "dest": "server.js"
+      "src": "package.json", // Le package.json à la racine, qui déclenche le build React
+      "use": "@vercel/static-build",
+      "config": {
+        "outputDirectory": "dist" // Votre build React est dans le dossier 'dist' à la racine
+      }
     },
     {
-      "src": "/(.*)",
-      "dest": "/index.js"
+      "src": "backend/server.js", // Votre API se trouve maintenant dans le dossier 'backend'
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)", // Les requêtes vers /api/ iront à votre fonction serverless
+      "dest": "backend/server.js" // La fonction est dans 'backend/server.js'
+    },
+    {
+      "src": "/(.*)", // Toutes les autres requêtes iront à votre frontend React
+      "dest": "/index.js" // Qui se trouve à la racine et utilise index.html
     }
   ]
 }
