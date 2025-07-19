@@ -1,40 +1,48 @@
 import { useState } from "react";
-import {useTranslation} from "react-i18next";
-import {t} from "i18next";
+import { useTranslation } from "react-i18next";
 
-const ContactLeftSection = () => (
-    <section className="contact-left">
-        <img src="/images/contact_white.png" alt="Contact"/>
-        <h1>{t('contactpage.title')}</h1>
-        <p>{t('contactpage.description')}</p>
-    </section>
-);
+const ContactLeftSection = () => {
+    const {t} = useTranslation();
+    return (
+        <section className="contact-left">
+            <img src="/images/contact_white.png" alt="Contact"/>
+            <h1>{t('contactpage.title')}</h1>
+            <p>{t('contactpage.description')}</p>
+        </section>
+    );
+};
 
-const LoadingSpinner = () => (
-    <div className="loading-spinner">
-        <div className="spinner"></div>
-        <p>{t('contactpage.sending')}</p>
-    </div>
-);
+const LoadingSpinner = () => {
+    const {t} = useTranslation();
+    return (
+        <div className="loading-spinner">
+            <div className="spinner"></div>
+            <p>{t('contactpage.sending')}</p>
+        </div>
+    )
+};
 
-const SuccessMessage = ({ formData }) => (
-    <div className="success-message">
-        <h2>{t('contactpage.success-message.title')}</h2>
-        <p>{t('contactpage.success-message.description')}</p>
-        <div className="contact-details">
-            <p><strong>{t('contactpage.success-message.name')}</strong> {formData.name} {formData.surname}</p>
-            {formData.company && <p><strong>{t('contactpage.success-message.company')}</strong> {formData.company}</p>}
-            <p><strong>{t('contactpage.success-message.email')}</strong> {formData.email}</p>
-            {formData.services.length > 0 && (
-                <p><strong>{t('contactpage.success-message.services')}</strong> {formData.services.join(", ")}</p>
-            )}
-            <div className="message-box">
-                <h3>{t('contactpage.success-message.message')}</h3>
-                <p>{formData.message}</p>
+const SuccessMessage = ({ formData }) => {
+    const {t} = useTranslation();
+    return (
+            <div className="success-message">
+            <h2>{t('contactpage.success-message.title')}</h2>
+            <p>{t('contactpage.success-message.description')}</p>
+            <div className="contact-details">
+                <p><strong>{t('contactpage.success-message.name')}</strong> {formData.name} {formData.surname}</p>
+                {formData.company && <p><strong>{t('contactpage.success-message.company')}</strong> {formData.company}</p>}
+                <p><strong>{t('contactpage.success-message.email')}</strong> {formData.email}</p>
+                {formData.services.length > 0 && (
+                    <p><strong>{t('contactpage.success-message.services')}</strong> {formData.services.join(", ")}</p>
+                )}
+                <div className="message-box">
+                    <h3>{t('contactpage.success-message.message')}</h3>
+                    <p>{formData.message}</p>
+                </div>
             </div>
         </div>
-    </div>
-);
+    )
+};
 
 const ContactForm = ({ formData, handleChange, handleSubmit, isLoading }) => {
     const {t} = useTranslation();
@@ -158,7 +166,7 @@ const createNotificationEmail = (formData) => {
   `;
 };
 
-const createCustomerEmail = (formData) => {
+const createCustomerEmail = (formData, t) => {
     return `
     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #e0e0e0; border-radius: 8px;">
       <h2 style="color: #004E96; text-align: center; margin-bottom: 20px;">${t('contactpage.customer-email.greetings')}</h2>
@@ -194,6 +202,8 @@ const createCustomerEmail = (formData) => {
 };
 
 export default function Contact() {
+    const {t} = useTranslation();
+
     const [formData, setFormData] = useState({
         name: "",
         surname: "",
@@ -244,7 +254,7 @@ export default function Contact() {
                     recipientEmail: "contact@4cores.be",
                     recipientName: "4CORES",
                     subject: `Nouveau message de contact de ${formData.name} ${formData.surname}`,
-                    text: createNotificationEmail(formData),
+                    text: createNotificationEmail(formData, t),
                     isHtml: true
                 }),
             });
@@ -268,9 +278,9 @@ export default function Contact() {
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
                     recipientEmail: formData.email,
-                    recipientName: `${formData.name} ${formData.surname}`,
+                    recipientName: formData.name + ' ' + formData.surname,
                     subject: t('contactpage.email-content.confirmation'),
-                    text: createCustomerEmail(formData),
+                    text: createCustomerEmail(formData, t),
                     isHtml: true
                 }),
             });
