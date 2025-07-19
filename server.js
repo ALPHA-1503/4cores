@@ -59,6 +59,8 @@ app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
 
+export default app;
+
 //app.get('*', (req, res) => {
 //    const indexPath = path.join(__dirname, 'dist', 'index.html');
 //    console.log('Attempting to send index.html from:', indexPath); // <-- Add this
