@@ -11,11 +11,13 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const app = express();
-const port = process.env.PORT || 3000;
+//const port = process.env.PORT || 3000;
 
 app.use(express.json());
 
-app.use(express.static(path.join(__dirname, 'dist')));
+
+// Commenting for Vercel production environment
+//app.use(express.static(path.join(__dirname, 'dist')));
 
 const mailjetClient = mailjet.apiConnect(
     process.env.MJ_APIKEY_PUBLIC,
@@ -53,8 +55,8 @@ app.post('/api/send-email', async (req, res) => {
     }
 });
 
-app.get('*', (req, res) => {
-    const indexPath = path.join(__dirname, 'dist', 'index.html');
-    console.log('Attempting to send index.html from:', indexPath); // <-- Add this
-    res.sendFile(indexPath);
-});
+//app.get('*', (req, res) => {
+//    const indexPath = path.join(__dirname, 'dist', 'index.html');
+//    console.log('Attempting to send index.html from:', indexPath); // <-- Add this
+//    res.sendFile(indexPath);
+//});
