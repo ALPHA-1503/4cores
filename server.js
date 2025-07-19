@@ -1,22 +1,13 @@
 import express from 'express';
 import mailjet from 'node-mailjet';
 import dotenv from 'dotenv';
-import path from 'path';
-import { fileURLToPath } from 'url';
 import process from 'node:process';
 
 dotenv.config();
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
 const app = express();
 
 app.use(express.json());
-
-
-// Commenting for Vercel production environment
-//app.use(express.static(path.join(__dirname, 'dist')));
 
 const mailjetClient = mailjet.apiConnect(
     process.env.MJ_APIKEY_PUBLIC,
@@ -55,9 +46,3 @@ app.post('/api/send-email', async (req, res) => {
 });
 
 export default app;
-
-//app.get('*', (req, res) => {
-//    const indexPath = path.join(__dirname, 'dist', 'index.html');
-//    console.log('Attempting to send index.html from:', indexPath); // <-- Add this
-//    res.sendFile(indexPath);
-//});
